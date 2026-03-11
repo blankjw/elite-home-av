@@ -127,12 +127,12 @@ export default function GalleryPage() {
                 >
                   <img 
                     src={[
-                      "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=1000&auto=format&fit=crop", # 1 Server rack
-                      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1000&auto=format&fit=crop", # 2 Smart home living room
-                      "https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1000&auto=format&fit=crop", # 3 Automation control
-                      "https://images.unsplash.com/photo-1540103711724-159491410427?q=80&w=1000&auto=format&fit=crop", # 4 Construction/Tools
-                      "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=1000&auto=format&fit=crop", # 5 Network cables
-                      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1000&auto=format&fit=crop"  # 6 Security camera
+                      "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=1000&auto=format&fit=crop", /* 1 Server rack */
+                      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1000&auto=format&fit=crop", /* 2 Smart home living room */
+                      "https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1000&auto=format&fit=crop", /* 3 Automation control */
+                      "https://images.unsplash.com/photo-1540103711724-159491410427?q=80&w=1000&auto=format&fit=crop", /* 4 Construction/Tools */
+                      "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=1000&auto=format&fit=crop", /* 5 Network cables */
+                      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1000&auto=format&fit=crop"  /* 6 Security camera */
                     ][item.id % 6]} 
                     alt={item.title}
                     className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105 transform"

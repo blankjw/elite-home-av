@@ -31,7 +31,7 @@ interface Service {
 const services: Service[] = [
   {
     id: 'audio',
-    image: 'https://image.pollinations.ai/prompt/luxury%20whole%20home%20audio%20system%20ceiling%20speakers%20modern%20living%20room%20professional%20installation%20cinematic%20dark?width=1200&height=500&nologo=true&seed=42',
+    image: 'https://picsum.photos/seed/42/1200/500',
     icon: Music,
     title: 'Home Audio',
     metaTitle: 'Home Audio Installation | SE Texas | Elite Home AV',
@@ -55,7 +55,7 @@ const services: Service[] = [
   },
   {
     id: 'video',
-    image: 'https://image.pollinations.ai/prompt/dedicated%20home%20theater%20room%204K%20projector%20acoustic%20panels%20stadium%20seating%20dark%20luxury%20cinematic?width=1200&height=500&nologo=true&seed=84',
+    image: 'https://picsum.photos/seed/84/1200/500',
     icon: Monitor,
     title: 'Home Video',
     metaTitle: 'Home Theater & Video Install | SE Texas',
@@ -80,7 +80,7 @@ const services: Service[] = [
   },
   {
     id: 'automation',
-    image: 'https://image.pollinations.ai/prompt/smart%20home%20automation%20control%20panel%20luxury%20modern%20home%20interior%20sleek%20dark%20cinematic?width=1200&height=500&nologo=true&seed=168',
+    image: 'https://picsum.photos/seed/168/1200/500',
     icon: Cpu,
     title: 'Home Automation',
     metaTitle: 'Smart Home Automation | SE Texas | Elite Home AV',
@@ -106,7 +106,7 @@ const services: Service[] = [
   },
   {
     id: 'networking',
-    image: 'https://image.pollinations.ai/prompt/network%20rack%20server%20cabinet%20patch%20panel%20managed%20switch%20UPS%20clean%20cable%20management%20dark?width=1200&height=500&nologo=true&seed=462',
+    image: 'https://picsum.photos/seed/462/1200/500',
     icon: Wifi,
     title: 'Networking',
     metaTitle: 'Home Network Installation | SE Texas',
@@ -131,7 +131,7 @@ const services: Service[] = [
   },
   {
     id: 'surveillance',
-    image: 'https://image.pollinations.ai/prompt/4K%20security%20camera%20system%20modern%20home%20exterior%20night%20vision%20perimeter%20surveillance%20dark?width=1200&height=500&nologo=true&seed=252',
+    image: 'https://picsum.photos/seed/252/1200/500',
     icon: Camera,
     title: 'Surveillance',
     metaTitle: 'Security Camera Installation | SE Texas',
@@ -157,7 +157,7 @@ const services: Service[] = [
   },
   {
     id: 'security',
-    image: 'https://image.pollinations.ai/prompt/smart%20home%20security%20keypad%20luxury%20entryway%20modern%20dark%20cinematic?width=1200&height=500&nologo=true&seed=100',
+    image: 'https://picsum.photos/seed/100/1200/500',
     icon: Shield,
     title: 'Security',
     metaTitle: 'Home Security Systems | SE Texas | Elite AV',
@@ -184,7 +184,7 @@ const services: Service[] = [
   },
   {
     id: 'electrical',
-    image: 'https://image.pollinations.ai/prompt/luxury%20modern%20lighting%20design%20interior%20architecture%20smart%20home%20dark%20cinematic?width=1200&height=500&nologo=true&seed=200',
+    image: 'https://picsum.photos/seed/200/1200/500',
     icon: Zap,
     title: 'Electrical',
     metaTitle: 'Electrical Services | Beaumont & SE Texas',
@@ -209,7 +209,7 @@ const services: Service[] = [
   },
   {
     id: 'plumbing',
-    image: 'https://image.pollinations.ai/prompt/luxury%20modern%20bathroom%20spa%20smart%20shower%20dark%20cinematic%20architectural?width=1200&height=500&nologo=true&seed=300',
+    image: 'https://picsum.photos/seed/300/1200/500',
     icon: Droplets,
     title: 'Plumbing',
     metaTitle: 'Plumbing Services | Lumberton & SE Texas',
@@ -233,7 +233,7 @@ const services: Service[] = [
   },
   {
     id: 'construction',
-    image: 'https://image.pollinations.ai/prompt/luxury%20home%20remodel%20living%20room%20architectural%20design%20dark%20cinematic?width=1200&height=500&nologo=true&seed=400',
+    image: 'https://picsum.photos/seed/400/1200/500',
     icon: HardHat,
     title: 'Construction & Remodel',
     metaTitle: 'Home Remodel & Construction | SE Texas',
@@ -260,7 +260,7 @@ const services: Service[] = [
   },
   {
     id: 'design',
-    image: 'https://image.pollinations.ai/prompt/luxury%20home%20office%20architectural%20plans%20interior%20design%20dark%20moody?width=1200&height=500&nologo=true&seed=500',
+    image: 'https://picsum.photos/seed/500/1200/500',
     icon: Palette,
     title: 'Design',
     metaTitle: 'Home AV & Smart Home Design | SE Texas',

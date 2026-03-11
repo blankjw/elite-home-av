@@ -13,7 +13,7 @@ export function Hero() {
       {/* AI Hero Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 mix-blend-luminosity"
-        style={{ backgroundImage: 'url("https://image.pollinations.ai/prompt/luxury%20home%20theater%20dark%20moody%20lighting%20massive%20screen%20stadium%20seating%20orange%20accents%20cinematic%204k%20interior%20design?width=1920&height=1080&nologo=true&seed=42")' }}
+        style={{ backgroundImage: 'url("https://picsum.photos/seed/42/1200/500")' }}
       />
       
       {/* Dark gradient overlay to ensure text readability */}

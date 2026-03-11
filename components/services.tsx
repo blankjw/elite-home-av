@@ -20,61 +20,61 @@ const services = [
     icon: Volume2,
     title: "Home Audio",
     description: "Whole-home audio systems with crystal-clear sound in every room.",
-    number: "01", image: "https://image.pollinations.ai/prompt/luxury%20whole%20home%20audio%20system%20ceiling%20speakers%20modern%20living%20room%20professional%20installation%20cinematic%20dark?width=400&height=600&nologo=true&seed=42"
+    number: "01", image: "https://picsum.photos/seed/42/1200/500"
   },
   {
     icon: Tv,
     title: "Home Video",
     description: "Custom home theaters and media rooms with stunning 4K/8K displays.",
-    number: "02", image: "https://image.pollinations.ai/prompt/dedicated%20home%20theater%20room%204K%20projector%20acoustic%20panels%20stadium%20seating%20dark%20luxury%20cinematic?width=400&height=600&nologo=true&seed=84"
+    number: "02", image: "https://picsum.photos/seed/84/1200/500"
   },
   {
     icon: Home,
     title: "Home Automation",
     description: "Smart home control for lighting, climate, shades, and more.",
-    number: "03", image: "https://image.pollinations.ai/prompt/smart%20home%20automation%20control%20panel%20luxury%20modern%20home%20interior%20sleek%20dark%20cinematic?width=400&height=600&nologo=true&seed=168"
+    number: "03", image: "https://picsum.photos/seed/168/1200/500"
   },
   {
     icon: Wifi,
     title: "Networking",
     description: "Enterprise-grade networking with seamless whole-home coverage.",
-    number: "04", image: "https://image.pollinations.ai/prompt/network%20rack%20server%20cabinet%20patch%20panel%20managed%20switch%20UPS%20clean%20cable%20management%20dark?width=400&height=600&nologo=true&seed=462"
+    number: "04", image: "https://picsum.photos/seed/462/1200/500"
   },
   {
     icon: Camera,
     title: "Surveillance",
     description: "Professional CCTV and video monitoring systems.",
-    number: "05", image: "https://image.pollinations.ai/prompt/4K%20security%20camera%20system%20modern%20home%20exterior%20night%20vision%20perimeter%20surveillance%20dark?width=400&height=600&nologo=true&seed=252"
+    number: "05", image: "https://picsum.photos/seed/252/1200/500"
   },
   {
     icon: Shield,
     title: "Security",
     description: "Advanced alarm systems and access control solutions.",
-    number: "06", image: "https://image.pollinations.ai/prompt/smart%20home%20security%20keypad%20luxury%20entryway%20modern%20dark%20cinematic?width=400&height=600&nologo=true&seed=100"
+    number: "06", image: "https://picsum.photos/seed/100/1200/500"
   },
   {
     icon: Zap,
     title: "Electrical",
     description: "Licensed electrical work from outlets to full panel upgrades.",
-    number: "07", image: "https://image.pollinations.ai/prompt/luxury%20modern%20lighting%20design%20interior%20architecture%20smart%20home%20dark%20cinematic?width=400&height=600&nologo=true&seed=200"
+    number: "07", image: "https://picsum.photos/seed/200/1200/500"
   },
   {
     icon: Droplets,
     title: "Plumbing",
     description: "Complete plumbing services for repairs and new construction.",
-    number: "08", image: "https://image.pollinations.ai/prompt/luxury%20modern%20bathroom%20spa%20smart%20shower%20dark%20cinematic%20architectural?width=400&height=600&nologo=true&seed=300"
+    number: "08", image: "https://picsum.photos/seed/300/1200/500"
   },
   {
     icon: Hammer,
     title: "Construction & Remodel",
     description: "Full-scale remodeling and custom construction projects.",
-    number: "09", image: "https://image.pollinations.ai/prompt/luxury%20home%20remodel%20living%20room%20architectural%20design%20dark%20cinematic?width=400&height=600&nologo=true&seed=400"
+    number: "09", image: "https://picsum.photos/seed/400/1200/500"
   },
   {
     icon: Palette,
     title: "Design",
     description: "Professional system design and project planning services.",
-    number: "10", image: "https://image.pollinations.ai/prompt/luxury%20home%20office%20architectural%20plans%20interior%20design%20dark%20moody?width=400&height=600&nologo=true&seed=500"
+    number: "10", image: "https://picsum.photos/seed/500/1200/500"
   }
 ]
 

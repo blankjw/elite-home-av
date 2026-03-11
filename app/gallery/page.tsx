@@ -123,14 +123,21 @@ export default function GalleryPage() {
               >
                 {/* Placeholder image area — swap with <Image /> */}
                 <div
-                  className={`w-full ${item.aspectRatio} relative overflow-hidden`}
-                  style={{ backgroundColor: getPlaceholderColor(item.id) }}
+                  className={`w-full ${item.aspectRatio} relative overflow-hidden bg-[#141414]`}
                 >
-                  {/* Placeholder visual */}
-                  <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 opacity-30 group-hover:opacity-50 transition-opacity">
-                    <Camera className="w-10 h-10 text-gray-500" />
-                    <span className="text-gray-500 text-xs font-mono">photo_{String(item.id).padStart(2, '0')}.jpg</span>
-                  </div>
+                  <img 
+                    src={[
+                      "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=1000&auto=format&fit=crop", # 1 Server rack
+                      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1000&auto=format&fit=crop", # 2 Smart home living room
+                      "https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1000&auto=format&fit=crop", # 3 Automation control
+                      "https://images.unsplash.com/photo-1540103711724-159491410427?q=80&w=1000&auto=format&fit=crop", # 4 Construction/Tools
+                      "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=1000&auto=format&fit=crop", # 5 Network cables
+                      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1000&auto=format&fit=crop"  # 6 Security camera
+                    ][item.id % 6]} 
+                    alt={item.title}
+                    className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105 transform"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent opacity-60" />
                   {/* Category tag */}
                   <div className="absolute top-3 left-3">
                     <span className="bg-[#E8521A] text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded-sm">

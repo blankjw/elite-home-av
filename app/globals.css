@@ -232,3 +232,12 @@ html {
   background-color: rgba(232, 82, 26, 0.3);
   color: #FFFFFF;
 }
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 2rem)); }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 40s linear infinite;
+}

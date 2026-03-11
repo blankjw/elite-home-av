@@ -99,15 +99,15 @@ export function Services() {
         <div className="max-w-3xl mb-20">
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-px bg-[#E8521A]" />
-            <span className="text-[#E8521A] text-sm font-semibold tracking-[0.2em] uppercase">Our Services</span>
+            <span className="text-[#E8521A] text-sm font-semibold tracking-[0.2em] uppercase">Our Expertise</span>
           </div>
           <h2 className="font-bebas text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white leading-[0.9]">
-            10 Trades.
+            End-to-End Expertise.
             <br />
-            <span className="text-[#6B7280]">One Expert Team.</span>
+            <span className="text-[#6B7280]">One Master Integrator.</span>
           </h2>
           <p className="mt-8 text-lg sm:text-xl text-[#9CA3AF] max-w-2xl leading-relaxed">
-            Every project completed by our in-house experts. No middlemen, no delays, no excuses — just premium craftsmanship delivered on time.
+            True smart home integration means understanding every layer of the build. By handling the design, installation, and programming personally, I ensure your systems communicate flawlessly. No disjointed contractors &mdash; just one cohesive vision.
           </p>
         </div>
 

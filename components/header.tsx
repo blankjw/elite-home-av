@@ -66,7 +66,7 @@ export function Header() {
               asChild
               className="bg-[#E8521A] hover:bg-[#d14816] text-white px-6 py-2.5 text-sm font-semibold tracking-wide rounded-none"
             >
-              <a href="#contact">Get Quote</a>
+              <a href="#contact">Contact</a>
             </Button>
           </div>
 

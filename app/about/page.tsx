@@ -54,18 +54,18 @@ export default function AboutPage() {
             <div>
               <p className="section-label mb-3">About</p>
               <h1 className="text-4xl md:text-6xl font-black text-white leading-tight mb-4">
-                This Isn&rsquo;t a Corporation.
+                Master-Level Integration.
                 <br />
-                <span className="text-[#E8521A]">It&rsquo;s a Craftsman</span>
+                <span className="text-[#E8521A]">Uncompromising</span>
                 <br />
-                With a Truck.
+                Quality.
               </h1>
               <div className="divider-orange mb-6" />
               <p className="text-gray-400 text-lg leading-relaxed">
-                You want to know who&rsquo;s actually showing up to your house? It&rsquo;s me.
-                I pull up in a Ram TRX with a loaded cargo trailer, I walk through your home,
-                I look at what you&rsquo;re trying to build, and I tell you straight what it
-                takes to get there.
+                True home automation and luxury AV requires an obsessive attention to detail. 
+                When you hire Elite Home AV, you are working directly with the master integrator 
+                who will design, engineer, install, and program every piece of your system. 
+                Complete accountability, flawless execution.
               </p>
             </div>
 
@@ -73,7 +73,7 @@ export default function AboutPage() {
             <div className="card-dark p-8 flex flex-col gap-6">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-[#E8521A] rounded-sm flex items-center justify-center flex-shrink-0">
-                  <Truck className="w-6 h-6 text-white" />
+                  <Zap className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <h2 className="text-white font-black text-2xl">John Blank</h2>
@@ -85,19 +85,19 @@ export default function AboutPage() {
               <div className="border-t border-[#222222] pt-6 space-y-3">
                 <div className="flex items-center gap-3 text-sm text-gray-400">
                   <MapPin className="w-4 h-4 text-[#E8521A] flex-shrink-0" />
-                  Lumberton, TX — SE Texas Born &amp; Raised
+                  Lumberton, TX — Serving all of SE Texas
                 </div>
                 <div className="flex items-center gap-3 text-sm text-gray-400">
                   <CheckCircle2 className="w-4 h-4 text-[#E8521A] flex-shrink-0" />
-                  10 Trades. One expert. No subs.
+                  Deep multi-trade expertise
                 </div>
                 <div className="flex items-center gap-3 text-sm text-gray-400">
                   <CheckCircle2 className="w-4 h-4 text-[#E8521A] flex-shrink-0" />
-                  Ram TRX + loaded cargo trailer, ready for anything
+                  End-to-end custom system design
                 </div>
                 <div className="flex items-center gap-3 text-sm text-gray-400">
                   <CheckCircle2 className="w-4 h-4 text-[#E8521A] flex-shrink-0" />
-                  Serving all of SE Texas
+                  Single-point accountability
                 </div>
               </div>
               <a href={PHONE_HREF} className="btn-primary w-full justify-center mt-2">
@@ -140,18 +140,18 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* TRX / Equipment Section */}
+            {/* Expertise / Tools Section */}
             <div className="card-dark p-6 md:p-8 border-l-4 border-[#E8521A]">
-              <h3 className="text-white font-black text-xl mb-4">The Trucks, the Trailer, the Tools</h3>
+              <h3 className="text-white font-black text-xl mb-4">The Precision Required for Perfection</h3>
               <p className="text-gray-300 leading-relaxed">
-                I don&rsquo;t show up with a folding table and a cardboard box. I&rsquo;m fully equipped
-                for whatever the job demands — rough construction through final AV calibration. The TRX
-                hauls the trailer. The trailer carries everything from framing lumber to cable spools to
-                rack-mount equipment to hand tools for finish work.
+                High-end integration isn't just about plugging things in. It requires exact precision 
+                at every phase, from rough-in wiring to final audio calibration. I bring an uncompromising 
+                standard to the tools and techniques used on your project.
               </p>
               <p className="text-gray-300 leading-relaxed mt-4">
-                If the job needs a concrete saw or a conduit bender or a calibration meter, it&rsquo;s
-                on the trailer. I&rsquo;m not calling in specialty subs. I&rsquo;m handling it.
+                Whether it's acoustic measurement gear for a luxury theater, specialized termination tools 
+                for enterprise fiber, or the necessary equipment for custom millwork, the job is done 
+                flawlessly, strictly adhering to industry best practices.
               </p>
             </div>
           </div>
@@ -163,7 +163,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="section-label mb-3">What I Do</p>
-            <h2 className="section-heading mb-4">10 Trades. 1 Expert.</h2>
+            <h2 className="section-heading mb-4">Comprehensive Expertise.</h2>
             <div className="divider-orange mx-auto" />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">

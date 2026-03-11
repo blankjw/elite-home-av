@@ -2,10 +2,10 @@
 
 export function StatsBar() {
   const stats = [
-    { value: "10", label: "Expert Trades", suffix: "+" },
-    { value: "1", label: "Unified Company", suffix: "" },
-    { value: "Lumberton", label: "Texas Based", suffix: "" },
-    { value: "Zero", label: "Subcontractors", suffix: "" }
+    { value: "Custom", label: "Design & Engineering", suffix: "" },
+    { value: "Flawless", label: "Execution", suffix: "" },
+    { value: "Seamless", label: "Automation", suffix: "" },
+    { value: "Unmatched", label: "Precision", suffix: "" }
   ]
 
   return (
@@ -47,7 +47,7 @@ export function StatsBar() {
               
               {/* Value */}
               <div className="flex items-baseline gap-1">
-                <span className="font-bebas text-5xl sm:text-6xl lg:text-7xl tracking-tight text-white">
+                <span className="font-bebas text-4xl sm:text-5xl lg:text-6xl tracking-tight text-white">
                   {stat.value}
                 </span>
                 {stat.suffix && (
@@ -69,8 +69,7 @@ export function StatsBar() {
         {/* Bottom tagline */}
         <div className="mt-16 text-center">
           <p className="text-lg sm:text-xl text-[#6B7280] max-w-2xl mx-auto">
-            When you call Elite, you get <span className="text-white font-medium">Elite</span>. 
-            Every technician is our employee, trained to our standards.
+            When you choose Elite, you work directly with the expert who designs, installs, and programs your home. <span className="text-white font-medium">Total accountability, uncompromising quality.</span>
           </p>
         </div>
       </div>

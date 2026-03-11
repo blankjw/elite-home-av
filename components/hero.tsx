@@ -57,21 +57,21 @@ export function Hero() {
             <div className="w-2 h-2 rounded-full bg-[#E8521A]" />
             <div className="absolute inset-0 w-2 h-2 rounded-full bg-[#E8521A] animate-ping" />
           </div>
-          <span className="text-sm text-[#9CA3AF] tracking-wide">Southeast Texas&apos;s Premier Home Services</span>
+          <span className="text-sm text-[#9CA3AF] tracking-wide">Lumberton, TX &bull; Serving Southeast Texas</span>
         </div>
 
         {/* Main Headline */}
         <h1 className="font-bebas text-[clamp(2.5rem,8vw,6rem)] leading-[0.9] tracking-tight text-white text-balance">
-          One Call.
-          <span className="text-[#E8521A]"> Every Trade.</span>
+          Complete Home Technology.
           <br />
-          Done Right.
+          <span className="text-[#E8521A]">Flawlessly Integrated.</span>
         </h1>
 
         {/* Subheadline */}
         <p className="mt-8 text-lg sm:text-xl lg:text-2xl text-[#9CA3AF] max-w-3xl mx-auto leading-relaxed text-pretty">
-          From home theater to full remodels, we handle every trade in-house. 
-          <span className="text-white font-medium"> No subcontractors. No runaround.</span> Just premium craftsmanship.
+          From luxury home theaters to enterprise-grade networking and seamless automation. 
+          <span className="text-white font-medium"> Every system is expertly designed, built, and programmed </span> 
+          by a single master integrator to work perfectly together.
         </p>
 
         {/* CTAs */}

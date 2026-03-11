@@ -20,14 +20,13 @@ export function Footer() {
           </span>
           
           <h2 className="font-bebas text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white leading-[0.9] text-balance">
-            Let&apos;s Build Something
+            Ready to Elevate Your
             <br />
-            <span className="text-[#E8521A]">Extraordinary</span>
+            <span className="text-[#E8521A]">Home?</span>
           </h2>
           
           <p className="mt-8 text-lg sm:text-xl text-[#9CA3AF] max-w-2xl mx-auto">
-            From concept to completion, we&apos;re here to make your vision a reality. 
-            One call gets it all started.
+            Call today to schedule a consultation and discuss your vision.
           </p>
           
           <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-5">

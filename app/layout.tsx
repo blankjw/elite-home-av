@@ -1,73 +1,57 @@
-import type { Metadata } from 'next';
-import './globals.css';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import type { Metadata, Viewport } from 'next'
+import { Inter, Bebas_Neue } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
+import './globals.css'
+
+const inter = Inter({ 
+  subsets: ["latin"],
+  variable: '--font-inter'
+});
+
+const bebasNeue = Bebas_Neue({ 
+  weight: "400",
+  subsets: ["latin"],
+  variable: '--font-bebas'
+});
 
 export const metadata: Metadata = {
-  title: {
-    default: 'Elite Home AV | Complete Home Solutions SE Texas',
-    template: '%s | Elite Home AV',
+  title: 'Elite Home AV LLC | One Call. Every Trade. Done Right.',
+  description: 'Premium home AV, automation, security, electrical, plumbing and remodel services in Southeast Texas. 10 trades, 1 company, no subcontractors. Serving Lumberton TX and surrounding areas.',
+  keywords: ['home automation', 'home theater', 'security systems', 'electrical', 'plumbing', 'remodel', 'Lumberton TX', 'Southeast Texas'],
+  icons: {
+    icon: [
+      {
+        url: '/icon-light-32x32.png',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/icon-dark-32x32.png',
+        media: '(prefers-color-scheme: dark)',
+      },
+      {
+        url: '/icon.svg',
+        type: 'image/svg+xml',
+      },
+    ],
+    apple: '/apple-icon.png',
   },
-  description:
-    'Home audio, video, automation, security, electrical & more. One company for every trade. Serving Lumberton, Beaumont, Port Arthur & SE Texas. (409) 790-7889.',
-  keywords: [
-    'home audio installation SE Texas',
-    'home theater Beaumont TX',
-    'smart home automation Lumberton TX',
-    'home security system Port Arthur TX',
-    'surveillance cameras Beaumont TX',
-    'electrical contractor Lumberton TX',
-    'home remodel Beaumont TX',
-    'structured wiring SE Texas',
-    'Control4 installer Southeast Texas',
-    'Elite Home AV',
-  ],
-  authors: [{ name: 'Elite Home AV LLC' }],
-  creator: 'Elite Home AV LLC',
-  publisher: 'Elite Home AV LLC',
-  metadataBase: new URL('https://www.elitehomeav.com'),
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://www.elitehomeav.com',
-    siteName: 'Elite Home AV LLC',
-    title: 'Elite Home AV | Complete Home Solutions SE Texas',
-    description:
-      'Home audio, video, automation, security, electrical & more. One company for every trade. Serving SE Texas.',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Elite Home AV | Complete Home Solutions SE Texas',
-    description:
-      'Home audio, video, automation, security, electrical & more. One company for every trade. Serving SE Texas.',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
-};
+}
+
+export const viewport: Viewport = {
+  themeColor: '#0A0A0A',
+}
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode;
-}) {
+}: Readonly<{
+  children: React.ReactNode
+}>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#0A0A0A" />
-      </head>
-      <body className="bg-[#0A0A0A] text-white min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+    <html lang="en" className="dark">
+      <body className={`${inter.variable} ${bebasNeue.variable} font-sans antialiased bg-background text-foreground`}>
+        {children}
+        <Analytics />
       </body>
     </html>
-  );
+  )
 }

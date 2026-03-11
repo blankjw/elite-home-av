@@ -98,7 +98,7 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0A0A0A]">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0A0A0A] w-full">
         {/* Background texture */}
         <div
           className="absolute inset-0 opacity-5"
@@ -108,7 +108,7 @@ export default function HomePage() {
           }}
         />
         {/* Orange glow accent */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-[#E8521A]/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-full max-w-[600px] h-[400px] bg-[#E8521A]/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 pt-24 pb-16 text-center">
           <div className="flex justify-center items-center mb-10">

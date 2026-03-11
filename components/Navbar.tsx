@@ -52,7 +52,13 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group flex-shrink-0">
-            <img src="/logo.jpg" alt="Elite Home AV LLC" className="h-12 w-auto" />
+            <div className="w-8 h-8 bg-[#E8521A] flex items-center justify-center rounded-sm">
+              <span className="text-white font-black text-sm">E</span>
+            </div>
+            <div className="leading-none">
+              <span className="block text-white font-black text-lg tracking-tight">ELITE HOME AV</span>
+              <span className="block text-[#E8521A] text-[10px] font-bold uppercase tracking-widest">Complete Home Solutions</span>
+            </div>
           </Link>
 
           {/* Desktop Nav */}

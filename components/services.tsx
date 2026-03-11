@@ -20,61 +20,61 @@ const services = [
     icon: Volume2,
     title: "Home Audio",
     description: "Whole-home audio systems with crystal-clear sound in every room.",
-    number: "01", image: "https://picsum.photos/seed/42/1200/500"
+    number: "01", image: "https://source.unsplash.com/1200x500/?home+audio+speakers+interior"
   },
   {
     icon: Tv,
     title: "Home Video",
     description: "Custom home theaters and media rooms with stunning 4K/8K displays.",
-    number: "02", image: "https://picsum.photos/seed/84/1200/500"
+    number: "02", image: "https://source.unsplash.com/1200x500/?home+theater+cinema+luxury"
   },
   {
     icon: Home,
     title: "Home Automation",
     description: "Smart home control for lighting, climate, shades, and more.",
-    number: "03", image: "https://picsum.photos/seed/168/1200/500"
+    number: "03", image: "https://source.unsplash.com/1200x500/?smart+home+technology+interior"
   },
   {
     icon: Wifi,
     title: "Networking",
     description: "Enterprise-grade networking with seamless whole-home coverage.",
-    number: "04", image: "https://picsum.photos/seed/462/1200/500"
+    number: "04", image: "https://source.unsplash.com/1200x500/?server+rack+network+cables"
   },
   {
     icon: Camera,
     title: "Surveillance",
     description: "Professional CCTV and video monitoring systems.",
-    number: "05", image: "https://picsum.photos/seed/252/1200/500"
+    number: "05", image: "https://source.unsplash.com/1200x500/?security+camera+house+exterior"
   },
   {
     icon: Shield,
     title: "Security",
     description: "Advanced alarm systems and access control solutions.",
-    number: "06", image: "https://picsum.photos/seed/100/1200/500"
+    number: "06", image: "https://source.unsplash.com/1200x500/?smart+home+security+lock+door"
   },
   {
     icon: Zap,
     title: "Electrical",
     description: "Licensed electrical work from outlets to full panel upgrades.",
-    number: "07", image: "https://picsum.photos/seed/200/1200/500"
+    number: "07", image: "https://source.unsplash.com/1200x500/?interior+lighting+modern+home+luxury"
   },
   {
     icon: Droplets,
     title: "Plumbing",
     description: "Complete plumbing services for repairs and new construction.",
-    number: "08", image: "https://picsum.photos/seed/300/1200/500"
+    number: "08", image: "https://source.unsplash.com/1200x500/?luxury+bathroom+modern+spa"
   },
   {
     icon: Hammer,
     title: "Construction & Remodel",
     description: "Full-scale remodeling and custom construction projects.",
-    number: "09", image: "https://picsum.photos/seed/400/1200/500"
+    number: "09", image: "https://source.unsplash.com/1200x500/?luxury+home+living+room+renovation"
   },
   {
     icon: Palette,
     title: "Design",
     description: "Professional system design and project planning services.",
-    number: "10", image: "https://picsum.photos/seed/500/1200/500"
+    number: "10", image: "https://source.unsplash.com/1200x500/?interior+design+luxury+modern+home"
   }
 ]
 

@@ -31,7 +31,7 @@ interface Service {
 const services: Service[] = [
   {
     id: 'audio',
-    image: 'https://picsum.photos/seed/42/1200/500',
+    image: 'https://source.unsplash.com/1200x500/?home+audio+speakers+interior',
     icon: Music,
     title: 'Home Audio',
     metaTitle: 'Home Audio Installation | SE Texas | Elite Home AV',
@@ -55,7 +55,7 @@ const services: Service[] = [
   },
   {
     id: 'video',
-    image: 'https://picsum.photos/seed/84/1200/500',
+    image: 'https://source.unsplash.com/1200x500/?home+theater+cinema+luxury',
     icon: Monitor,
     title: 'Home Video',
     metaTitle: 'Home Theater & Video Install | SE Texas',
@@ -80,7 +80,7 @@ const services: Service[] = [
   },
   {
     id: 'automation',
-    image: 'https://picsum.photos/seed/168/1200/500',
+    image: 'https://source.unsplash.com/1200x500/?smart+home+technology+interior',
     icon: Cpu,
     title: 'Home Automation',
     metaTitle: 'Smart Home Automation | SE Texas | Elite Home AV',
@@ -106,7 +106,7 @@ const services: Service[] = [
   },
   {
     id: 'networking',
-    image: 'https://picsum.photos/seed/462/1200/500',
+    image: 'https://source.unsplash.com/1200x500/?server+rack+network+cables',
     icon: Wifi,
     title: 'Networking',
     metaTitle: 'Home Network Installation | SE Texas',
@@ -131,7 +131,7 @@ const services: Service[] = [
   },
   {
     id: 'surveillance',
-    image: 'https://picsum.photos/seed/252/1200/500',
+    image: 'https://source.unsplash.com/1200x500/?security+camera+house+exterior',
     icon: Camera,
     title: 'Surveillance',
     metaTitle: 'Security Camera Installation | SE Texas',
@@ -157,7 +157,7 @@ const services: Service[] = [
   },
   {
     id: 'security',
-    image: 'https://picsum.photos/seed/100/1200/500',
+    image: 'https://source.unsplash.com/1200x500/?smart+home+security+lock+door',
     icon: Shield,
     title: 'Security',
     metaTitle: 'Home Security Systems | SE Texas | Elite AV',
@@ -184,7 +184,7 @@ const services: Service[] = [
   },
   {
     id: 'electrical',
-    image: 'https://picsum.photos/seed/200/1200/500',
+    image: 'https://source.unsplash.com/1200x500/?interior+lighting+modern+home+luxury',
     icon: Zap,
     title: 'Electrical',
     metaTitle: 'Electrical Services | Beaumont & SE Texas',
@@ -209,7 +209,7 @@ const services: Service[] = [
   },
   {
     id: 'plumbing',
-    image: 'https://picsum.photos/seed/300/1200/500',
+    image: 'https://source.unsplash.com/1200x500/?luxury+bathroom+modern+spa',
     icon: Droplets,
     title: 'Plumbing',
     metaTitle: 'Plumbing Services | Lumberton & SE Texas',
@@ -233,7 +233,7 @@ const services: Service[] = [
   },
   {
     id: 'construction',
-    image: 'https://picsum.photos/seed/400/1200/500',
+    image: 'https://source.unsplash.com/1200x500/?luxury+home+living+room+renovation',
     icon: HardHat,
     title: 'Construction & Remodel',
     metaTitle: 'Home Remodel & Construction | SE Texas',
@@ -260,7 +260,7 @@ const services: Service[] = [
   },
   {
     id: 'design',
-    image: 'https://picsum.photos/seed/500/1200/500',
+    image: 'https://source.unsplash.com/1200x500/?interior+design+luxury+modern+home',
     icon: Palette,
     title: 'Design',
     metaTitle: 'Home AV & Smart Home Design | SE Texas',

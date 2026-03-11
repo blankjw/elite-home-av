@@ -13,7 +13,7 @@ export function Hero() {
       {/* AI Hero Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 mix-blend-luminosity"
-        style={{ backgroundImage: 'url("https://picsum.photos/seed/42/1200/500")' }}
+        style={{ backgroundImage: 'url("https://source.unsplash.com/1200x500/?home+audio+speakers+interior")' }}
       />
       
       {/* Dark gradient overlay to ensure text readability */}

@@ -110,9 +110,9 @@ export default function HomePage() {
         {/* Orange glow accent */}
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-[#E8521A]/10 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 text-center">
-          <div className="flex justify-center mb-8">
-            <img src="/logo-hero.jpg" alt="Elite Home AV LLC" className="w-[320px] h-[320px] md:w-[480px] md:h-[480px] lg:w-[560px] lg:h-[560px] object-contain drop-shadow-2xl" />
+        <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 pt-24 pb-16 text-center">
+          <div className="flex justify-center items-center mb-10">
+            <img src="/logo-hero.jpg" alt="Elite Home AV LLC" className="w-[420px] h-[420px] md:w-[600px] md:h-[600px] lg:w-[700px] lg:h-[700px] xl:w-[800px] xl:h-[800px] object-contain drop-shadow-2xl" />
           </div>
 
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-none tracking-tight text-white mb-6">

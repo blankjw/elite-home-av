@@ -20,61 +20,61 @@ const services = [
     icon: Volume2,
     title: "Home Audio",
     description: "Whole-home audio systems with crystal-clear sound in every room.",
-    number: "01"
+    number: "01", image: "https://image.pollinations.ai/prompt/luxury%20whole%20home%20audio%20system%20ceiling%20speakers%20modern%20living%20room%20professional%20installation%20cinematic%20dark?width=400&height=600&nologo=true&seed=42"
   },
   {
     icon: Tv,
     title: "Home Video",
     description: "Custom home theaters and media rooms with stunning 4K/8K displays.",
-    number: "02"
+    number: "02", image: "https://image.pollinations.ai/prompt/dedicated%20home%20theater%20room%204K%20projector%20acoustic%20panels%20stadium%20seating%20dark%20luxury%20cinematic?width=400&height=600&nologo=true&seed=84"
   },
   {
     icon: Home,
     title: "Home Automation",
     description: "Smart home control for lighting, climate, shades, and more.",
-    number: "03"
+    number: "03", image: "https://image.pollinations.ai/prompt/smart%20home%20automation%20control%20panel%20luxury%20modern%20home%20interior%20sleek%20dark%20cinematic?width=400&height=600&nologo=true&seed=168"
   },
   {
     icon: Wifi,
     title: "Networking",
     description: "Enterprise-grade networking with seamless whole-home coverage.",
-    number: "04"
+    number: "04", image: "https://image.pollinations.ai/prompt/network%20rack%20server%20cabinet%20patch%20panel%20managed%20switch%20UPS%20clean%20cable%20management%20dark?width=400&height=600&nologo=true&seed=462"
   },
   {
     icon: Camera,
     title: "Surveillance",
     description: "Professional CCTV and video monitoring systems.",
-    number: "05"
+    number: "05", image: "https://image.pollinations.ai/prompt/4K%20security%20camera%20system%20modern%20home%20exterior%20night%20vision%20perimeter%20surveillance%20dark?width=400&height=600&nologo=true&seed=252"
   },
   {
     icon: Shield,
     title: "Security",
     description: "Advanced alarm systems and access control solutions.",
-    number: "06"
+    number: "06", image: "https://image.pollinations.ai/prompt/smart%20home%20security%20keypad%20luxury%20entryway%20modern%20dark%20cinematic?width=400&height=600&nologo=true&seed=100"
   },
   {
     icon: Zap,
     title: "Electrical",
     description: "Licensed electrical work from outlets to full panel upgrades.",
-    number: "07"
+    number: "07", image: "https://image.pollinations.ai/prompt/luxury%20modern%20lighting%20design%20interior%20architecture%20smart%20home%20dark%20cinematic?width=400&height=600&nologo=true&seed=200"
   },
   {
     icon: Droplets,
     title: "Plumbing",
     description: "Complete plumbing services for repairs and new construction.",
-    number: "08"
+    number: "08", image: "https://image.pollinations.ai/prompt/luxury%20modern%20bathroom%20spa%20smart%20shower%20dark%20cinematic%20architectural?width=400&height=600&nologo=true&seed=300"
   },
   {
     icon: Hammer,
     title: "Construction & Remodel",
     description: "Full-scale remodeling and custom construction projects.",
-    number: "09"
+    number: "09", image: "https://image.pollinations.ai/prompt/luxury%20home%20remodel%20living%20room%20architectural%20design%20dark%20cinematic?width=400&height=600&nologo=true&seed=400"
   },
   {
     icon: Palette,
     title: "Design",
     description: "Professional system design and project planning services.",
-    number: "10"
+    number: "10", image: "https://image.pollinations.ai/prompt/luxury%20home%20office%20architectural%20plans%20interior%20design%20dark%20moody?width=400&height=600&nologo=true&seed=500"
   }
 ]
 
@@ -128,6 +128,7 @@ interface ServiceCardProps {
     title: string
     description: string
     number: string
+    image?: string
   }
   index: number
 }
@@ -140,6 +141,16 @@ function ServiceCard({ service, index }: ServiceCardProps) {
       className="group relative p-6 lg:p-8 bg-[#141414] border border-[#1F1F1F] hover:border-[#E8521A]/50 transition-all duration-500 cursor-pointer overflow-hidden"
       style={{ animationDelay: `${index * 50}ms` }}
     >
+      {/* AI Background Image */}
+      {service.image && (
+        <img 
+          src={service.image}
+          alt={service.title}
+          className="absolute inset-0 w-full h-full object-cover opacity-10 mix-blend-luminosity group-hover:opacity-30 group-hover:scale-105 transition-all duration-700"
+        />
+      )}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#141414] via-[#141414]/90 to-[#141414]/50 pointer-events-none" />
+
       {/* Hover gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#E8521A]/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       

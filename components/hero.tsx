@@ -10,6 +10,16 @@ export function Hero() {
       {/* Background layers for depth */}
       <div className="absolute inset-0 bg-[#0A0A0A]" />
       
+      {/* AI Hero Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 mix-blend-luminosity"
+        style={{ backgroundImage: 'url("https://image.pollinations.ai/prompt/luxury%20home%20theater%20dark%20moody%20lighting%20massive%20screen%20stadium%20seating%20orange%20accents%20cinematic%204k%20interior%20design?width=1920&height=1080&nologo=true&seed=42")' }}
+      />
+      
+      {/* Dark gradient overlay to ensure text readability */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-transparent to-[#0A0A0A]" />
+      
       {/* Subtle noise texture */}
       <div 
         className="absolute inset-0 opacity-[0.015]"

@@ -25,11 +25,13 @@ interface Service {
   body: string[];
   includes: string[];
   localAngle: string;
+  image: string;
 }
 
 const services: Service[] = [
   {
     id: 'audio',
+    image: 'https://image.pollinations.ai/prompt/luxury%20whole%20home%20audio%20system%20ceiling%20speakers%20modern%20living%20room%20professional%20installation%20cinematic%20dark?width=1200&height=500&nologo=true&seed=42',
     icon: Music,
     title: 'Home Audio',
     metaTitle: 'Home Audio Installation | SE Texas | Elite Home AV',
@@ -53,6 +55,7 @@ const services: Service[] = [
   },
   {
     id: 'video',
+    image: 'https://image.pollinations.ai/prompt/dedicated%20home%20theater%20room%204K%20projector%20acoustic%20panels%20stadium%20seating%20dark%20luxury%20cinematic?width=1200&height=500&nologo=true&seed=84',
     icon: Monitor,
     title: 'Home Video',
     metaTitle: 'Home Theater & Video Install | SE Texas',
@@ -77,6 +80,7 @@ const services: Service[] = [
   },
   {
     id: 'automation',
+    image: 'https://image.pollinations.ai/prompt/smart%20home%20automation%20control%20panel%20luxury%20modern%20home%20interior%20sleek%20dark%20cinematic?width=1200&height=500&nologo=true&seed=168',
     icon: Cpu,
     title: 'Home Automation',
     metaTitle: 'Smart Home Automation | SE Texas | Elite Home AV',
@@ -102,6 +106,7 @@ const services: Service[] = [
   },
   {
     id: 'networking',
+    image: 'https://image.pollinations.ai/prompt/network%20rack%20server%20cabinet%20patch%20panel%20managed%20switch%20UPS%20clean%20cable%20management%20dark?width=1200&height=500&nologo=true&seed=462',
     icon: Wifi,
     title: 'Networking',
     metaTitle: 'Home Network Installation | SE Texas',
@@ -126,6 +131,7 @@ const services: Service[] = [
   },
   {
     id: 'surveillance',
+    image: 'https://image.pollinations.ai/prompt/4K%20security%20camera%20system%20modern%20home%20exterior%20night%20vision%20perimeter%20surveillance%20dark?width=1200&height=500&nologo=true&seed=252',
     icon: Camera,
     title: 'Surveillance',
     metaTitle: 'Security Camera Installation | SE Texas',
@@ -151,6 +157,7 @@ const services: Service[] = [
   },
   {
     id: 'security',
+    image: 'https://image.pollinations.ai/prompt/smart%20home%20security%20keypad%20luxury%20entryway%20modern%20dark%20cinematic?width=1200&height=500&nologo=true&seed=100',
     icon: Shield,
     title: 'Security',
     metaTitle: 'Home Security Systems | SE Texas | Elite AV',
@@ -177,6 +184,7 @@ const services: Service[] = [
   },
   {
     id: 'electrical',
+    image: 'https://image.pollinations.ai/prompt/luxury%20modern%20lighting%20design%20interior%20architecture%20smart%20home%20dark%20cinematic?width=1200&height=500&nologo=true&seed=200',
     icon: Zap,
     title: 'Electrical',
     metaTitle: 'Electrical Services | Beaumont & SE Texas',
@@ -201,6 +209,7 @@ const services: Service[] = [
   },
   {
     id: 'plumbing',
+    image: 'https://image.pollinations.ai/prompt/luxury%20modern%20bathroom%20spa%20smart%20shower%20dark%20cinematic%20architectural?width=1200&height=500&nologo=true&seed=300',
     icon: Droplets,
     title: 'Plumbing',
     metaTitle: 'Plumbing Services | Lumberton & SE Texas',
@@ -224,6 +233,7 @@ const services: Service[] = [
   },
   {
     id: 'construction',
+    image: 'https://image.pollinations.ai/prompt/luxury%20home%20remodel%20living%20room%20architectural%20design%20dark%20cinematic?width=1200&height=500&nologo=true&seed=400',
     icon: HardHat,
     title: 'Construction & Remodel',
     metaTitle: 'Home Remodel & Construction | SE Texas',
@@ -250,6 +260,7 @@ const services: Service[] = [
   },
   {
     id: 'design',
+    image: 'https://image.pollinations.ai/prompt/luxury%20home%20office%20architectural%20plans%20interior%20design%20dark%20moody?width=1200&height=500&nologo=true&seed=500',
     icon: Palette,
     title: 'Design',
     metaTitle: 'Home AV & Smart Home Design | SE Texas',
@@ -282,13 +293,12 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="section-label mb-3">What We Do</p>
           <h1 className="text-4xl md:text-6xl font-black text-white leading-tight mb-4">
-            Every Trade.<br />
-            <span className="text-[#E8521A]">One Company.</span>
+            Complete Integration.<br />
+            <span className="text-[#E8521A]">Flawlessly Executed.</span>
           </h1>
           <div className="divider-orange mb-6" />
           <p className="text-gray-400 text-lg max-w-2xl mb-8">
-            Ten services. One crew. From the initial design through final calibration — we handle
-            everything your home needs, and it all works together because the same person planned it.
+            End-to-end expertise. From initial architectural planning through final calibration — we handle your home's entire technology ecosystem, ensuring every system communicates perfectly under a single master integrator.
           </p>
           <a href={PHONE_HREF} className="btn-primary">
             <Phone className="w-4 h-4" />
@@ -331,6 +341,20 @@ export default function ServicesPage() {
               className={`py-20 md:py-24 ${isAlt ? 'bg-[#0d0d0d]' : 'bg-[#0A0A0A]'} border-b border-[#222222] scroll-mt-32`}
             >
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                {/* AI Generated Service Image */}
+                <div className="w-full h-64 md:h-96 mb-12 relative overflow-hidden rounded-md border border-[#222] bg-[#141414] group">
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] to-transparent z-10 opacity-60" />
+                  <img 
+                    src={service.image} 
+                    alt={service.title} 
+                    className="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-all duration-700"
+                    loading="lazy"
+                  />
+                  <div className="absolute bottom-6 left-6 z-20">
+                    <div className="w-12 h-1 bg-[#E8521A] mb-3" />
+                  </div>
+                </div>
+
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
                   {/* Left: Content */}
                   <div>

@@ -364,7 +364,7 @@ export default function ServicesPage() {
                         Call {PHONE}
                       </a>
                       <Link href="/contact" className="btn-outline-orange">
-                        Get a Quote
+                        Contact Us
                         <ArrowRight className="w-4 h-4" />
                       </Link>
                     </div>

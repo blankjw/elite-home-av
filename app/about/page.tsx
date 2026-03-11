@@ -48,7 +48,15 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-16 bg-[#0A0A0A] border-b border-[#222222]">
+      <section className="relative pt-32 pb-16 bg-[#0A0A0A] border-b border-[#222222] overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.12]">
+          <img
+            src="https://image.pollinations.ai/prompt/luxury%20home%20theater%20smart%20home%20automation%20professional%20installation%20dark%20cinematic%20widescreen?width=1600&height=900&nologo=true&seed=777"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/70 to-transparent" />
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>

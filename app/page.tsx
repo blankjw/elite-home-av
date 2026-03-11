@@ -26,8 +26,16 @@ export default function Home() {
                 "Ubiquiti", "RTI", "Sonos", "Lutron", "Leviton", "Klipsch", "Sony", "BenQ", "Apple",
                 "Ubiquiti", "RTI", "Sonos", "Lutron", "Leviton", "Klipsch", "Sony", "BenQ", "Apple"
               ].map((brand, idx) => (
-                <div key={idx} className="flex items-center justify-center grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
-                  <span className="font-bebas text-3xl sm:text-4xl tracking-widest text-white">{brand}</span>
+                <div key={idx} className="flex items-center justify-center grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500 w-32">
+                  {brand === "Sonos" && <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Sonos_Logo.svg" alt="Sonos" className="h-6 object-contain invert" />}
+                  {brand === "Ubiquiti" && <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Ubiquiti_Networks_logo.svg" alt="Ubiquiti" className="h-10 object-contain invert" />}
+                  {brand === "Lutron" && <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Lutron_logo.svg" alt="Lutron" className="h-6 object-contain invert" />}
+                  {brand === "Leviton" && <span className="font-bebas text-3xl sm:text-4xl tracking-widest text-white">LEVITON</span>}
+                  {brand === "Klipsch" && <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Klipsch_Audio_Technologies_logo.svg" alt="Klipsch" className="h-6 object-contain invert" />}
+                  {brand === "Sony" && <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Sony_logo.svg" alt="Sony" className="h-5 object-contain invert" />}
+                  {brand === "BenQ" && <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/BenQ_logo.svg" alt="BenQ" className="h-8 object-contain invert" />}
+                  {brand === "Apple" && <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" className="h-10 object-contain invert" />}
+                  {brand === "RTI" && <span className="font-bebas text-3xl sm:text-4xl tracking-widest text-white italic">RTI</span>}
                 </div>
               ))}
             </div>

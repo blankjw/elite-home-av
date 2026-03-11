@@ -38,15 +38,15 @@ export function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,#0A0A0A_70%)]" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 text-center pt-20">
-        {/* Large Hero Logo */}
-        <div className="mb-6">
+      <div className="relative z-10 w-full text-center pt-16">
+        {/* Large Hero Logo — flush under navbar */}
+        <div className="mb-4 w-full">
           <Image 
             src="/images/hero-logo.png" 
             alt="Elite Home AV LLC" 
-            width={800}
-            height={400}
-            className="mx-auto w-full max-w-2xl lg:max-w-4xl h-auto"
+            width={1280}
+            height={698}
+            className="mx-auto w-full max-w-4xl xl:max-w-6xl h-auto"
             priority
           />
         </div>

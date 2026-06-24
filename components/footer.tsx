@@ -47,7 +47,7 @@ export function Footer() {
               size="lg"
               className="border-2 border-[#262626] hover:border-[#E8521A] text-white hover:bg-[#E8521A]/5 px-10 py-7 text-lg font-semibold tracking-wide rounded-none group"
             >
-              <a href="mailto:info@elitehomeav.com" className="flex items-center gap-3">
+              <a href="mailto:john@elitehomeav.com" className="flex items-center gap-3">
                 <Mail className="w-5 h-5" />
                 Email Us
               </a>
@@ -84,11 +84,11 @@ export function Footer() {
                   </div>
                   <span className="font-medium">(409) 790-7889</span>
                 </a>
-                <a href="mailto:info@elitehomeav.com" className="flex items-center gap-4 text-[#9CA3AF] hover:text-[#E8521A] transition-colors group">
+                <a href="mailto:john@elitehomeav.com" className="flex items-center gap-4 text-[#9CA3AF] hover:text-[#E8521A] transition-colors group">
                   <div className="w-10 h-10 border border-[#262626] group-hover:border-[#E8521A] flex items-center justify-center transition-colors">
                     <Mail className="w-4 h-4" />
                   </div>
-                  <span className="font-medium">info@elitehomeav.com</span>
+                  <span className="font-medium">john@elitehomeav.com</span>
                 </a>
                 <div className="flex items-center gap-4 text-[#9CA3AF]">
                   <div className="w-10 h-10 border border-[#262626] flex items-center justify-center">

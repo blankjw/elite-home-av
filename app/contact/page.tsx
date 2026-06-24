@@ -5,12 +5,14 @@ import ContactForm from '@/components/ContactForm';
 export const metadata: Metadata = {
   title: 'Contact Elite Home AV | (409) 790-7889',
   description:
-    'Call or contact Elite Home AV LLC in Lumberton, TX. Serving Beaumont, Port Arthur, Galveston & all of SE Texas. (409) 790-7889 | elitehomeav.com',
+    'Call or contact Elite Home AV LLC in Lumberton, TX. Serving Beaumont, Port Arthur, Galveston & all of SE Texas. (409) 790-7889 | john@elitehomeav.com',
   alternates: { canonical: 'https://www.elitehomeav.com/contact' },
 };
 
 const PHONE = '(409) 790-7889';
 const PHONE_HREF = 'tel:4097907889';
+const EMAIL = 'john@elitehomeav.com';
+const EMAIL_HREF = `mailto:${EMAIL}`;
 
 export default function ContactPage() {
   return (
@@ -79,6 +81,21 @@ export default function ContactPage() {
                         className="text-white font-bold hover:text-[#E8521A] transition-colors"
                       >
                         www.elitehomeav.com
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 bg-[#E8521A]/10 rounded-sm flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-5 h-5 text-[#E8521A]" />
+                    </div>
+                    <div>
+                      <p className="text-[#E8521A] font-bold text-xs uppercase tracking-widest mb-1">Email</p>
+                      <a
+                        href={EMAIL_HREF}
+                        className="text-white font-bold hover:text-[#E8521A] transition-colors"
+                      >
+                        {EMAIL}
                       </a>
                     </div>
                   </div>

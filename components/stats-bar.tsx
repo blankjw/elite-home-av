@@ -2,10 +2,10 @@
 
 export function StatsBar() {
   const stats = [
-    { value: "Custom", label: "Design & Engineering", suffix: "" },
-    { value: "Flawless", label: "Execution", suffix: "" },
-    { value: "Seamless", label: "Automation", suffix: "" },
-    { value: "Unmatched", label: "Precision", suffix: "" }
+    { value: "Thoughtful", label: "Planning", suffix: "" },
+    { value: "Clean", label: "Installation", suffix: "" },
+    { value: "Simple", label: "Control", suffix: "" },
+    { value: "Dependable", label: "Systems", suffix: "" }
   ]
 
   return (
@@ -69,7 +69,7 @@ export function StatsBar() {
         {/* Bottom tagline */}
         <div className="mt-16 text-center">
           <p className="text-lg sm:text-xl text-[#6B7280] max-w-2xl mx-auto">
-            When you choose Elite, you work directly with the expert who designs, installs, and programs your home. <span className="text-white font-medium">Total accountability, uncompromising quality.</span>
+            From the first conversation through final setup, you work with one knowledgeable point of contact who understands the entire system.
           </p>
         </div>
       </div>

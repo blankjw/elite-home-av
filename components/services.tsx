@@ -1,13 +1,14 @@
 "use client"
 
-import { Volume2, Tv, Home, Wifi, Cable, LucideIcon } from "lucide-react"
+import { Volume2, Tv, Lightbulb, Camera, SlidersHorizontal, Network, LucideIcon } from "lucide-react"
 
 const services = [
   { icon: Volume2, title: "Home Audio", description: "Whole-home audio, surround sound, and outdoor speaker systems.", number: "01" },
   { icon: Tv, title: "Home Theater", description: "TV mounting, media rooms, projectors, and clean cable management.", number: "02" },
-  { icon: Home, title: "Smart Home", description: "Practical control for the AV, lighting, and devices you use every day.", number: "03" },
-  { icon: Wifi, title: "Home Networking", description: "Reliable Wi-Fi, wired connections, and organized home networks.", number: "04" },
-  { icon: Cable, title: "Low-Voltage Wiring", description: "Structured cabling and pre-wire for AV, networking, and smart-home systems.", number: "05" },
+  { icon: Lightbulb, title: "Lighting", description: "Lighting control and smart lighting designed for the way each space is used.", number: "03" },
+  { icon: Camera, title: "Surveillance & Access", description: "Camera systems and access control for clear visibility and simple entry management.", number: "04" },
+  { icon: SlidersHorizontal, title: "Automation", description: "Straightforward control of the technology you use every day.", number: "05" },
+  { icon: Network, title: "Networking & Integration", description: "Reliable Wi-Fi, wired networks, and the infrastructure that keeps every system connected.", number: "06" },
 ]
 
 export function Services() {
@@ -18,10 +19,10 @@ export function Services() {
       <div className="relative max-w-7xl mx-auto px-6">
         <div className="max-w-3xl mb-20">
           <div className="flex items-center gap-4 mb-6"><div className="w-12 h-px bg-[#E8521A]" /><span className="text-[#E8521A] text-sm font-semibold tracking-[0.2em] uppercase">What We Do</span></div>
-          <h2 className="font-bebas text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white leading-[0.9]">Home Technology.<br /><span className="text-[#6B7280]">Installed With Care.</span></h2>
-          <p className="mt-8 text-lg sm:text-xl text-[#9CA3AF] max-w-2xl leading-relaxed">We help Southeast Texas homeowners plan, install, and enjoy technology that works the way it should — with a clean finish and a clear scope before work starts.</p>
+          <h2 className="font-bebas text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white leading-[0.9]">One System.<br /><span className="text-[#6B7280]">Built Around Your Space.</span></h2>
+          <p className="mt-8 text-lg sm:text-xl text-[#9CA3AF] max-w-3xl leading-relaxed">Elite Home AV designs and installs integrated technology for residential and commercial spaces across Southeast Texas. We plan the infrastructure around how you use the space, so the finished system is dependable, intuitive, and cleanly installed.</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {services.map((service) => <ServiceCard key={service.number} service={service} />)}
         </div>
       </div>

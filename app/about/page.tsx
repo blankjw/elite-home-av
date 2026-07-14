@@ -2,14 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import {
   Phone, MapPin, CheckCircle2, ArrowRight, Music, Monitor,
-  Cpu, Wifi, Camera, Shield, Zap, Droplets, HardHat, Palette,
-  Truck,
+  Lightbulb, Camera, SlidersHorizontal, Network, KeyRound, Zap,
 } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'About Elite Home AV | Lumberton, TX',
   description:
-    'Multi-trade home AV expert based in Lumberton TX. Audio, automation, security, electrical, plumbing & construction. Serving all of SE Texas.',
+    'Integrated audio, theater, lighting, surveillance, access control, automation, and networking for Southeast Texas homes and businesses.',
   alternates: { canonical: 'https://www.elitehomeav.com/about' },
 };
 
@@ -18,15 +17,12 @@ const PHONE_HREF = 'tel:4097907889';
 
 const trades = [
   { icon: Music, name: 'Home Audio', slug: 'audio', desc: 'Whole-home systems, outdoor speakers, listening rooms, surround sound' },
-  { icon: Monitor, name: 'Home Video', slug: 'video', desc: 'Theaters, outdoor entertainment, projector rooms, 4K installs' },
-  { icon: Cpu, name: 'Home Automation', slug: 'automation', desc: 'Smart home systems that actually work the way they\'re supposed to' },
-  { icon: Wifi, name: 'Networking', slug: 'networking', desc: 'Structured wiring, whole-home Wi-Fi, enterprise-grade infrastructure' },
-  { icon: Camera, name: 'Surveillance', slug: 'surveillance', desc: '4K camera systems, night vision, remote access, full property coverage' },
-  { icon: Shield, name: 'Security', slug: 'security', desc: 'Door/window sensors, motion detection, smart locks, full system integration' },
-  { icon: Zap, name: 'Electrical', slug: 'electrical', desc: 'Panel upgrades, circuit additions, rewires, smart lighting wiring' },
-  { icon: Droplets, name: 'Plumbing', slug: 'plumbing', desc: 'New construction rough-in, remodel plumbing, fixture installation' },
-  { icon: HardHat, name: 'Construction & Remodel', slug: 'construction', desc: 'Additions, theater room buildouts, full home renovations' },
-  { icon: Palette, name: 'Design', slug: 'design', desc: 'Pre-project planning, room design, system layout, AV specification' },
+  { icon: Monitor, name: 'Home Theater', slug: 'theater', desc: 'Media rooms, projectors, displays, and immersive viewing' },
+  { icon: Lightbulb, name: 'Lighting', slug: 'lighting', desc: 'Lighting control designed around the space and the people using it' },
+  { icon: Camera, name: 'Surveillance', slug: 'surveillance', desc: 'Camera systems that give you clear visibility when it matters' },
+  { icon: KeyRound, name: 'Access Control', slug: 'access', desc: 'Simple, practical control over who can enter a space' },
+  { icon: SlidersHorizontal, name: 'Automation', slug: 'automation', desc: 'Control that makes everyday technology easier to use' },
+  { icon: Network, name: 'Networking & Integration', slug: 'networking', desc: 'The dependable backbone that keeps the system connected' },
 ];
 
 const serviceAreas = [
@@ -62,18 +58,13 @@ export default function AboutPage() {
             <div>
               <p className="section-label mb-3">About</p>
               <h1 className="text-4xl md:text-6xl font-black text-white leading-tight mb-4">
-                Master-Level Integration.
+                Integrated Systems.
                 <br />
-                <span className="text-[#E8521A]">Uncompromising</span>
-                <br />
-                Quality.
+                <span className="text-[#E8521A]">Thoughtfully Designed.</span>
               </h1>
               <div className="divider-orange mb-6" />
               <p className="text-gray-400 text-lg leading-relaxed">
-                True home automation and luxury AV requires an obsessive attention to detail. 
-                When you hire Elite Home AV, you are working directly with the master integrator 
-                who will design, engineer, install, and program every piece of your system. 
-                Complete accountability, flawless execution.
+                Elite Home AV designs technology around the way a space is actually used. From entertainment and lighting to cameras, access, and networking, each piece is planned to work as part of one dependable system.
               </p>
             </div>
 
@@ -97,15 +88,15 @@ export default function AboutPage() {
                 </div>
                 <div className="flex items-center gap-3 text-sm text-gray-400">
                   <CheckCircle2 className="w-4 h-4 text-[#E8521A] flex-shrink-0" />
-                  Deep multi-trade expertise
+                  Residential and commercial systems
                 </div>
                 <div className="flex items-center gap-3 text-sm text-gray-400">
                   <CheckCircle2 className="w-4 h-4 text-[#E8521A] flex-shrink-0" />
-                  End-to-end custom system design
+                  Clear design and installation process
                 </div>
                 <div className="flex items-center gap-3 text-sm text-gray-400">
                   <CheckCircle2 className="w-4 h-4 text-[#E8521A] flex-shrink-0" />
-                  Single-point accountability
+                  One point of contact from consultation through setup
                 </div>
               </div>
               <a href={PHONE_HREF} className="btn-primary w-full justify-center mt-2">
@@ -123,43 +114,28 @@ export default function AboutPage() {
           <div className="space-y-8">
             <div>
               <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
-                From Lumberton to All of SE Texas
+                Technology That Works Together
               </h2>
               <div className="divider-orange mb-6" />
               <div className="space-y-5 text-gray-300 leading-relaxed text-lg">
                 <p>
-                  I&rsquo;m based in Lumberton, Texas — Southeast Texas born and raised. I grew up
-                  doing this kind of work and spent years developing skills across trades that most
-                  people split between four or five different contractors. Home AV. Automation.
-                  Networking. Surveillance. Security. Electrical. Plumbing. Construction and remodel. Design.
+                  Technology works best when it is planned as one system—not added one piece at a time. Elite Home AV designs and installs home theater, audio, networking, surveillance, lighting control, access control, and automation for homes and businesses across Southeast Texas.
                 </p>
                 <p>
-                  I do all of it. And I do it all at the same level of quality, because it all has
-                  to work together.
+                  We start with how you use the space, then design the infrastructure around it. The result is a clean, dependable system where entertainment, lighting, cameras, access, and controls work together the way they should—simple to use and built to last.
                 </p>
-                <p>
-                  When your smart home lighting talks to your security system, your security system
-                  talks to your cameras, and your cameras are on a network I built from scratch —
-                  every piece fits because the same guy planned it. There&rsquo;s no version where
-                  one contractor&rsquo;s work doesn&rsquo;t line up with another&rsquo;s. I designed
-                  it, I ran the wire, I built the room, I programmed the system.
-                </p>
-                <p className="text-[#E8521A] font-black text-xl">That&rsquo;s the difference.</p>
+                <p className="text-[#E8521A] font-black text-xl">One system. One clear point of contact.</p>
               </div>
             </div>
 
             {/* Expertise / Tools Section */}
             <div className="card-dark p-6 md:p-8 border-l-4 border-[#E8521A]">
-              <h3 className="text-white font-black text-xl mb-4">The Precision Required for Perfection</h3>
+              <h3 className="text-white font-black text-xl mb-4">Planned Around the Entire System</h3>
               <p className="text-gray-300 leading-relaxed">
-                High-end integration isn't just about plugging things in. It requires exact precision 
-                at every phase, from rough-in wiring to final audio calibration. I bring an uncompromising 
-                standard to the tools and techniques used on your project.
+                Good integration is more than installing individual products. It begins with a clear plan for the room, the network, the equipment, and the people who will use it.
               </p>
               <p className="text-gray-300 leading-relaxed mt-4">
-                Whether it's acoustic measurement gear for a luxury theater, specialized termination tools 
-                for enterprise fiber, or the necessary equipment for custom millwork, the job is done 
-                flawlessly, strictly adhering to industry best practices.
+                That planning makes the finished system easier to use, easier to support, and far less likely to become a collection of disconnected apps and remotes.
               </p>
             </div>
           </div>
@@ -174,7 +150,7 @@ export default function AboutPage() {
             <h2 className="section-heading mb-4">Comprehensive Expertise.</h2>
             <div className="divider-orange mx-auto" />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {trades.map((trade) => {
               const Icon = trade.icon;
               return (

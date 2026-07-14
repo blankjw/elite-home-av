@@ -18,11 +18,11 @@ const bebasNeue = Bebas_Neue({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.elitehomeav.com'),
-  title: 'Elite Home AV LLC | Home Theater & Smart Home Installation',
-  description: 'Home theater, smart-home, networking, audio, and low-voltage installation in Lumberton and Southeast Texas.',
-  keywords: ['home theater', 'smart home', 'home audio', 'home networking', 'low voltage wiring', 'Lumberton TX', 'Southeast Texas'],
+  title: 'Elite Home AV LLC | Integrated Technology for Homes & Businesses',
+  description: 'Home audio, theater, lighting, surveillance, access control, automation, and networking for residential and commercial spaces in Southeast Texas.',
+  keywords: ['home theater', 'home audio', 'lighting control', 'surveillance', 'access control', 'automation', 'networking', 'Lumberton TX', 'Southeast Texas'],
   alternates: { canonical: '/' },
-  openGraph: { title: 'Elite Home AV | Home Theater & Smart Home Installation', description: 'Home theater, smart-home, networking, audio, and low-voltage installation in Southeast Texas.', url: '/', siteName: 'Elite Home AV', locale: 'en_US', type: 'website' },
+  openGraph: { title: 'Elite Home AV | Integrated Technology for Homes & Businesses', description: 'Audio, theater, lighting, surveillance, access control, automation, and networking in Southeast Texas.', url: '/', siteName: 'Elite Home AV', locale: 'en_US', type: 'website' },
   icons: {
     icon: [
       {
@@ -54,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${inter.variable} ${bebasNeue.variable} font-sans antialiased bg-background text-foreground`}>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'LocalBusiness', name: 'Elite Home AV LLC', url: 'https://www.elitehomeav.com', telephone: '+1-409-790-7889', email: 'john@elitehomeav.com', address: { '@type': 'PostalAddress', addressLocality: 'Lumberton', addressRegion: 'TX', postalCode: '77657', addressCountry: 'US' }, areaServed: { '@type': 'AdministrativeArea', name: 'Southeast Texas' }, description: 'Home theater, smart-home, networking, audio, and low-voltage installation.' }) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'LocalBusiness', name: 'Elite Home AV LLC', url: 'https://www.elitehomeav.com', telephone: '+1-409-790-7889', email: 'john@elitehomeav.com', address: { '@type': 'PostalAddress', addressLocality: 'Lumberton', addressRegion: 'TX', postalCode: '77657', addressCountry: 'US' }, areaServed: { '@type': 'AdministrativeArea', name: 'Southeast Texas' }, description: 'Integrated audio, theater, lighting, surveillance, access control, automation, and networking for homes and businesses.' }) }} />
         <Header />
         <main className="min-h-screen bg-background">
           {children}

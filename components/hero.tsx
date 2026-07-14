@@ -11,8 +11,8 @@ export function Hero() {
     <div className="relative z-10 w-full text-center pt-16">
       <div className="mb-4 w-full"><Image src="/images/hero-logo.png" alt="Elite Home AV LLC" width={1280} height={698} className="mx-auto w-full max-w-4xl xl:max-w-6xl h-auto" priority /></div>
       <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-[#262626] bg-[#141414]/80 mb-6"><span className="w-2 h-2 rounded-full bg-[#E8521A]" /><span className="text-sm text-[#9CA3AF] tracking-wide">Lumberton, TX • Serving Southeast Texas</span></div>
-      <h1 className="font-bebas text-[clamp(2.5rem,8vw,6rem)] leading-[0.9] tracking-tight text-white text-balance">Home Theater, Smart Home<br /><span className="text-[#E8521A]">& Low-Voltage Installation.</span></h1>
-      <p className="mt-8 text-lg sm:text-xl lg:text-2xl text-[#9CA3AF] max-w-3xl mx-auto leading-relaxed text-pretty">Clean installs, dependable Wi-Fi, whole-home audio, and home theater systems — designed around how you actually live.</p>
+      <h1 className="font-bebas text-[clamp(2.5rem,8vw,6rem)] leading-[0.9] tracking-tight text-white text-balance">Integrated Technology<br /><span className="text-[#E8521A]">For Homes & Businesses.</span></h1>
+      <p className="mt-8 text-lg sm:text-xl lg:text-2xl text-[#9CA3AF] max-w-3xl mx-auto leading-relaxed text-pretty">Audio, theater, lighting, surveillance, automation, networking, and access control — thoughtfully designed to work together.</p>
       <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-5">
         <Button asChild size="lg" className="bg-[#E8521A] hover:bg-[#d14816] text-white px-10 py-7 text-lg font-semibold tracking-wide rounded-none"><a href="/contact" className="flex items-center gap-3"><ArrowRight className="w-5 h-5" />Request a Consultation</a></Button>
         <Button asChild variant="outline" size="lg" className="border-2 border-white/20 hover:border-white/40 text-white hover:bg-white/5 px-10 py-7 text-lg font-semibold tracking-wide rounded-none"><a href="tel:4097907889" className="flex items-center gap-3"><Phone className="w-5 h-5" />Call (409) 790-7889</a></Button>

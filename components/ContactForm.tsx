@@ -8,10 +8,12 @@ const PHONE = '(409) 790-7889';
 
 const services = [
   'Home Audio',
-  'Home Theater / TV Installation',
-  'Smart Home',
-  'Home Networking',
-  'Low-Voltage Wiring',
+  'Home Theater',
+  'Lighting',
+  'Surveillance & Access Control',
+  'Automation',
+  'Networking & Integration',
+  'Commercial Technology',
   'Design Consultation',
   'Multiple Services',
   'Not Sure Yet',

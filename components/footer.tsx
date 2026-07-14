@@ -72,7 +72,7 @@ export function Footer() {
                 </div>
               </a>
               <p className="text-[#6B7280] max-w-md leading-relaxed mb-8">
-                Home theater, smart-home, networking, audio, and low-voltage installation for Southeast Texas homes.
+                Integrated audio, theater, lighting, surveillance, automation, networking, and access control for Southeast Texas homes and businesses.
               </p>
               
               {/* Contact Info */}
@@ -102,7 +102,7 @@ export function Footer() {
             <div>
               <h3 className="font-bebas text-xl tracking-wide text-white mb-6">Services</h3>
               <ul className="space-y-3 text-sm text-[#6B7280]">
-                {["Home Audio", "Home Theater", "Smart Home", "Home Networking", "Low-Voltage Wiring"].map((service) => (
+                {["Home Audio", "Home Theater", "Lighting", "Surveillance & Access", "Automation", "Networking & Integration"].map((service) => (
                   <li key={service}>
                     <a href="/services" className="hover:text-[#E8521A] transition-colors inline-flex items-center gap-2 group">
                       {service}

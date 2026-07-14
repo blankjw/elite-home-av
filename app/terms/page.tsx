@@ -1,0 +1,3 @@
+import type { Metadata } from 'next';
+export const metadata: Metadata = { title: 'Terms of Service | Elite Home AV' };
+export default function TermsPage() { return <main className="min-h-screen bg-[#0A0A0A] text-[#D1D5DB] pt-32 pb-24 px-6"><article className="max-w-3xl mx-auto"><h1 className="font-bebas text-5xl text-white">Terms of Service</h1><p className="mt-6">Last updated: July 14, 2026</p><p className="mt-5">Website information is provided for general information and does not create a contract or quotation. Services, timing, pricing, and scope are confirmed in a written estimate or agreement for each project.</p><p className="mt-5">Contact us at john@elitehomeav.com with questions about a proposed project.</p></article></main> }

@@ -17,9 +17,12 @@ const bebasNeue = Bebas_Neue({
 });
 
 export const metadata: Metadata = {
-  title: 'Elite Home AV LLC | One Call. Every Trade. Done Right.',
-  description: 'Premium home AV, automation, security, electrical, plumbing and remodel services in Southeast Texas. 10 trades, 1 company, no subcontractors. Serving Lumberton TX and surrounding areas.',
-  keywords: ['home automation', 'home theater', 'security systems', 'electrical', 'plumbing', 'remodel', 'Lumberton TX', 'Southeast Texas'],
+  metadataBase: new URL('https://www.elitehomeav.com'),
+  title: 'Elite Home AV LLC | Home Theater & Smart Home Installation',
+  description: 'Home theater, smart-home, networking, audio, and low-voltage installation in Lumberton and Southeast Texas.',
+  keywords: ['home theater', 'smart home', 'home audio', 'home networking', 'low voltage wiring', 'Lumberton TX', 'Southeast Texas'],
+  alternates: { canonical: '/' },
+  openGraph: { title: 'Elite Home AV | Home Theater & Smart Home Installation', description: 'Home theater, smart-home, networking, audio, and low-voltage installation in Southeast Texas.', url: '/', siteName: 'Elite Home AV', locale: 'en_US', type: 'website' },
   icons: {
     icon: [
       {
@@ -51,6 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${inter.variable} ${bebasNeue.variable} font-sans antialiased bg-background text-foreground`}>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'LocalBusiness', name: 'Elite Home AV LLC', url: 'https://www.elitehomeav.com', telephone: '+1-409-790-7889', email: 'john@elitehomeav.com', address: { '@type': 'PostalAddress', addressLocality: 'Lumberton', addressRegion: 'TX', postalCode: '77657', addressCountry: 'US' }, areaServed: { '@type': 'AdministrativeArea', name: 'Southeast Texas' }, description: 'Home theater, smart-home, networking, audio, and low-voltage installation.' }) }} />
         <Header />
         <main className="min-h-screen bg-background">
           {children}

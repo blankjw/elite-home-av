@@ -72,8 +72,7 @@ export function Footer() {
                 </div>
               </a>
               <p className="text-[#6B7280] max-w-md leading-relaxed mb-8">
-                Southeast Texas&apos;s premier home services company. From audio/video to full remodels, 
-                we handle every trade in-house with premium craftsmanship.
+                Home theater, smart-home, networking, audio, and low-voltage installation for Southeast Texas homes.
               </p>
               
               {/* Contact Info */}
@@ -103,9 +102,9 @@ export function Footer() {
             <div>
               <h3 className="font-bebas text-xl tracking-wide text-white mb-6">Services</h3>
               <ul className="space-y-3 text-sm text-[#6B7280]">
-                {["Home Audio", "Home Video", "Home Automation", "Networking", "Surveillance", "Security", "Electrical", "Plumbing", "Construction", "Design"].map((service) => (
+                {["Home Audio", "Home Theater", "Smart Home", "Home Networking", "Low-Voltage Wiring"].map((service) => (
                   <li key={service}>
-                    <a href="#services" className="hover:text-[#E8521A] transition-colors inline-flex items-center gap-2 group">
+                    <a href="/services" className="hover:text-[#E8521A] transition-colors inline-flex items-center gap-2 group">
                       {service}
                       <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                     </a>
@@ -118,14 +117,9 @@ export function Footer() {
             <div>
               <h3 className="font-bebas text-xl tracking-wide text-white mb-6">Company</h3>
               <ul className="space-y-3 text-sm text-[#6B7280]">
-                {["About Us", "Our Projects", "Testimonials", "Service Areas", "Careers", "Contact"].map((link) => (
-                  <li key={link}>
-                    <a href="#" className="hover:text-[#E8521A] transition-colors inline-flex items-center gap-2 group">
-                      {link}
-                      <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    </a>
-                  </li>
-                ))}
+                <li><a href="/about" className="hover:text-[#E8521A] transition-colors inline-flex items-center gap-2 group">About Us<ArrowUpRight className="w-3 h-3" /></a></li>
+                <li><a href="/gallery" className="hover:text-[#E8521A] transition-colors inline-flex items-center gap-2 group">Our Work<ArrowUpRight className="w-3 h-3" /></a></li>
+                <li><a href="/contact" className="hover:text-[#E8521A] transition-colors inline-flex items-center gap-2 group">Contact<ArrowUpRight className="w-3 h-3" /></a></li>
               </ul>
             </div>
           </div>
@@ -139,11 +133,9 @@ export function Footer() {
             © {currentYear} Elite Home AV LLC. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm text-[#6B7280]">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
             <span className="w-1 h-1 rounded-full bg-[#262626]" />
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <span className="w-1 h-1 rounded-full bg-[#262626]" />
-            <a href="#" className="hover:text-white transition-colors">Licenses</a>
+            <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 
 export function Hero() {
   return (
-    <section className="relative min-h-[100svh] flex items-center overflow-hidden bg-[#0A0A0A]">
+    <section className="relative min-h-[100svh] flex items-center overflow-x-hidden bg-[#0A0A0A]">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,#1d120d_0%,#0A0A0A_65%)]" />
       <div className="absolute top-1/3 right-1/4 w-[600px] h-[600px] bg-[#E8521A]/8 rounded-full blur-[180px]" />
 
@@ -57,8 +57,8 @@ export function Hero() {
                 <img
                   src="/images/hero-logo.jpg"
                   alt="Elite Home AV LLC"
-                  width={560}
-                  height={305}
+                  width={1100}
+                  height={1100}
                   className="hero-logo-img"
                 />
               </div>

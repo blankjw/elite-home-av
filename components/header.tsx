@@ -39,7 +39,7 @@ export function Header() {
               <a 
                 key={label}
                 href={href} 
-                className="relative text-sm text-[#9CA3AF] hover:text-white transition-colors duration-300 tracking-wide group"
+                className="relative text-sm text-[#D1D5DB] hover:text-white transition-colors duration-300 tracking-wide group"
               >
                 {label}
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#E8521A] group-hover:w-full transition-all duration-300" />
@@ -57,7 +57,7 @@ export function Header() {
                 <Phone className="w-4 h-4" />
               </div>
               <div className="flex flex-col">
-                <span className="text-xs text-[#6B7280] tracking-wide">Call Now</span>
+                <span className="text-xs text-[#A3A3A3] tracking-wide">Call Now</span>
                 <span className="text-sm font-semibold tracking-wide">(409) 790-7889</span>
               </div>
             </a>
@@ -91,7 +91,7 @@ export function Header() {
               <a 
                 key={label}
                 href={href} 
-                className="py-4 text-lg text-[#9CA3AF] hover:text-white hover:pl-4 transition-all duration-300 border-b border-[#262626]/50"
+                className="py-4 text-lg text-[#D1D5DB] hover:text-white hover:pl-4 transition-all duration-300 border-b border-[#262626]/50"
                 style={{ animationDelay: `${index * 50}ms` }}
                 onClick={() => setIsMenuOpen(false)}
               >

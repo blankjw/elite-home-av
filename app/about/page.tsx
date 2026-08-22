@@ -43,63 +43,58 @@ const serviceAreas = [
 export default function AboutPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative pt-32 pb-16 bg-[#0A0A0A] border-b border-[#222222] overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.12]">
-          <img
-            src="https://image.pollinations.ai/prompt/luxury%20home%20theater%20smart%20home%20automation%20professional%20installation%20dark%20cinematic%20widescreen?width=1600&height=900&nologo=true&seed=777"
-            alt=""
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/70 to-transparent" />
+      <section className="relative pt-32 pb-16 bg-[#0A0A0A] border-b border-[#262626] overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,#2a140c_0%,#0A0A0A_58%)]" />
+        <div className="absolute -right-16 top-10 w-[520px] opacity-[0.07] pointer-events-none hidden lg:block">
+          {/* Local brand mark only — no remote stock imagery */}
+          <img src="/images/hero-logo.png" alt="" className="w-full hero-logo-img" />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-14 items-stretch">
+            <div className="flex flex-col justify-center">
               <p className="section-label mb-3">About</p>
-              <h1 className="text-4xl md:text-6xl font-black text-white leading-tight mb-4">
+              <h1 className="font-bebas text-5xl md:text-7xl tracking-tight text-white leading-[0.9] mb-4">
                 Integrated Systems.
                 <br />
                 <span className="text-[#E8521A]">Thoughtfully Designed.</span>
               </h1>
               <div className="divider-orange mb-6" />
-              <p className="text-gray-400 text-lg leading-relaxed">
+              <p className="text-[#D1D5DB] text-lg leading-relaxed max-w-xl">
                 Elite Home AV designs technology around the way a space is actually used. From entertainment and lighting to cameras, access, and networking, each piece is planned to work as part of one dependable system.
               </p>
             </div>
 
-            {/* TRX Card */}
-            <div className="card-dark p-8 flex flex-col gap-6">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-[#E8521A] rounded-sm flex items-center justify-center flex-shrink-0">
-                  <Zap className="w-6 h-6 text-white" />
+            <div className="card-dark p-7 md:p-8 flex flex-col gap-6 border border-[#262626] bg-[#141414]">
+              <div className="flex items-center gap-4">
+                <div className="w-14 h-14 bg-[#E8521A] rounded-sm flex items-center justify-center flex-shrink-0">
+                  <Zap className="w-7 h-7 text-white" />
                 </div>
                 <div>
-                  <h2 className="text-white font-black text-2xl">John Blank</h2>
-                  <p className="text-[#E8521A] font-bold text-sm uppercase tracking-widest">
+                  <h2 className="font-bebas text-3xl tracking-wide text-white leading-none">John Blank</h2>
+                  <p className="text-[#E8521A] font-semibold text-xs uppercase tracking-[0.18em] mt-1">
                     Owner — Elite Home AV LLC
                   </p>
                 </div>
               </div>
-              <div className="border-t border-[#222222] pt-6 space-y-3">
-                <div className="flex items-center gap-3 text-sm text-gray-400">
-                  <MapPin className="w-4 h-4 text-[#E8521A] flex-shrink-0" />
-                  Lumberton, TX — Serving all of SE Texas
+              <div className="border-t border-[#262626] pt-6 grid gap-3">
+                <div className="flex items-start gap-3 text-sm text-[#D1D5DB]">
+                  <MapPin className="w-4 h-4 text-[#E8521A] flex-shrink-0 mt-0.5" />
+                  Lumberton, TX — Serving Southeast Texas
                 </div>
-                <div className="flex items-center gap-3 text-sm text-gray-400">
-                  <CheckCircle2 className="w-4 h-4 text-[#E8521A] flex-shrink-0" />
+                <div className="flex items-start gap-3 text-sm text-[#D1D5DB]">
+                  <CheckCircle2 className="w-4 h-4 text-[#E8521A] flex-shrink-0 mt-0.5" />
                   Residential and commercial systems
                 </div>
-                <div className="flex items-center gap-3 text-sm text-gray-400">
-                  <CheckCircle2 className="w-4 h-4 text-[#E8521A] flex-shrink-0" />
+                <div className="flex items-start gap-3 text-sm text-[#D1D5DB]">
+                  <CheckCircle2 className="w-4 h-4 text-[#E8521A] flex-shrink-0 mt-0.5" />
                   Clear design and installation process
                 </div>
-                <div className="flex items-center gap-3 text-sm text-gray-400">
-                  <CheckCircle2 className="w-4 h-4 text-[#E8521A] flex-shrink-0" />
+                <div className="flex items-start gap-3 text-sm text-[#D1D5DB]">
+                  <CheckCircle2 className="w-4 h-4 text-[#E8521A] flex-shrink-0 mt-0.5" />
                   One point of contact from consultation through setup
                 </div>
               </div>
-              <a href={PHONE_HREF} className="btn-primary w-full justify-center mt-2">
+              <a href={PHONE_HREF} className="btn-primary w-full justify-center mt-auto">
                 <Phone className="w-4 h-4" />
                 Call {PHONE}
               </a>
@@ -108,33 +103,31 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Owner Bio */}
-      <section className="py-20 md:py-24 bg-[#0d0d0d] border-b border-[#222222]">
+      <section className="py-20 md:py-24 bg-[#0d0d0d] border-b border-[#262626]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-8">
             <div>
-              <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
+              <h2 className="font-bebas text-4xl md:text-5xl tracking-tight text-white mb-4">
                 Technology That Works Together
               </h2>
               <div className="divider-orange mb-6" />
-              <div className="space-y-5 text-gray-300 leading-relaxed text-lg">
+              <div className="space-y-5 text-[#D1D5DB] leading-relaxed text-lg">
                 <p>
                   Technology works best when it is planned as one system—not added one piece at a time. Elite Home AV designs and installs home theater, audio, networking, surveillance, lighting control, access control, and automation for homes and businesses across Southeast Texas.
                 </p>
                 <p>
                   We start with how you use the space, then design the infrastructure around it. The result is a clean, dependable system where entertainment, lighting, cameras, access, and controls work together the way they should—simple to use and built to last.
                 </p>
-                <p className="text-[#E8521A] font-black text-xl">One system. One clear point of contact.</p>
+                <p className="text-[#E8521A] font-bebas text-2xl tracking-wide">One system. One clear point of contact.</p>
               </div>
             </div>
 
-            {/* Expertise / Tools Section */}
             <div className="card-dark p-6 md:p-8 border-l-4 border-[#E8521A]">
-              <h3 className="text-white font-black text-xl mb-4">Planned Around the Entire System</h3>
-              <p className="text-gray-300 leading-relaxed">
+              <h3 className="font-bebas text-2xl tracking-wide text-white mb-4">Planned Around the Entire System</h3>
+              <p className="text-[#D1D5DB] leading-relaxed">
                 Good integration is more than installing individual products. It begins with a clear plan for the room, the network, the equipment, and the people who will use it.
               </p>
-              <p className="text-gray-300 leading-relaxed mt-4">
+              <p className="text-[#D1D5DB] leading-relaxed mt-4">
                 That planning makes the finished system easier to use, easier to support, and far less likely to become a collection of disconnected apps and remotes.
               </p>
             </div>
@@ -142,12 +135,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Trades Grid */}
-      <section className="py-20 md:py-24 bg-[#0A0A0A] border-b border-[#222222]">
+      <section className="py-20 md:py-24 bg-[#0A0A0A] border-b border-[#262626]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="section-label mb-3">What I Do</p>
-            <h2 className="section-heading mb-4">Comprehensive Expertise.</h2>
+            <p className="section-label mb-3">What We Do</p>
+            <h2 className="section-heading mb-4">Integrated Trades.</h2>
             <div className="divider-orange mx-auto" />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -162,10 +154,10 @@ export default function AboutPage() {
                   <div className="w-9 h-9 bg-[#E8521A]/10 rounded-sm flex items-center justify-center mb-3 group-hover:bg-[#E8521A] transition-colors">
                     <Icon className="w-4 h-4 text-[#E8521A] group-hover:text-white transition-colors" />
                   </div>
-                  <h3 className="text-white font-bold text-sm mb-1 group-hover:text-[#E8521A] transition-colors">
+                  <h3 className="font-bebas text-xl tracking-wide text-white mb-1 group-hover:text-[#E8521A] transition-colors">
                     {trade.name}
                   </h3>
-                  <p className="text-gray-500 text-xs leading-relaxed">{trade.desc}</p>
+                  <p className="text-[#A3A3A3] text-xs leading-relaxed">{trade.desc}</p>
                 </Link>
               );
             })}
@@ -173,22 +165,18 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Service Area */}
-      <section className="py-20 md:py-24 bg-[#0d0d0d] border-b border-[#222222]">
+      <section className="py-20 md:py-24 bg-[#0d0d0d] border-b border-[#262626]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="section-label mb-3">Where I Work</p>
-              <h2 className="section-heading mb-4">All of Southeast Texas</h2>
+              <p className="section-label mb-3">Where We Work</p>
+              <h2 className="section-heading mb-4">Southeast Texas</h2>
               <div className="divider-orange mb-6" />
-              <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                I serve all of Southeast Texas — and I mean all of it. From my home base in
-                Lumberton to the coast at Galveston, the lakes at Toledo Bend and Sam Rayburn,
-                and everywhere in between.
+              <p className="text-[#D1D5DB] text-lg leading-relaxed mb-4">
+                Based in Lumberton, Elite Home AV serves homes and businesses across Southeast Texas — including the Golden Triangle, nearby lake communities, and the coast.
               </p>
-              <p className="text-gray-400 leading-relaxed">
-                Jefferson County, Hardin County, the lake communities, the coast — if you&rsquo;re
-                in SE Texas and you need the work done right, I&rsquo;ll be there.
+              <p className="text-[#A3A3A3] leading-relaxed">
+                Jefferson County, Hardin County, and surrounding communities. If you&rsquo;re in SE Texas and you need the work planned as one system, we can talk through it.
               </p>
             </div>
             <div>
@@ -199,16 +187,16 @@ export default function AboutPage() {
                     className={`flex items-center gap-1.5 px-3 py-2 rounded-sm text-sm font-semibold ${
                       area.note
                         ? 'bg-[#E8521A] text-white'
-                        : 'card-dark text-gray-300 hover:border-[#E8521A]/40 hover:text-white transition-colors'
+                        : 'card-dark text-[#D1D5DB] hover:border-[#E8521A]/40 hover:text-white transition-colors'
                     }`}
                   >
                     <MapPin className="w-3 h-3 flex-shrink-0" />
                     {area.city}
-                    {area.note && <span className="text-white/70 text-xs font-normal">{area.note}</span>}
+                    {area.note && <span className="text-white/80 text-xs font-normal">{area.note}</span>}
                   </div>
                 ))}
-                <div className="card-dark text-gray-500 text-sm px-3 py-2 rounded-sm italic">
-                  + everywhere in between
+                <div className="card-dark text-[#A3A3A3] text-sm px-3 py-2 rounded-sm italic">
+                  + surrounding SE Texas
                 </div>
               </div>
             </div>
@@ -216,17 +204,16 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-20 bg-[#E8521A]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-white text-4xl md:text-5xl font-black mb-4">
+          <h2 className="font-bebas text-4xl md:text-6xl tracking-tight text-white mb-4">
             Ready to Work Together?
           </h2>
-          <p className="text-white/80 text-lg mb-2">
-            Call me. Tell me what you&rsquo;re trying to build.
+          <p className="text-white text-lg mb-2">
+            Call and tell us what you&rsquo;re trying to build.
           </p>
-          <p className="text-white font-bold mb-8">
-            I&rsquo;ll give you a straight answer on what it takes and what it costs.
+          <p className="text-white font-semibold mb-8">
+            We&rsquo;ll give you a straight answer on what it takes.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a

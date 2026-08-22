@@ -22,7 +22,21 @@ export const metadata: Metadata = {
   description: 'Home audio, theater, lighting, surveillance, access control, automation, and networking for residential and commercial spaces in Southeast Texas.',
   keywords: ['home theater', 'home audio', 'lighting control', 'surveillance', 'access control', 'automation', 'networking', 'Lumberton TX', 'Southeast Texas'],
   alternates: { canonical: '/' },
-  openGraph: { title: 'Elite Home AV | Integrated Technology for Homes & Businesses', description: 'Audio, theater, lighting, surveillance, access control, automation, and networking in Southeast Texas.', url: '/', siteName: 'Elite Home AV', locale: 'en_US', type: 'website' },
+  openGraph: {
+    title: 'Elite Home AV | Integrated Technology for Homes & Businesses',
+    description: 'Audio, theater, lighting, surveillance, access control, automation, and networking in Southeast Texas.',
+    url: '/',
+    siteName: 'Elite Home AV',
+    locale: 'en_US',
+    type: 'website',
+    images: [{ url: '/og.jpg', width: 1200, height: 630, alt: 'Elite Home AV LLC' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Elite Home AV | Integrated Technology for Homes & Businesses',
+    description: 'Audio, theater, lighting, surveillance, access control, automation, and networking in Southeast Texas.',
+    images: ['/og.jpg'],
+  },
   icons: {
     icon: [
       {

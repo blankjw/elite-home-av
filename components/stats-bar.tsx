@@ -56,7 +56,7 @@ export function StatsBar() {
               </div>
               
               {/* Label */}
-              <div className="mt-3 text-sm sm:text-base text-[#6B7280] uppercase tracking-[0.2em] font-medium">
+              <div className="mt-3 text-sm sm:text-base text-[#A3A3A3] uppercase tracking-[0.2em] font-medium">
                 {stat.label}
               </div>
               
@@ -68,7 +68,7 @@ export function StatsBar() {
         
         {/* Bottom tagline */}
         <div className="mt-16 text-center">
-          <p className="text-lg sm:text-xl text-[#6B7280] max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-[#A3A3A3] max-w-2xl mx-auto">
             From the first conversation through final setup, you work with one knowledgeable point of contact who understands the entire system.
           </p>
         </div>

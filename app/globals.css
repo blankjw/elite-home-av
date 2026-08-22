@@ -20,7 +20,7 @@
   --secondary: #1A1A1A;
   --secondary-foreground: #FFFFFF;
   --muted: #1A1A1A;
-  --muted-foreground: #9CA3AF;
+  --muted-foreground: #D1D5DB;
   --accent: #E8521A;
   --accent-foreground: #FFFFFF;
   --destructive: #EF4444;
@@ -32,7 +32,7 @@
   --chart-2: #FF7A45;
   --chart-3: #B84315;
   --chart-4: #FFFFFF;
-  --chart-5: #9CA3AF;
+  --chart-5: #D1D5DB;
   --radius: 0.5rem;
   --sidebar: #0F0F0F;
   --sidebar-foreground: #FFFFFF;
@@ -56,7 +56,7 @@
   --secondary: #1A1A1A;
   --secondary-foreground: #FFFFFF;
   --muted: #1A1A1A;
-  --muted-foreground: #9CA3AF;
+  --muted-foreground: #D1D5DB;
   --accent: #E8521A;
   --accent-foreground: #FFFFFF;
   --destructive: #EF4444;
@@ -68,7 +68,7 @@
   --chart-2: #FF7A45;
   --chart-3: #B84315;
   --chart-4: #FFFFFF;
-  --chart-5: #9CA3AF;
+  --chart-5: #D1D5DB;
   --sidebar: #0F0F0F;
   --sidebar-foreground: #FFFFFF;
   --sidebar-primary: #E8521A;
@@ -240,4 +240,63 @@ html {
 
 .animate-scroll-left {
   animation: scroll-left 40s linear infinite;
+}
+
+
+/* Display / UI helpers used across about, contact, and the form */
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #E8521A;
+}
+
+.section-heading {
+  font-family: var(--font-bebas), 'Bebas Neue', Impact, sans-serif;
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  line-height: 0.9;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.divider-orange {
+  width: 3.5rem;
+  height: 2px;
+  background: #E8521A;
+}
+
+.card-dark {
+  background: #141414;
+  border: 1px solid #262626;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: #E8521A;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+  border-radius: 2px;
+  transition: background-color 150ms ease;
+}
+
+.btn-primary:hover {
+  background: #d14816;
+}
+
+.hero-logo-frame {
+  overflow: hidden;
+  background: transparent;
+}
+
+.hero-logo-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
 }

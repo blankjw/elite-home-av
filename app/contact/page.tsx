@@ -97,6 +97,11 @@ export default function ContactPage() {
                       >
                         {EMAIL}
                       </a>
+                      <p className="text-gray-500 text-xs mt-1">
+                        <a href="/card" className="hover:text-[#E8521A] transition-colors">
+                          Digital business card
+                        </a>
+                      </p>
                     </div>
                   </div>
 

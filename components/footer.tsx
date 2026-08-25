@@ -15,9 +15,14 @@ export function Footer() {
           <p className="text-sm text-[#6B7280]">
             © {currentYear} Elite Home AV LLC
           </p>
-          <a href="/" className="text-sm text-[#6B7280] transition-colors hover:text-white">
-            Back to site
-          </a>
+          <div className="flex items-center gap-5">
+            <a href="/" className="text-sm text-[#6B7280] transition-colors hover:text-white">
+              Back to site
+            </a>
+            <a href="#signature" className="text-sm text-[#6B7280] transition-colors hover:text-white">
+              Email signature
+            </a>
+          </div>
         </div>
       </footer>
     )

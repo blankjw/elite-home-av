@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Globe, Mail, MapPin, MessageSquare, Phone, UserPlus } from 'lucide-react'
 import { CARD } from '@/lib/card'
 import { cardQrSvg, getLiveCardUrl } from '@/lib/qr'
+import { buildSignatureHtml } from '@/lib/signature'
+import { EmailSignaturePanel } from '@/components/email-signature'
 
 export const metadata: Metadata = {
   title: 'John Blank | Elite Home AV',
@@ -23,6 +25,7 @@ export default async function CardPage() {
   const qrSvg = await cardQrSvg(cardUrl)
 
   return (
+    <>
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#0A0A0A] px-4 py-16 sm:py-24">
       <div className="pointer-events-none absolute top-1/4 left-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-[#E8521A]/8 blur-[140px]" />
 
@@ -151,7 +154,16 @@ export default async function CardPage() {
             Scan to save
           </figcaption>
         </figure>
+
+        <a
+          href="#signature"
+          className="mt-8 inline-block text-xs uppercase tracking-[0.18em] text-[#6B7280] transition-colors hover:text-[#E8521A]"
+        >
+          Email signature
+        </a>
       </article>
     </section>
+    <EmailSignaturePanel previewHtml={buildSignatureHtml('')} copyHtml={buildSignatureHtml()} />
+    </>
   )
 }

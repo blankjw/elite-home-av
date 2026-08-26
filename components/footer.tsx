@@ -1,10 +1,32 @@
 "use client"
 
 import { Phone, Mail, MapPin, ArrowUpRight } from "lucide-react"
+import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 
 export function Footer() {
+  const pathname = usePathname()
   const currentYear = new Date().getFullYear()
+
+  if (pathname === "/card") {
+    return (
+      <footer className="border-t border-[#1F1F1F] bg-[#0A0A0A]">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-6 sm:flex-row">
+          <p className="text-sm text-[#6B7280]">
+            © {currentYear} Elite Home AV LLC
+          </p>
+          <div className="flex items-center gap-5">
+            <a href="/" className="text-sm text-[#6B7280] transition-colors hover:text-white">
+              Back to site
+            </a>
+            <a href="#signature" className="text-sm text-[#6B7280] transition-colors hover:text-white">
+              Email signature
+            </a>
+          </div>
+        </div>
+      </footer>
+    )
+  }
 
   return (
     <footer id="contact" className="relative bg-[#0A0A0A] overflow-hidden">
@@ -120,6 +142,7 @@ export function Footer() {
                 <li><a href="/about" className="hover:text-[#E8521A] transition-colors inline-flex items-center gap-2 group">About Us<ArrowUpRight className="w-3 h-3" /></a></li>
                 <li><a href="/gallery" className="hover:text-[#E8521A] transition-colors inline-flex items-center gap-2 group">Our Work<ArrowUpRight className="w-3 h-3" /></a></li>
                 <li><a href="/contact" className="hover:text-[#E8521A] transition-colors inline-flex items-center gap-2 group">Contact<ArrowUpRight className="w-3 h-3" /></a></li>
+                <li><a href="/card" className="hover:text-[#E8521A] transition-colors inline-flex items-center gap-2 group">Digital Card<ArrowUpRight className="w-3 h-3" /></a></li>
               </ul>
             </div>
           </div>

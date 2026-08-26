@@ -1,10 +1,12 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { usePathname } from "next/navigation"
 import { Phone, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function Header() {
+  const pathname = usePathname()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
@@ -15,6 +17,10 @@ export function Header() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  if (pathname === "/card") {
+    return null
+  }
 
   return (
     <header 

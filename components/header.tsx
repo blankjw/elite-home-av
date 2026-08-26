@@ -26,10 +26,16 @@ export function Header() {
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between">
-          {/* Logo Text */}
-          <a href="/" className="flex items-center group">
-            <span className="font-bebas text-xl sm:text-2xl tracking-[0.1em] text-white">
-              ELITE HOME AV <span className="text-[#E8521A]">LLC</span>
+          <a href="/" className="flex items-center gap-3 group">
+            <img
+              src="/images/logo-mark.png"
+              alt="Elite Home AV"
+              width={96}
+              height={72}
+              className="h-10 w-auto sm:h-12"
+            />
+            <span className="font-bebas text-xl sm:text-2xl tracking-[0.12em] text-white">
+              ELITE HOME AV
             </span>
           </a>
 

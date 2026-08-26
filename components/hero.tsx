@@ -24,7 +24,7 @@ export function Hero() {
       <div className="relative z-10 h-full flex items-end">
         <div className="w-full max-w-7xl mx-auto px-6 pb-10 sm:pb-14 lg:pb-20">
           <div className="flex items-center gap-3 mb-5">
-            <span className="w-8 h-px bg-[#3B6D9A]" aria-hidden="true" />
+            <span className="w-12 h-[3px] shrink-0 bg-[#8BB4D0]" aria-hidden="true" />
             <p className="text-white/90 text-xs sm:text-sm font-semibold tracking-[0.28em] uppercase">
               Southeast Texas
             </p>

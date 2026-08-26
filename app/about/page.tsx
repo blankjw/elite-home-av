@@ -43,8 +43,8 @@ const serviceAreas = [
 export default function AboutPage() {
   return (
     <>
-      <section className="relative pt-32 pb-16 bg-[#0A0A0A] border-b border-[#262626] overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,#2a140c_0%,#0A0A0A_58%)]" />
+      <section className="relative pt-32 pb-16 bg-[#F4F6F8] border-b border-[#D5DAE0] overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,#2a140c_0%,#F4F6F8_58%)]" />
         <div className="absolute -right-16 top-10 w-[520px] opacity-[0.07] pointer-events-none hidden lg:block">
           {/* Local brand mark only — no remote stock imagery */}
           <img src="/images/hero-logo.png" alt="" className="w-full hero-logo-img" />
@@ -53,44 +53,44 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-14 items-stretch">
             <div className="flex flex-col justify-center">
               <p className="section-label mb-3">About</p>
-              <h1 className="font-bebas text-5xl md:text-7xl tracking-tight text-white leading-[0.9] mb-4">
+              <h1 className="font-bebas text-5xl md:text-7xl tracking-tight text-[#1E293B] leading-[0.9] mb-4">
                 Integrated Systems.
                 <br />
-                <span className="text-[#E8521A]">Thoughtfully Designed.</span>
+                <span className="text-[#3B6D9A]">Thoughtfully Designed.</span>
               </h1>
               <div className="divider-orange mb-6" />
-              <p className="text-[#D1D5DB] text-lg leading-relaxed max-w-xl">
+              <p className="text-[#64748B] text-lg leading-relaxed max-w-xl">
                 Elite Home AV designs technology around the way a space is actually used. From entertainment and lighting to cameras, access, and networking, each piece is planned to work as part of one dependable system.
               </p>
             </div>
 
-            <div className="card-dark p-7 md:p-8 flex flex-col gap-6 border border-[#262626] bg-[#141414]">
+            <div className="card-dark p-7 md:p-8 flex flex-col gap-6 border border-[#D5DAE0] bg-white">
               <div className="flex items-center gap-4">
-                <div className="w-14 h-14 bg-[#E8521A] rounded-sm flex items-center justify-center flex-shrink-0">
-                  <Zap className="w-7 h-7 text-white" />
+                <div className="w-14 h-14 bg-[#3B6D9A] rounded-sm flex items-center justify-center flex-shrink-0">
+                  <Zap className="w-7 h-7 text-[#1E293B]" />
                 </div>
                 <div>
-                  <h2 className="font-bebas text-3xl tracking-wide text-white leading-none">John Blank</h2>
-                  <p className="text-[#E8521A] font-semibold text-xs uppercase tracking-[0.18em] mt-1">
+                  <h2 className="font-bebas text-3xl tracking-wide text-[#1E293B] leading-none">John Blank</h2>
+                  <p className="text-[#3B6D9A] font-semibold text-xs uppercase tracking-[0.18em] mt-1">
                     Owner — Elite Home AV LLC
                   </p>
                 </div>
               </div>
-              <div className="border-t border-[#262626] pt-6 grid gap-3">
-                <div className="flex items-start gap-3 text-sm text-[#D1D5DB]">
-                  <MapPin className="w-4 h-4 text-[#E8521A] flex-shrink-0 mt-0.5" />
+              <div className="border-t border-[#D5DAE0] pt-6 grid gap-3">
+                <div className="flex items-start gap-3 text-sm text-[#64748B]">
+                  <MapPin className="w-4 h-4 text-[#3B6D9A] flex-shrink-0 mt-0.5" />
                   Lumberton, TX — Serving Southeast Texas
                 </div>
-                <div className="flex items-start gap-3 text-sm text-[#D1D5DB]">
-                  <CheckCircle2 className="w-4 h-4 text-[#E8521A] flex-shrink-0 mt-0.5" />
+                <div className="flex items-start gap-3 text-sm text-[#64748B]">
+                  <CheckCircle2 className="w-4 h-4 text-[#3B6D9A] flex-shrink-0 mt-0.5" />
                   Residential and commercial systems
                 </div>
-                <div className="flex items-start gap-3 text-sm text-[#D1D5DB]">
-                  <CheckCircle2 className="w-4 h-4 text-[#E8521A] flex-shrink-0 mt-0.5" />
+                <div className="flex items-start gap-3 text-sm text-[#64748B]">
+                  <CheckCircle2 className="w-4 h-4 text-[#3B6D9A] flex-shrink-0 mt-0.5" />
                   Clear design and installation process
                 </div>
-                <div className="flex items-start gap-3 text-sm text-[#D1D5DB]">
-                  <CheckCircle2 className="w-4 h-4 text-[#E8521A] flex-shrink-0 mt-0.5" />
+                <div className="flex items-start gap-3 text-sm text-[#64748B]">
+                  <CheckCircle2 className="w-4 h-4 text-[#3B6D9A] flex-shrink-0 mt-0.5" />
                   One point of contact from consultation through setup
                 </div>
               </div>
@@ -103,31 +103,31 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-24 bg-[#0d0d0d] border-b border-[#262626]">
+      <section className="py-20 md:py-24 bg-[#0d0d0d] border-b border-[#D5DAE0]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-8">
             <div>
-              <h2 className="font-bebas text-4xl md:text-5xl tracking-tight text-white mb-4">
+              <h2 className="font-bebas text-4xl md:text-5xl tracking-tight text-[#1E293B] mb-4">
                 Technology That Works Together
               </h2>
               <div className="divider-orange mb-6" />
-              <div className="space-y-5 text-[#D1D5DB] leading-relaxed text-lg">
+              <div className="space-y-5 text-[#64748B] leading-relaxed text-lg">
                 <p>
                   Technology works best when it is planned as one system—not added one piece at a time. Elite Home AV designs and installs home theater, audio, networking, surveillance, lighting control, access control, and automation for homes and businesses across Southeast Texas.
                 </p>
                 <p>
                   We start with how you use the space, then design the infrastructure around it. The result is a clean, dependable system where entertainment, lighting, cameras, access, and controls work together the way they should—simple to use and built to last.
                 </p>
-                <p className="text-[#E8521A] font-bebas text-2xl tracking-wide">One system. One clear point of contact.</p>
+                <p className="text-[#3B6D9A] font-bebas text-2xl tracking-wide">One system. One clear point of contact.</p>
               </div>
             </div>
 
-            <div className="card-dark p-6 md:p-8 border-l-4 border-[#E8521A]">
-              <h3 className="font-bebas text-2xl tracking-wide text-white mb-4">Planned Around the Entire System</h3>
-              <p className="text-[#D1D5DB] leading-relaxed">
+            <div className="card-dark p-6 md:p-8 border-l-4 border-[#3B6D9A]">
+              <h3 className="font-bebas text-2xl tracking-wide text-[#1E293B] mb-4">Planned Around the Entire System</h3>
+              <p className="text-[#64748B] leading-relaxed">
                 Good integration is more than installing individual products. It begins with a clear plan for the room, the network, the equipment, and the people who will use it.
               </p>
-              <p className="text-[#D1D5DB] leading-relaxed mt-4">
+              <p className="text-[#64748B] leading-relaxed mt-4">
                 That planning makes the finished system easier to use, easier to support, and far less likely to become a collection of disconnected apps and remotes.
               </p>
             </div>
@@ -135,7 +135,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-24 bg-[#0A0A0A] border-b border-[#262626]">
+      <section className="py-20 md:py-24 bg-[#F4F6F8] border-b border-[#D5DAE0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="section-label mb-3">What We Do</p>
@@ -149,15 +149,15 @@ export default function AboutPage() {
                 <Link
                   key={trade.name}
                   href={`/services#${trade.slug}`}
-                  className="group card-dark p-5 hover:border-[#E8521A]/50 transition-all duration-300"
+                  className="group card-dark p-5 hover:border-[#3B6D9A]/50 transition-all duration-300"
                 >
-                  <div className="w-9 h-9 bg-[#E8521A]/10 rounded-sm flex items-center justify-center mb-3 group-hover:bg-[#E8521A] transition-colors">
-                    <Icon className="w-4 h-4 text-[#E8521A] group-hover:text-white transition-colors" />
+                  <div className="w-9 h-9 bg-[#3B6D9A]/10 rounded-sm flex items-center justify-center mb-3 group-hover:bg-[#3B6D9A] transition-colors">
+                    <Icon className="w-4 h-4 text-[#3B6D9A] group-hover:text-[#1E293B] transition-colors" />
                   </div>
-                  <h3 className="font-bebas text-xl tracking-wide text-white mb-1 group-hover:text-[#E8521A] transition-colors">
+                  <h3 className="font-bebas text-xl tracking-wide text-[#1E293B] mb-1 group-hover:text-[#3B6D9A] transition-colors">
                     {trade.name}
                   </h3>
-                  <p className="text-[#A3A3A3] text-xs leading-relaxed">{trade.desc}</p>
+                  <p className="text-[#64748B] text-xs leading-relaxed">{trade.desc}</p>
                 </Link>
               );
             })}
@@ -165,17 +165,17 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-24 bg-[#0d0d0d] border-b border-[#262626]">
+      <section className="py-20 md:py-24 bg-[#0d0d0d] border-b border-[#D5DAE0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="section-label mb-3">Where We Work</p>
               <h2 className="section-heading mb-4">Southeast Texas</h2>
               <div className="divider-orange mb-6" />
-              <p className="text-[#D1D5DB] text-lg leading-relaxed mb-4">
+              <p className="text-[#64748B] text-lg leading-relaxed mb-4">
                 Based in Lumberton, Elite Home AV serves homes and businesses across Southeast Texas — including the Golden Triangle, nearby lake communities, and the coast.
               </p>
-              <p className="text-[#A3A3A3] leading-relaxed">
+              <p className="text-[#64748B] leading-relaxed">
                 Jefferson County, Hardin County, and surrounding communities. If you&rsquo;re in SE Texas and you need the work planned as one system, we can talk through it.
               </p>
             </div>
@@ -186,16 +186,16 @@ export default function AboutPage() {
                     key={area.city}
                     className={`flex items-center gap-1.5 px-3 py-2 rounded-sm text-sm font-semibold ${
                       area.note
-                        ? 'bg-[#E8521A] text-white'
-                        : 'card-dark text-[#D1D5DB] hover:border-[#E8521A]/40 hover:text-white transition-colors'
+                        ? 'bg-[#3B6D9A] text-white'
+                        : 'card-dark text-[#64748B] hover:border-[#3B6D9A]/40 hover:text-white transition-colors'
                     }`}
                   >
                     <MapPin className="w-3 h-3 flex-shrink-0" />
                     {area.city}
-                    {area.note && <span className="text-white/80 text-xs font-normal">{area.note}</span>}
+                    {area.note && <span className="text-[#1E293B]/80 text-xs font-normal">{area.note}</span>}
                   </div>
                 ))}
-                <div className="card-dark text-[#A3A3A3] text-sm px-3 py-2 rounded-sm italic">
+                <div className="card-dark text-[#64748B] text-sm px-3 py-2 rounded-sm italic">
                   + surrounding SE Texas
                 </div>
               </div>
@@ -204,28 +204,28 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-[#E8521A]">
+      <section className="py-20 bg-[#3B6D9A]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-bebas text-4xl md:text-6xl tracking-tight text-white mb-4">
+          <h2 className="font-bebas text-4xl md:text-6xl tracking-tight text-[#1E293B] mb-4">
             Ready to Work Together?
           </h2>
-          <p className="text-white text-lg mb-2">
+          <p className="text-[#1E293B] text-lg mb-2">
             Call and tell us what you&rsquo;re trying to build.
           </p>
-          <p className="text-white font-semibold mb-8">
+          <p className="text-[#1E293B] font-semibold mb-8">
             We&rsquo;ll give you a straight answer on what it takes.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href={PHONE_HREF}
-              className="inline-flex items-center gap-3 bg-black text-white font-black text-2xl px-10 py-5 rounded-sm hover:bg-[#0A0A0A] transition-colors w-full sm:w-auto justify-center"
+              className="inline-flex items-center gap-3 bg-black text-[#1E293B] font-black text-2xl px-10 py-5 rounded-sm hover:bg-[#F4F6F8] transition-colors w-full sm:w-auto justify-center"
             >
               <Phone className="w-6 h-6" />
               {PHONE}
             </a>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 border-2 border-white text-white font-bold px-8 py-5 rounded-sm hover:bg-white hover:text-black transition-colors w-full sm:w-auto justify-center text-lg"
+              className="inline-flex items-center gap-2 border-2 border-white text-[#1E293B] font-bold px-8 py-5 rounded-sm hover:bg-white hover:text-black transition-colors w-full sm:w-auto justify-center text-lg"
             >
               Contact Form
               <ArrowRight className="w-5 h-5" />

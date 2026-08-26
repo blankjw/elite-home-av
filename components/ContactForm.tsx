@@ -54,7 +54,7 @@ function validate(data: typeof emptyForm): Errors {
 }
 
 const fieldClass =
-  'w-full bg-[#0A0A0A] border text-white placeholder-[#6B7280] rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-[#E8521A] transition-colors';
+  'w-full bg-[#F4F6F8] border text-white placeholder-[#6B7280] rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-[#3B6D9A] transition-colors';
 
 export default function ContactForm() {
   const [status, setStatus] = useState<Status>('idle');
@@ -114,15 +114,15 @@ export default function ContactForm() {
   if (status === 'success') {
     return (
       <div className="card-dark p-8 text-center flex flex-col items-center gap-6" role="status" aria-live="polite">
-        <div className="w-16 h-16 bg-[#E8521A]/10 rounded-full flex items-center justify-center">
-          <CheckCircle2 className="w-8 h-8 text-[#E8521A]" />
+        <div className="w-16 h-16 bg-[#3B6D9A]/10 rounded-full flex items-center justify-center">
+          <CheckCircle2 className="w-8 h-8 text-[#3B6D9A]" />
         </div>
         <div>
-          <h3 className="font-bebas text-3xl tracking-wide text-white mb-2">Message Sent</h3>
-          <p className="text-[#D1D5DB] mb-2">
+          <h3 className="font-bebas text-3xl tracking-wide text-[#1E293B] mb-2">Message Sent</h3>
+          <p className="text-[#64748B] mb-2">
             Thanks — we received your note and will follow up.
           </p>
-          <p className="text-[#A3A3A3] text-sm">
+          <p className="text-[#64748B] text-sm">
             For the fastest response, call or text {PHONE}.
           </p>
         </div>
@@ -133,7 +133,7 @@ export default function ContactForm() {
         <button
           type="button"
           onClick={() => setStatus('idle')}
-          className="text-[#A3A3A3] text-sm hover:text-white transition-colors"
+          className="text-[#64748B] text-sm hover:text-[#1E293B] transition-colors"
         >
           Send another message
         </button>
@@ -143,10 +143,10 @@ export default function ContactForm() {
 
   return (
     <div className="card-dark p-6 md:p-8">
-      <h2 className="font-bebas text-3xl tracking-wide text-white mb-2">Send Us a Message</h2>
-      <p className="text-[#D1D5DB] text-sm mb-8">
+      <h2 className="font-bebas text-3xl tracking-wide text-[#1E293B] mb-2">Send Us a Message</h2>
+      <p className="text-[#64748B] text-sm mb-8">
         Fill out the form below and we&rsquo;ll get back to you. Or just call:{' '}
-        <a href={PHONE_HREF} className="text-[#E8521A] font-bold hover:underline">
+        <a href={PHONE_HREF} className="text-[#3B6D9A] font-bold hover:underline">
           {PHONE}
         </a>
       </p>
@@ -173,8 +173,8 @@ export default function ContactForm() {
       <form onSubmit={handleSubmit} className="space-y-5" noValidate>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
-            <label htmlFor="name" className="block text-white text-sm font-bold mb-2">
-              Your Name <span className="text-[#E8521A]">*</span>
+            <label htmlFor="name" className="block text-[#1E293B] text-sm font-bold mb-2">
+              Your Name <span className="text-[#3B6D9A]">*</span>
             </label>
             <input
               type="text"
@@ -197,8 +197,8 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label htmlFor="phone" className="block text-white text-sm font-bold mb-2">
-              Phone Number <span className="text-[#E8521A]">*</span>
+            <label htmlFor="phone" className="block text-[#1E293B] text-sm font-bold mb-2">
+              Phone Number <span className="text-[#3B6D9A]">*</span>
             </label>
             <input
               type="tel"
@@ -223,8 +223,8 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-white text-sm font-bold mb-2">
-            Email Address <span className="text-[#A3A3A3] font-normal">(optional)</span>
+          <label htmlFor="email" className="block text-[#1E293B] text-sm font-bold mb-2">
+            Email Address <span className="text-[#64748B] font-normal">(optional)</span>
           </label>
           <input
             type="email"
@@ -246,8 +246,8 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label htmlFor="service" className="block text-white text-sm font-bold mb-2">
-            Service Needed <span className="text-[#E8521A]">*</span>
+          <label htmlFor="service" className="block text-[#1E293B] text-sm font-bold mb-2">
+            Service Needed <span className="text-[#3B6D9A]">*</span>
           </label>
           <select
             id="service"
@@ -276,8 +276,8 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-white text-sm font-bold mb-2">
-            Tell Us About Your Project <span className="text-[#E8521A]">*</span>
+          <label htmlFor="message" className="block text-[#1E293B] text-sm font-bold mb-2">
+            Tell Us About Your Project <span className="text-[#3B6D9A]">*</span>
           </label>
           <textarea
             id="message"
@@ -316,9 +316,9 @@ export default function ContactForm() {
           )}
         </button>
 
-        <p className="text-[#A3A3A3] text-xs text-center">
+        <p className="text-[#64748B] text-xs text-center">
           Required fields are marked with an orange asterisk. Or call{' '}
-          <a href={PHONE_HREF} className="text-[#E8521A] font-bold hover:underline">
+          <a href={PHONE_HREF} className="text-[#3B6D9A] font-bold hover:underline">
             {PHONE}
           </a>{' '}
           for an immediate response.

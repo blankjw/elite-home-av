@@ -4,79 +4,78 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Elite Home AV LLC - Premium Dark Theme */
-/* Brand Colors: Ignition Orange (#E8521A), Black (#0A0A0A), White (#FFFFFF) */
+/* Elite Home AV — steel blue + gray */
 
 :root {
-  /* Dark theme by default for cinematic feel */
-  --background: #0A0A0A;
-  --foreground: #FFFFFF;
-  --card: #141414;
-  --card-foreground: #FFFFFF;
-  --popover: #141414;
-  --popover-foreground: #FFFFFF;
-  --primary: #E8521A;
+  --background: #F4F6F8;
+  --foreground: #1E293B;
+  --card: #FFFFFF;
+  --card-foreground: #1E293B;
+  --popover: #FFFFFF;
+  --popover-foreground: #1E293B;
+  --primary: #3B6D9A;
   --primary-foreground: #FFFFFF;
-  --secondary: #1A1A1A;
-  --secondary-foreground: #FFFFFF;
-  --muted: #1A1A1A;
-  --muted-foreground: #D1D5DB;
-  --accent: #E8521A;
+  --secondary: #E8ECF0;
+  --secondary-foreground: #1E293B;
+  --muted: #EEF1F4;
+  --muted-foreground: #64748B;
+  --accent: #3B6D9A;
   --accent-foreground: #FFFFFF;
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
-  --border: #262626;
-  --input: #262626;
-  --ring: #E8521A;
-  --chart-1: #E8521A;
-  --chart-2: #FF7A45;
-  --chart-3: #B84315;
-  --chart-4: #FFFFFF;
-  --chart-5: #D1D5DB;
+  --border: #D5DAE0;
+  --input: #D5DAE0;
+  --ring: #3B6D9A;
+  --chart-1: #3B6D9A;
+  --chart-2: #64748B;
+  --chart-3: #94A3B8;
+  --chart-4: #1E293B;
+  --chart-5: #CBD5E1;
   --radius: 0.5rem;
-  --sidebar: #0F0F0F;
-  --sidebar-foreground: #FFFFFF;
-  --sidebar-primary: #E8521A;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #1E293B;
+  --sidebar-primary: #3B6D9A;
   --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #1A1A1A;
-  --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: #262626;
-  --sidebar-ring: #E8521A;
+  --sidebar-accent: #E8ECF0;
+  --sidebar-accent-foreground: #1E293B;
+  --sidebar-border: #D5DAE0;
+  --sidebar-ring: #3B6D9A;
 }
 
-.dark {
-  --background: #0A0A0A;
-  --foreground: #FFFFFF;
-  --card: #141414;
-  --card-foreground: #FFFFFF;
-  --popover: #141414;
-  --popover-foreground: #FFFFFF;
-  --primary: #E8521A;
+.dark  {
+  --background: #F4F6F8;
+  --foreground: #1E293B;
+  --card: #FFFFFF;
+  --card-foreground: #1E293B;
+  --popover: #FFFFFF;
+  --popover-foreground: #1E293B;
+  --primary: #3B6D9A;
   --primary-foreground: #FFFFFF;
-  --secondary: #1A1A1A;
-  --secondary-foreground: #FFFFFF;
-  --muted: #1A1A1A;
-  --muted-foreground: #D1D5DB;
-  --accent: #E8521A;
+  --secondary: #E8ECF0;
+  --secondary-foreground: #1E293B;
+  --muted: #EEF1F4;
+  --muted-foreground: #64748B;
+  --accent: #3B6D9A;
   --accent-foreground: #FFFFFF;
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
-  --border: #262626;
-  --input: #262626;
-  --ring: #E8521A;
-  --chart-1: #E8521A;
-  --chart-2: #FF7A45;
-  --chart-3: #B84315;
-  --chart-4: #FFFFFF;
-  --chart-5: #D1D5DB;
-  --sidebar: #0F0F0F;
-  --sidebar-foreground: #FFFFFF;
-  --sidebar-primary: #E8521A;
+  --border: #D5DAE0;
+  --input: #D5DAE0;
+  --ring: #3B6D9A;
+  --chart-1: #3B6D9A;
+  --chart-2: #64748B;
+  --chart-3: #94A3B8;
+  --chart-4: #1E293B;
+  --chart-5: #CBD5E1;
+  --radius: 0.5rem;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #1E293B;
+  --sidebar-primary: #3B6D9A;
   --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #1A1A1A;
-  --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: #262626;
-  --sidebar-ring: #E8521A;
+  --sidebar-accent: #E8ECF0;
+  --sidebar-accent-foreground: #1E293B;
+  --sidebar-border: #D5DAE0;
+  --sidebar-ring: #3B6D9A;
 }
 
 @theme inline {
@@ -229,7 +228,7 @@ html {
 
 /* Selection styling */
 ::selection {
-  background-color: rgba(232, 82, 26, 0.3);
+  background-color: rgba(59, 109, 154, 0.28);
   color: #FFFFFF;
 }
 
@@ -249,7 +248,7 @@ html {
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #E8521A;
+  color: #3B6D9A;
 }
 
 .section-heading {
@@ -257,18 +256,18 @@ html {
   font-size: clamp(2.25rem, 5vw, 3.75rem);
   line-height: 0.9;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: #1E293B;
 }
 
 .divider-orange {
   width: 3.5rem;
   height: 2px;
-  background: #E8521A;
+  background: #3B6D9A;
 }
 
 .card-dark {
-  background: #141414;
-  border: 1px solid #262626;
+  background: #FFFFFF;
+  border: 1px solid #D5DAE0;
 }
 
 .btn-primary {
@@ -276,8 +275,8 @@ html {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background: #E8521A;
-  color: #ffffff;
+  background: #3B6D9A;
+  color: #1E293B;
   font-weight: 600;
   padding: 0.75rem 1.25rem;
   border-radius: 2px;
@@ -285,7 +284,7 @@ html {
 }
 
 .btn-primary:hover {
-  background: #d14816;
+  background: #2F5A80;
 }
 
 .hero-logo-frame {

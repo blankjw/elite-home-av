@@ -55,36 +55,36 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <main className="bg-[#0A0A0A] min-h-screen pt-32 pb-24">
+    <main className="bg-[#F4F6F8] min-h-screen pt-32 pb-24">
       <section className="max-w-7xl mx-auto px-6">
         <div className="max-w-3xl">
-          <p className="text-[#E8521A] text-sm font-semibold tracking-[0.2em] uppercase mb-5">Residential & Commercial</p>
-          <h1 className="font-bebas text-6xl sm:text-8xl leading-[.9] text-white">
+          <p className="text-[#3B6D9A] text-sm font-semibold tracking-[0.2em] uppercase mb-5">Residential & Commercial</p>
+          <h1 className="font-bebas text-6xl sm:text-8xl leading-[.9] text-[#1E293B]">
             Technology That
             <br />
-            <span className="text-[#E8521A]">Feels Simple.</span>
+            <span className="text-[#3B6D9A]">Feels Simple.</span>
           </h1>
-          <p className="mt-8 text-xl text-[#D1D5DB] leading-relaxed">
+          <p className="mt-8 text-xl text-[#64748B] leading-relaxed">
             We plan and install integrated technology around your space, your priorities, and how you use it — so entertainment, lighting, cameras, access, and networking work as one system.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-16">
           {services.map(({ icon: Icon, title, copy, line, slug }) => (
-            <article key={title} id={slug} className="p-8 bg-[#141414] border border-[#262626] scroll-mt-28">
-              <Icon className="w-8 h-8 text-[#E8521A] mb-8" />
-              <h2 className="font-bebas text-3xl text-white tracking-wide">{title}</h2>
-              <p className="mt-4 text-[#D1D5DB] leading-relaxed">{copy}</p>
-              <p className="mt-6 text-sm text-[#E8521A] leading-relaxed">{line}</p>
+            <article key={title} id={slug} className="p-8 bg-white border border-[#D5DAE0] scroll-mt-28">
+              <Icon className="w-8 h-8 text-[#3B6D9A] mb-8" />
+              <h2 className="font-bebas text-3xl text-[#1E293B] tracking-wide">{title}</h2>
+              <p className="mt-4 text-[#64748B] leading-relaxed">{copy}</p>
+              <p className="mt-6 text-sm text-[#3B6D9A] leading-relaxed">{line}</p>
             </article>
           ))}
         </div>
       </section>
       <section className="max-w-5xl mx-auto px-6 mt-24 text-center">
-        <h2 className="font-bebas text-5xl text-white">Have a Project in Mind?</h2>
-        <p className="mt-4 text-[#D1D5DB]">
+        <h2 className="font-bebas text-5xl text-[#1E293B]">Have a Project in Mind?</h2>
+        <p className="mt-4 text-[#64748B]">
           Tell us what you want the room or system to do. We&apos;ll help you define the right next step.
         </p>
-        <Link href="/contact" className="inline-flex mt-8 bg-[#E8521A] hover:bg-[#d14816] text-white px-8 py-4 font-semibold">
+        <Link href="/contact" className="inline-flex mt-8 bg-[#3B6D9A] hover:bg-[#2F5A80] text-white px-8 py-4 font-semibold">
           Request a Consultation
         </Link>
       </section>

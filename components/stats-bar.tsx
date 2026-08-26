@@ -19,8 +19,8 @@ export function StatsBar() {
               90deg,
               transparent,
               transparent 100px,
-              #E8521A 100px,
-              #E8521A 101px
+              #3B6D9A 100px,
+              #3B6D9A 101px
             )`
           }}
         />
@@ -31,7 +31,7 @@ export function StatsBar() {
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#262626] to-transparent" />
       
       {/* Accent glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[200px] bg-[#E8521A]/5 rounded-full blur-[100px]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[200px] bg-[#3B6D9A]/5 rounded-full blur-[100px]" />
       
       <div className="relative max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0">
@@ -42,33 +42,33 @@ export function StatsBar() {
             >
               {/* Divider line (except first) */}
               {index > 0 && (
-                <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-px h-20 bg-gradient-to-b from-transparent via-[#E8521A]/40 to-transparent" />
+                <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-px h-20 bg-gradient-to-b from-transparent via-[#3B6D9A]/40 to-transparent" />
               )}
               
               {/* Value */}
               <div className="flex items-baseline gap-1">
-                <span className="font-bebas text-4xl sm:text-5xl lg:text-6xl tracking-tight text-white">
+                <span className="font-bebas text-4xl sm:text-5xl lg:text-6xl tracking-tight text-[#1E293B]">
                   {stat.value}
                 </span>
                 {stat.suffix && (
-                  <span className="font-bebas text-3xl lg:text-4xl text-[#E8521A]">{stat.suffix}</span>
+                  <span className="font-bebas text-3xl lg:text-4xl text-[#3B6D9A]">{stat.suffix}</span>
                 )}
               </div>
               
               {/* Label */}
-              <div className="mt-3 text-sm sm:text-base text-[#A3A3A3] uppercase tracking-[0.2em] font-medium">
+              <div className="mt-3 text-sm sm:text-base text-[#64748B] uppercase tracking-[0.2em] font-medium">
                 {stat.label}
               </div>
               
               {/* Underline accent */}
-              <div className="mt-4 w-8 h-px bg-[#E8521A]/50" />
+              <div className="mt-4 w-8 h-px bg-[#3B6D9A]/50" />
             </div>
           ))}
         </div>
         
         {/* Bottom tagline */}
         <div className="mt-16 text-center">
-          <p className="text-lg sm:text-xl text-[#A3A3A3] max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-[#64748B] max-w-2xl mx-auto">
             From the first conversation through final setup, you work with one knowledgeable point of contact who understands the entire system.
           </p>
         </div>

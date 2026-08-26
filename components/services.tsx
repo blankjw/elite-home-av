@@ -14,21 +14,21 @@ type ServiceCard = {
 }
 
 const residentialServices: ServiceCard[] = [
-  { title: "Home Audio", href: "/services#audio", image: "/images/service-audio.jpg", alt: "Modern open living room" },
-  { title: "Home Theater", href: "/services#theater", image: "/images/service-theater.jpg", alt: "Contemporary dining and living interior" },
-  { title: "Lighting", href: "/services#lighting", image: "/images/service-lighting.jpg", alt: "Modern home exterior at dusk" },
-  { title: "Surveillance & Access", href: "/services#surveillance", image: "/images/service-surveillance.jpg", alt: "Modern residence with pool" },
-  { title: "Automation", href: "/services#automation", image: "/images/service-automation.jpg", alt: "Bright residential living room" },
-  { title: "Networking", href: "/services#networking", image: "/images/service-networking.jpg", alt: "Modern home exterior" },
+  { title: "Home Audio", href: "/services#audio", image: "/images/service-audio.jpg", alt: "Bookshelf speaker" },
+  { title: "Home Theater", href: "/services#theater", image: "/images/service-theater.jpg", alt: "Living room with a large flat-screen TV on a floating console" },
+  { title: "Lighting", href: "/services#lighting", image: "/images/service-lighting.jpg", alt: "Modern house at dusk with warm interior lighting" },
+  { title: "Surveillance & Access", href: "/services#surveillance", image: "/images/service-surveillance.jpg", alt: "Outdoor security cameras" },
+  { title: "Automation", href: "/services#automation", image: "/images/service-automation.jpg", alt: "Smartphone controlling a smart lock" },
+  { title: "Networking", href: "/services#networking", image: "/images/service-networking.jpg", alt: "Network switch with fiber connections" },
 ]
 
 const commercialServices: ServiceCard[] = [
-  { title: "Distributed Audio", href: "/services#audio", image: "/images/service-audio.jpg", alt: "Modern open living room" },
-  { title: "Presentation Spaces", href: "/services#theater", image: "/images/service-theater.jpg", alt: "Contemporary dining and living interior" },
-  { title: "Lighting Control", href: "/services#lighting", image: "/images/service-lighting.jpg", alt: "Modern home exterior at dusk" },
-  { title: "Surveillance & Access", href: "/services#surveillance", image: "/images/service-surveillance.jpg", alt: "Modern residence with pool" },
-  { title: "Automation", href: "/services#automation", image: "/images/service-automation.jpg", alt: "Bright residential living room" },
-  { title: "Networking", href: "/services#networking", image: "/images/service-networking.jpg", alt: "Modern home exterior" },
+  { title: "Distributed Audio", href: "/services#audio", image: "/images/service-audio.jpg", alt: "Bookshelf speaker" },
+  { title: "Presentation Spaces", href: "/services#theater", image: "/images/service-theater.jpg", alt: "Living room with a large flat-screen TV on a floating console" },
+  { title: "Lighting Control", href: "/services#lighting", image: "/images/service-lighting.jpg", alt: "Modern house at dusk with warm interior lighting" },
+  { title: "Surveillance & Access", href: "/services#surveillance", image: "/images/service-surveillance.jpg", alt: "Outdoor security cameras" },
+  { title: "Automation", href: "/services#automation", image: "/images/service-automation.jpg", alt: "Smartphone controlling a smart lock" },
+  { title: "Networking", href: "/services#networking", image: "/images/service-networking.jpg", alt: "Network switch with fiber connections" },
 ]
 
 function servicesFor(segment: Segment): ServiceCard[] {

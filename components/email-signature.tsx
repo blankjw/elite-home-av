@@ -33,10 +33,10 @@ export function EmailSignaturePanel({ html }: { html: string }) {
 
         <img
           src="/card/email-signature.png"
-          width={400}
-          height={220}
+          width={500}
+          height={150}
           alt="John Blank, Elite Home AV"
-          className="mt-6 w-full max-w-[400px] border border-[#262626]"
+          className="mt-6 w-full max-w-[500px] border border-[#262626]"
         />
 
         <div className="mt-6 flex flex-wrap items-center justify-between gap-3">

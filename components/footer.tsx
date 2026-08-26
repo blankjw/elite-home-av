@@ -62,15 +62,14 @@ export function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
             {/* Brand */}
             <div className="lg:col-span-2">
-              <a href="/" className="inline-flex items-center gap-3 mb-6">
+              <a href="/" className="inline-flex items-center mb-6" aria-label="Elite Home AV">
                 <img
-                  src="/images/logo-mark-light.png"
+                  src="/images/logo.png"
                   alt="Elite Home AV"
-                  width={96}
-                  height={72}
+                  width={112}
+                  height={110}
                   className="h-12 w-auto"
                 />
-                <span className="font-bebas text-2xl tracking-[0.15em] text-[#1E293B] leading-none">ELITE HOME AV</span>
               </a>
               <p className="text-[#64748B] max-w-md leading-relaxed mb-8">
                 Integrated audio, theater, lighting, surveillance, automation, networking, and access control for Southeast Texas homes and businesses.

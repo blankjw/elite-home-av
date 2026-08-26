@@ -26,17 +26,14 @@ export function Header() {
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between">
-          <a href="/" className="flex items-center gap-3 group">
+          <a href="/" className="flex items-center shrink-0" aria-label="Elite Home AV">
             <img
-              src="/images/logo-mark-light.png"
+              src="/images/logo.png"
               alt="Elite Home AV"
-              width={96}
-              height={72}
-              className="h-10 w-auto sm:h-12"
+              width={112}
+              height={110}
+              className="h-11 w-auto sm:h-12"
             />
-            <span className="font-bebas text-xl sm:text-2xl tracking-[0.12em] text-[#1E293B]">
-              ELITE HOME AV
-            </span>
           </a>
 
           {/* Desktop Navigation */}

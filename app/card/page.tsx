@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Globe, Mail, MapPin, MessageSquare, Phone, UserPlus } from 'lucide-react'
 import { CARD } from '@/lib/card'
 import { cardQrSvg, getLiveCardUrl } from '@/lib/qr'
-import { buildSignatureHtml } from '@/lib/signature'
+import { SIGNATURE_HTML } from '@/lib/signature'
 import { EmailSignaturePanel } from '@/components/email-signature'
 
 export const metadata: Metadata = {
@@ -163,7 +163,7 @@ export default async function CardPage() {
         </a>
       </article>
     </section>
-    <EmailSignaturePanel previewHtml={buildSignatureHtml('')} copyHtml={buildSignatureHtml()} />
+    <EmailSignaturePanel html={SIGNATURE_HTML} />
     </>
   )
 }

@@ -14,21 +14,21 @@ type ServiceCard = {
 }
 
 const residentialServices: ServiceCard[] = [
-  { title: "Home Audio", href: "/services#audio", image: "/images/service-audio.jpg", alt: "Upscale living room with in-ceiling speakers" },
-  { title: "Home Theater", href: "/services#theater", image: "/images/service-theater.jpg", alt: "Theater seating facing a projection screen" },
-  { title: "Lighting", href: "/services#lighting", image: "/images/service-lighting.jpg", alt: "Modern house at dusk with warm interior lighting" },
+  { title: "Home Audio", href: "/services#audio", image: "/images/service-audio.jpg", alt: "Residential media room with floor-standing speakers flanking a screen" },
+  { title: "Home Theater", href: "/services#theater", image: "/images/service-theater.jpg", alt: "Dedicated home theater with leather recliners and a projection screen" },
+  { title: "Lighting", href: "/services#lighting", image: "/images/service-lighting.jpg", alt: "House at night with landscape and path lighting" },
   { title: "Surveillance & Access", href: "/services#surveillance", image: "/images/service-surveillance.jpg", alt: "Residential driveway and entry" },
   { title: "Automation", href: "/services#automation", image: "/images/service-automation.jpg", alt: "Smartphone controlling a smart lock" },
-  { title: "Networking", href: "/services#networking", image: "/images/service-networking.jpg", alt: "Network rack with organized cabling" },
+  { title: "Networking", href: "/services#networking", image: "/images/service-networking.jpg", alt: "Front of rack-mounted network hardware" },
 ]
 
 const commercialServices: ServiceCard[] = [
-  { title: "Distributed Audio", href: "/services#audio", image: "/images/service-audio.jpg", alt: "Upscale living room with in-ceiling speakers" },
-  { title: "Presentation Spaces", href: "/services#theater", image: "/images/service-theater.jpg", alt: "Theater seating facing a projection screen" },
-  { title: "Lighting Control", href: "/services#lighting", image: "/images/service-lighting.jpg", alt: "Modern house at dusk with warm interior lighting" },
+  { title: "Distributed Audio", href: "/services#audio", image: "/images/service-audio.jpg", alt: "Residential media room with floor-standing speakers flanking a screen" },
+  { title: "Presentation Spaces", href: "/services#theater", image: "/images/service-theater.jpg", alt: "Dedicated home theater with leather recliners and a projection screen" },
+  { title: "Lighting Control", href: "/services#lighting", image: "/images/service-lighting.jpg", alt: "House at night with landscape and path lighting" },
   { title: "Surveillance & Access", href: "/services#surveillance", image: "/images/service-surveillance.jpg", alt: "Residential driveway and entry" },
   { title: "Automation", href: "/services#automation", image: "/images/service-automation.jpg", alt: "Smartphone controlling a smart lock" },
-  { title: "Networking", href: "/services#networking", image: "/images/service-networking.jpg", alt: "Network rack with organized cabling" },
+  { title: "Networking", href: "/services#networking", image: "/images/service-networking.jpg", alt: "Front of rack-mounted network hardware" },
 ]
 
 function servicesFor(segment: Segment): ServiceCard[] {

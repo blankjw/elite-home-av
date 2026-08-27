@@ -49,19 +49,16 @@ export function Footer() {
             <div className="lg:col-span-2">
               <Link
                 href="/"
-                className="inline-flex items-center gap-3 mb-6"
+                className="inline-flex items-center mb-6"
                 aria-label="Elite Home AV"
               >
                 <Image
-                  src="/images/logo-mark-light.png"
+                  src="/images/logo-lockup.jpg"
                   alt=""
-                  width={595}
-                  height={560}
-                  className="h-12 w-auto"
+                  width={1536}
+                  height={1024}
+                  className="h-[4.5rem] w-auto object-contain"
                 />
-                <span className="font-bebas text-[1.65rem] leading-none tracking-[0.14em] text-[#1E293B]">
-                  ELITE HOME AV
-                </span>
               </Link>
               <p className="text-[#64748B] max-w-md leading-relaxed mb-8">
                 Integrated audio, theater, lighting, surveillance, automation, networking, and access control for Southeast Texas homes and businesses.

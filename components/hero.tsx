@@ -5,7 +5,7 @@ import { PHONE_HREF } from "@/lib/site"
 
 export function Hero() {
   return (
-    <section className="relative mt-20 h-[calc(100svh-5rem)] min-h-[28rem] w-full overflow-hidden bg-[#1E293B]">
+    <section className="relative mt-24 h-[calc(100svh-6rem)] min-h-[28rem] w-full overflow-hidden bg-[#1E293B]">
       <Image
         src="/images/hero-living-room.jpg"
         alt="Modern residential living room"

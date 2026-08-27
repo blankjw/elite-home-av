@@ -10,24 +10,22 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 h-20 bg-white/95 backdrop-blur-md border-b border-[#D5DAE0]">
+    <header className="fixed top-0 left-0 right-0 z-50 h-24 bg-white/95 backdrop-blur-md border-b border-[#D5DAE0]">
       <div className="max-w-7xl mx-auto px-6 h-full">
         <div className="flex items-center justify-between h-full gap-4">
           <Link
             href="/"
-            className="flex items-center gap-3 shrink-0 min-w-0"
+            className="flex items-center shrink-0"
             aria-label="Elite Home AV"
           >
             <Image
-              src="/images/logo-mark-light.png"
+              src="/images/logo-lockup.jpg"
               alt=""
-              width={595}
-              height={560}
-              className="h-11 w-auto"
+              width={1536}
+              height={1024}
+              priority
+              className="h-[4.5rem] w-auto object-contain"
             />
-            <span className="font-bebas text-[1.35rem] sm:text-[1.65rem] leading-none tracking-[0.12em] sm:tracking-[0.14em] text-[#1E293B] whitespace-nowrap">
-              ELITE HOME AV
-            </span>
           </Link>
 
           <nav className="hidden lg:block" aria-label="Primary">
@@ -82,7 +80,7 @@ export function Header() {
 
         <div
           id="mobile-nav"
-          className={`lg:hidden absolute top-20 left-0 right-0 bg-white/95 backdrop-blur-xl border-b border-[#D5DAE0] overflow-hidden transition-[max-height,opacity] duration-300 ${
+          className={`lg:hidden absolute top-24 left-0 right-0 bg-white/95 backdrop-blur-xl border-b border-[#D5DAE0] overflow-hidden transition-[max-height,opacity] duration-300 ${
             isMenuOpen ? "max-h-[480px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
           }`}
         >

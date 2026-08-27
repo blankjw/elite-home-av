@@ -14,21 +14,21 @@ type ServiceCard = {
 }
 
 const residentialServices: ServiceCard[] = [
-  { title: "Home Audio", href: "/services#audio", image: "/images/service-audio.jpg", alt: "Bookshelf speaker" },
-  { title: "Home Theater", href: "/services#theater", image: "/images/service-theater.jpg", alt: "Living room with a large flat-screen TV on a floating console" },
+  { title: "Home Audio", href: "/services#audio", image: "/images/service-audio.jpg", alt: "Upscale living room with in-ceiling speakers" },
+  { title: "Home Theater", href: "/services#theater", image: "/images/service-theater.jpg", alt: "Theater seating facing a projection screen" },
   { title: "Lighting", href: "/services#lighting", image: "/images/service-lighting.jpg", alt: "Modern house at dusk with warm interior lighting" },
-  { title: "Surveillance & Access", href: "/services#surveillance", image: "/images/service-surveillance.jpg", alt: "Outdoor security cameras" },
+  { title: "Surveillance & Access", href: "/services#surveillance", image: "/images/service-surveillance.jpg", alt: "Residential driveway and entry" },
   { title: "Automation", href: "/services#automation", image: "/images/service-automation.jpg", alt: "Smartphone controlling a smart lock" },
-  { title: "Networking", href: "/services#networking", image: "/images/service-networking.jpg", alt: "Network switch with fiber connections" },
+  { title: "Networking", href: "/services#networking", image: "/images/service-networking.jpg", alt: "Network rack with organized cabling" },
 ]
 
 const commercialServices: ServiceCard[] = [
-  { title: "Distributed Audio", href: "/services#audio", image: "/images/service-audio.jpg", alt: "Bookshelf speaker" },
-  { title: "Presentation Spaces", href: "/services#theater", image: "/images/service-theater.jpg", alt: "Living room with a large flat-screen TV on a floating console" },
+  { title: "Distributed Audio", href: "/services#audio", image: "/images/service-audio.jpg", alt: "Upscale living room with in-ceiling speakers" },
+  { title: "Presentation Spaces", href: "/services#theater", image: "/images/service-theater.jpg", alt: "Theater seating facing a projection screen" },
   { title: "Lighting Control", href: "/services#lighting", image: "/images/service-lighting.jpg", alt: "Modern house at dusk with warm interior lighting" },
-  { title: "Surveillance & Access", href: "/services#surveillance", image: "/images/service-surveillance.jpg", alt: "Outdoor security cameras" },
+  { title: "Surveillance & Access", href: "/services#surveillance", image: "/images/service-surveillance.jpg", alt: "Residential driveway and entry" },
   { title: "Automation", href: "/services#automation", image: "/images/service-automation.jpg", alt: "Smartphone controlling a smart lock" },
-  { title: "Networking", href: "/services#networking", image: "/images/service-networking.jpg", alt: "Network switch with fiber connections" },
+  { title: "Networking", href: "/services#networking", image: "/images/service-networking.jpg", alt: "Network rack with organized cabling" },
 ]
 
 function servicesFor(segment: Segment): ServiceCard[] {

@@ -7,16 +7,8 @@ type Solution = (typeof SOLUTIONS)[number]
 export function SolutionDetail({ solution }: { solution: Solution }) {
   return (
     <article className="min-h-screen">
-      <section className="relative min-h-[min(72svh,720px)] overflow-hidden pt-28">
-        <img src={solution.image} alt={solution.imageLabel} className="absolute inset-0 h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#05111ee6] via-[#05111ecc] to-[#05111e33]" />
-        <div className="relative mx-auto flex min-h-[min(72svh,720px)] max-w-7xl flex-col justify-end px-6 pb-14 pt-16 md:px-10">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#E2C68D]">Solutions</p>
-          <h1 className="mt-4 max-w-xl font-serif text-[clamp(2rem,4vw,3.4rem)] leading-[1.08] tracking-[-0.04em] text-white">{solution.title}</h1>
-          <p className="mt-4 max-w-md text-sm leading-7 text-[#E0E5E9]">{solution.summary}</p>
-          <p className="mt-6 text-[10px] uppercase tracking-[0.16em] text-[#B8C3CF]">{solution.imageLabel}</p>
-        </div>
-      </section>
+      <section className="solution-top"><div className="e-shell"><div><p className="e-kicker"><Link href="/services">Solutions</Link> / {solution.title}</p><h1>{solution.title}</h1></div><p>{solution.summary}</p></div></section>
+      <figure className="solution-banner"><img src={solution.image} alt={solution.imageAlt} width={1536} height={1024} fetchPriority="high" loading="eager"/><figcaption>{solution.imageLabel}</figcaption></figure>
 
       <section className="bg-[#F7F9FC] px-6 py-16 text-[#0B1526] md:px-10 md:py-24">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2">

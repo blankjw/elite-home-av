@@ -9,8 +9,8 @@ type PageHeroProps = {
 
 export function PageHero({ label, title, description, children }: PageHeroProps) {
   return (
-    <section className="border-b border-[#31445A] pt-40 pb-16 md:pb-20">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="page-hero">
+      <div className="e-shell">
         <div className={children ? "grid lg:grid-cols-2 gap-12 items-start" : "max-w-3xl"}>
           <div>
             {label ? <p className="eyebrow mb-4">{label}</p> : null}

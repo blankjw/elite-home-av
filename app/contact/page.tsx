@@ -26,8 +26,8 @@ export default function ContactPage() {
         </div>
       </PageHero>
 
-      <section className="pb-24">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
+      <section className="contact-body">
+        <div className="e-shell grid lg:grid-cols-2 gap-12">
           <div className="space-y-8 text-sm">
             <div className="space-y-4">
               <div>

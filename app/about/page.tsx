@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { PageHero } from "@/components/page-hero"
 import { SiteCta } from "@/components/site-cta"
+import { BrandLockup } from "@/components/brand-lockup"
 import { CONTACT } from "@/lib/site"
 
 export const metadata: Metadata = {
@@ -61,10 +62,7 @@ export default function AboutPage() {
       <section className="bg-[#071525] px-6 py-16 md:px-10">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center">
           <p className="max-w-md text-lg leading-8 text-[#C3CCD7]">We are the installer and the person who still knows the property later. Rooms that feel finished. Systems that stay out of the way.</p>
-          <figure className="w-full max-w-xl overflow-hidden border border-[#31445A]">
-            <img src="/images/concepts/concealed-keypad-dusk-1536.webp" alt="Illustrative finished room with quiet wall control" className="w-full object-cover" />
-            <figcaption className="px-4 py-3 text-[10px] uppercase tracking-[0.18em] text-[#B8C3CF]">Design inspiration</figcaption>
-          </figure>
+          <div className="e-about-mark"><BrandLockup variant="hero" linked={false}/></div>
         </div>
       </section>
 

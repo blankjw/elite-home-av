@@ -1,0 +1,96 @@
+export const SOLUTIONS = [
+  {
+    slug: "audio",
+    title: "Home audio",
+    summary: "Music that follows you through the rooms you live in, without a pile of speakers in the way.",
+    body: "We plan speakers, amplification, and control so rooms sound right and stay simple to operate.",
+    image: "/images/concepts/audio-living-dusk.png",
+    imageLabel: "Design inspiration",
+    outcomes: [
+      "Clear, even sound in the rooms you use most",
+      "Speaker placement that respects both the architecture and the listening positions",
+      "Indoor and outdoor zones you can run together or separately",
+    ],
+    small: "A pair of rooms, a patio, or replacing a noisy soundbar without opening the whole house.",
+    whole: "Distributed audio across living, kitchen, suites, and exterior, tied to the same control and network as lighting.",
+  },
+  {
+    slug: "theater",
+    title: "Home theater",
+    summary: "A night in that feels like a theater, in a room that still looks like a room.",
+    body: "We design the display, sound, lighting, and concealment together so the media wall belongs to the architecture.",
+    image: "/images/concepts/theater-media-room.png",
+    imageLabel: "Design inspiration",
+    outcomes: [
+      "A display and seating plan that fits the room, not a catalog bundle",
+      "Sound that stays in the space instead of rattling the house",
+      "Cabling and equipment out of the architecture",
+    ],
+    small: "A living-room display with clean wiring and one remote path.",
+    whole: "A dedicated media room with lighting scenes, shading, and audio that share the property backbone.",
+  },
+  {
+    slug: "lighting",
+    title: "Lighting",
+    summary: "Light that matches the hour and the way you use the space.",
+    body: "Scenes and keypads belong in the architecture. We specify control that stays simple after handover.",
+    image: "/images/concepts/lighting-living-dusk.png",
+    imageLabel: "Design inspiration",
+    outcomes: [
+      "Keypads and scenes named for how you use the room",
+      "Day-to-evening light that does not require a phone",
+      "Loads and panels documented for later service",
+    ],
+    small: "A kitchen, suite, or entry with a few reliable scenes.",
+    whole: "Whole-property lighting that shares control with shades, audio, and security.",
+  },
+  {
+    slug: "surveillance",
+    title: "Surveillance & access control",
+    summary: "Arrive and leave knowing the door and the approach are handled.",
+    body: "Protection is designed with the rest of the property so it is usable, not noisy.",
+    image: "/images/concepts/surveillance-entry.png",
+    imageLabel: "Design inspiration",
+    outcomes: [
+      "Views of the approaches that matter, not a wall of unused cameras",
+      "Doors and gates that match how people actually arrive",
+      "Recording and access on the same network as the rest of the house",
+    ],
+    small: "A driveway, porch, and primary door with a clear live view.",
+    whole: "Property-wide cameras and access planned with lighting and networking so nothing is an add-on island.",
+  },
+  {
+    slug: "automation",
+    title: "Automation",
+    summary: "One or two buttons for the routines you already have.",
+    body: "Automation should reduce steps, not add apps. We program the scenes you will actually use.",
+    image: "/images/concepts/concealed-keypad-dusk.png",
+    imageLabel: "Design inspiration",
+    outcomes: [
+      "Leave, arrive, and evening scenes that do one job each",
+      "Control that still works if a phone is not in your hand",
+      "Fewer overlapping apps after handover",
+    ],
+    small: "A handful of scenes for the rooms you live in every day.",
+    whole: "Lighting, climate, shades, audio, and protection sharing one control language.",
+  },
+  {
+    slug: "networking",
+    title: "Networking & integration",
+    summary: "The house stays connected so everything else can stay quiet.",
+    body: "We treat Wi-Fi, switching, and the rack as the quiet backbone of the house.",
+    image: "/images/concepts/networking-rack.png",
+    imageLabel: "Design inspiration",
+    outcomes: [
+      "Coverage where people sit, work, and gather",
+      "A rack and wiring path that can be serviced later",
+      "Cameras, audio, and control on a planned network—not consumer mesh leftovers",
+    ],
+    small: "Reliable Wi-Fi and a clean equipment location for a single wing.",
+    whole: "Wired backbone, wireless, and rack design for the entire property.",
+  },
+] as const
+
+export function solutionBySlug(slug: string) {
+  return SOLUTIONS.find((s) => s.slug === slug) || null
+}

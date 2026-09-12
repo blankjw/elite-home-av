@@ -18,7 +18,7 @@ export const CONTACT = {
 
 export const NAV_LINKS = [
   ["Solutions", "/services"],
-  ["Our Approach", "/gallery"],
+  ["Our Work", "/gallery"],
   ["ELITE Care", "/care"],
   ["About", "/about"],
   ["Contact", "/contact"],

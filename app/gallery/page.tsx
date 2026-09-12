@@ -1,11 +1,55 @@
 import type { Metadata } from "next"
+import Link from "next/link"
+import { ArrowUpRight } from "lucide-react"
 import { PageHero } from "@/components/page-hero"
 import { SiteCta } from "@/components/site-cta"
-export const metadata: Metadata = { title: "Our Approach | Elite Home AV", description: "See how Elite Home AV plans technology from the first conversation through installation and support for homes and businesses across Southeast Texas.", alternates: { canonical: "https://www.elitehomeav.com/gallery" } }
-const steps = [
- ["Begin with your day", "Tell us where technology gets in the way. A room that is difficult to use, an unreliable connection, or a new space taking shape gives us a concrete place to start."],
- ["Agree on the scope", "We discuss the rooms, equipment, installation needs, and priorities together. You can start with one improvement or plan several systems around the same property."],
- ["Plan for the finished space", "Equipment placement, wiring paths, access for service, and the way you control the system all matter. We work through those details before they become inconveniences."],
- ["Make the handoff usable", "Installation is only part of the work. We walk through how the system operates and how to reach ELITE when you need help or want to make a change."]
-]
-export default function Approach(){ return <><PageHero label="Our approach" title="A clear plan. A space that works for you." description="Work directly with John Blank, from the first conversation through installation and handoff. Based in Lumberton, serving homes and businesses across Southeast Texas."/><section className="bg-[#F7F9FC] px-6 py-16 text-[#0B1526] md:py-24"><div className="mx-auto max-w-7xl"><div className="grid gap-x-16 gap-y-12 md:grid-cols-2">{steps.map(([title,copy])=><article key={title} className="border-t border-[#AAB6C5] pt-6"><h2 className="font-serif text-3xl tracking-tight">{title}</h2><p className="mt-5 max-w-lg text-sm leading-7 text-[#405165]">{copy}</p></article>)}</div><div className="mt-16 border-t border-[#AAB6C5] pt-8"><SiteCta href="/contact" variant="solid">Discuss your space</SiteCta></div></div></section></> }
+import { CASE_STUDIES } from "@/lib/case-studies"
+
+export const metadata: Metadata = {
+  title: "Our Work | Elite Home AV",
+  description: "See how Elite Home AV approaches integrated technology projects for homes and businesses across Southeast Texas.",
+  alternates: { canonical: "https://www.elitehomeav.com/gallery" },
+}
+
+const principles = [
+  ["Constraint", "Start with the architecture, construction stage, daily frustrations, and decisions that cannot be deferred."],
+  ["Thinking", "Coordinate the systems as one property instead of treating audio, lighting, security, and networking as separate purchases."],
+  ["Execution", "Protect clean pathways, service access, documentation, and a handoff that makes sense after the tools leave."],
+  ["Everyday result", "Technology should feel settled into the space: straightforward to use, reliable, and ready to change with the property."],
+] as const
+
+const reviewEnabled = process.env.PORTFOLIO_REVIEW === "1"
+
+export default function WorkPage() {
+  return <>
+    <PageHero label="Our work" title="The work is quiet. The difference is not." description="The strongest technology projects begin with careful decisions beneath the finished space. Our project stories show the constraint, the thinking, the execution, and what the customer should notice every day." />
+    <section className="e-section e-paper work-method" aria-labelledby="work-method-title">
+      <div className="e-shell">
+        <div className="e-section-heading">
+          <div><p className="e-kicker">Under the Surface</p><h2 id="work-method-title">A useful project story starts below the finish.</h2></div>
+          <p>Not a wall of equipment photos. Each case study is built around the choices that made the completed space more dependable, more intuitive, and easier to support.</p>
+        </div>
+        <div className="work-principles">
+          {principles.map(([title, copy]) => <article key={title}><h3>{title}</h3><p>{copy}</p></article>)}
+        </div>
+      </div>
+    </section>
+    <section className="e-section work-index" aria-labelledby="work-index-title">
+      <div className="e-shell">
+        <div className="e-section-heading">
+          <div><p className="e-kicker">Field stories</p><h2 id="work-index-title">Real work, shared deliberately.</h2></div>
+          <p>Customer privacy comes first. Project stories use general locations, approved photography, and only the details needed to explain the value of the work.</p>
+        </div>
+        {reviewEnabled ? <div className="work-review-list">
+          {CASE_STUDIES.map((study) => <Link key={study.slug} href={`/gallery/${study.slug}`} className="work-review-card">
+            <div className="work-linework" aria-hidden="true"><span/><span/><span/><span/></div>
+            <div><p className="e-kicker">Private review · {study.status}</p><h3>{study.title}</h3><p>{study.summary}</p><span className="e-text-link">Review the case-study structure <ArrowUpRight size={18}/></span></div>
+          </Link>)}
+        </div> : <div className="work-hold">
+          <div className="work-linework" aria-hidden="true"><span/><span/><span/><span/></div>
+          <div><p className="e-kicker">In preparation</p><h3>Project stories are being reviewed with the same care as the work itself.</h3><p>We are assembling the first ELITE field stories with approved project details and privacy-reviewed photography. Until then, explore how we plan and support an integrated property.</p><SiteCta href="/services" variant="solid">Explore solutions</SiteCta></div>
+        </div>}
+      </div>
+    </section>
+  </>
+}

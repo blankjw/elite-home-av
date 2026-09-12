@@ -34,6 +34,11 @@ All new assets under public/images/editorial, built-in Codex subscription image 
 - Entry: retained existing conceptual entry visual, surveillance capability only.
 Consistent navigation-to-detail reuse is deliberate; no duplicate prominent scenes within a page.
 
+## Project-story system
+`/gallery` is the public **Our Work** index and explains the Under the Surface story model: constraint, thinking, execution, and everyday result. Case-study data lives in `lib/case-studies.ts` so additional grounded stories can reuse one structure without duplicating page markup.
+
+Unapproved case studies remain behind `PORTFOLIO_REVIEW=1`. Review routes use generic locations, no client identifiers, no private media, `noindex,nofollow`, and stay out of the sitemap; the normal production configuration returns 404. Approved photography replaces the architectural media slots only after the client-media publication gate is complete. In-progress stories must label future outcomes as intended results rather than completed claims.
+
 ## Interaction / accessibility
 Visible double-contrast keyboard focus; active desktop/mobile navigation; menu expanded/control semantics, Escape dismissal and focus return, route-close behavior. Native link semantics throughout. Minimum44px mobile controls. No hover-only content. Real Formspree endpoint and intent handling retained; test via intercepted requests without sending emails. Semantic headings and landmarks. No new portal/demo routes.
 

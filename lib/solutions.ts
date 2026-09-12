@@ -6,7 +6,6 @@ export const SOLUTIONS = [
     body: "We plan speakers, amplification, and control so rooms sound right and stay simple to operate.",
     image: "/images/editorial/outdoor-1536.webp",
     imageAlt: "Generated outdoor audio concept with a garden speaker beside a sunlit terrace",
-    imageLabel: "AI-generated design concept",
     outcomes: [
       "Clear, even sound in the rooms you use most",
       "Speaker placement that respects both the architecture and the listening positions",
@@ -22,7 +21,6 @@ export const SOLUTIONS = [
     body: "We design the display, sound, lighting, and concealment together so the media wall belongs to the architecture.",
     image: "/images/editorial/cinema-1536.webp",
     imageAlt: "Generated private cinema concept with acoustic walls and leather seating",
-    imageLabel: "AI-generated design concept",
     outcomes: [
       "A display and seating plan that fits the room, not a catalog bundle",
       "Sound that stays in the space instead of rattling the house",
@@ -38,7 +36,6 @@ export const SOLUTIONS = [
     body: "Scenes and keypads belong in the architecture. We specify control that stays simple after handover.",
     image: "/images/editorial/lighting-1536.webp",
     imageAlt: "Generated dining room concept with layered architectural lighting",
-    imageLabel: "AI-generated design concept",
     outcomes: [
       "Keypads and scenes named for how you use the room",
       "Day-to-evening light that does not require a phone",
@@ -54,7 +51,6 @@ export const SOLUTIONS = [
     body: "Protection is designed with the rest of the property so it is usable, not noisy.",
     image: "/images/editorial/entry.webp",
     imageAlt: "Generated entry concept with an open architectural door",
-    imageLabel: "AI-generated design concept",
     outcomes: [
       "Views of the approaches that matter, not a wall of unused cameras",
       "Doors and gates that match how people actually arrive",
@@ -70,7 +66,6 @@ export const SOLUTIONS = [
     body: "Automation should reduce steps, not add apps. We program the scenes you will actually use.",
     image: "/images/editorial/control-1536.webp",
     imageAlt: "Generated close-up of a bronze physical control on a stone wall",
-    imageLabel: "AI-generated design concept",
     outcomes: [
       "Leave, arrive, and evening scenes that do one job each",
       "Control that still works if a phone is not in your hand",
@@ -86,7 +81,6 @@ export const SOLUTIONS = [
     body: "We treat Wi-Fi, switching, and the rack as the quiet backbone of the house.",
     image: "/images/editorial/network-1536.webp",
     imageAlt: "Generated network equipment detail with carefully routed blue cabling",
-    imageLabel: "AI-generated design concept",
     outcomes: [
       "Coverage where people sit, work, and gather",
       "A rack and wiring path that can be serviced later",

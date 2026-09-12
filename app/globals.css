@@ -414,7 +414,7 @@ button { cursor:pointer; }
 .arrival-intro>p { color:var(--e-silver);font-size:14px;line-height:1.9;margin-bottom:25px; }
 .arrival-figure { position:relative; }
 .arrival-figure>img { width:100%;height:clamp(380px,39vw,590px);object-fit:cover;object-position:50% 58%; }
-.arrival-figure figcaption { display:flex;justify-content:space-between;align-items:center;gap:20px;padding:15px var(--e-gutter);font-size:10px;color:var(--e-silver);letter-spacing:.07em;max-width:1440px;margin:auto; }
+.arrival-figure figcaption { display:flex;justify-content:flex-end;align-items:center;gap:20px;padding:15px var(--e-gutter);font-size:10px;color:var(--e-silver);letter-spacing:.07em;max-width:1440px;margin:auto; }
 .arrival-figure figcaption a { display:inline-flex;gap:15px;align-items:center;min-height:24px; }
 #possibilities { scroll-margin-top:90px; }
 .e-section-heading { display:grid;grid-template-columns:1fr .55fr;gap:40px;align-items:end;margin-bottom:44px; }

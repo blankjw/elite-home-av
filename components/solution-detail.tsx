@@ -8,7 +8,7 @@ export function SolutionDetail({ solution }: { solution: Solution }) {
   return (
     <article className="min-h-screen">
       <section className="solution-top"><div className="e-shell"><div><p className="e-kicker"><Link href="/services">Solutions</Link> / {solution.title}</p><h1>{solution.title}</h1></div><p>{solution.summary}</p></div></section>
-      <figure className="solution-banner"><img src={solution.image} alt={solution.imageAlt} width={1536} height={1024} fetchPriority="high" loading="eager"/><figcaption>{solution.imageLabel}</figcaption></figure>
+      <figure className="solution-banner"><img src={solution.image} alt={solution.imageAlt} width={1536} height={1024} fetchPriority="high" loading="eager"/></figure>
 
       <section className="bg-[#F7F9FC] px-6 py-16 text-[#0B1526] md:px-10 md:py-24">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2">

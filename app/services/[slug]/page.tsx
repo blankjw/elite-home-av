@@ -11,7 +11,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params
   const solution = solutionBySlug(slug)
   if (!solution) return {}
-  return { title: `${solution.title} | Elite Home AV`, description: solution.summary }
+  return {
+    title: `${solution.title} in Southeast Texas | ELITE`,
+    description: solution.seoDescription,
+    alternates: { canonical: `https://www.elitehomeav.com/services/${solution.slug}` },
+  }
 }
 
 export default async function SolutionPage({ params }: { params: Promise<{ slug: string }> }) {

@@ -8,7 +8,7 @@ import { CONTACT } from "@/lib/site"
 export const metadata: Metadata = {
   title: "About Elite Home AV | Lumberton, TX",
   description:
-    "A local team that plans technology so homes and businesses in Southeast Texas feel simple to live and work in.",
+    "Meet Elite Home AV in Lumberton, serving Beaumont and Southeast Texas with integrated technology designed around how homes and businesses actually work.",
   alternates: { canonical: "https://www.elitehomeav.com/about" },
 }
 

@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { PageHero } from "@/components/page-hero"
 import { SiteCta } from "@/components/site-cta"
-export const metadata: Metadata = { title: "Our Approach | Elite Home AV", description: "From the first conversation with John Blank to installation and ongoing support: how ELITE approaches your home or business.", alternates: { canonical: "https://www.elitehomeav.com/gallery" } }
+export const metadata: Metadata = { title: "Our Approach | Elite Home AV", description: "See how Elite Home AV plans technology from the first conversation through installation and support for homes and businesses across Southeast Texas.", alternates: { canonical: "https://www.elitehomeav.com/gallery" } }
 const steps = [
  ["Begin with your day", "Tell us where technology gets in the way. A room that is difficult to use, an unreliable connection, or a new space taking shape gives us a concrete place to start."],
  ["Agree on the scope", "We discuss the rooms, equipment, installation needs, and priorities together. You can start with one improvement or plan several systems around the same property."],

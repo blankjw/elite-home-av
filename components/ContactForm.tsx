@@ -2,6 +2,7 @@
 
 import { FormEvent, Suspense, useState } from "react"
 import { useSearchParams } from "next/navigation"
+import { track } from "@vercel/analytics"
 import { SiteCta } from "@/components/site-cta"
 import { CONTACT } from "@/lib/site"
 
@@ -41,8 +42,13 @@ function ContactFormInner() {
         body: JSON.stringify(formData),
       })
       if (!res.ok) throw new Error("Submission failed")
+      track("contact_form_submitted", {
+        intent: formData.intent,
+        service: formData.service,
+      })
       setStatus("saved")
     } catch {
+      track("contact_form_error", { intent: formData.intent })
       setStatus("error")
     }
   }

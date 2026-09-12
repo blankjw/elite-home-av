@@ -5,7 +5,7 @@ export const SOLUTIONS = [
     summary: "Music that follows you through the rooms you live in, without a pile of speakers in the way.",
     body: "We plan speakers, amplification, and control so rooms sound right and stay simple to operate.",
     image: "/images/editorial/outdoor-1536.webp",
-    imageAlt: "Generated outdoor audio concept with a garden speaker beside a sunlit terrace",
+    imageAlt: "Garden speaker beside a sunlit terrace",
     outcomes: [
       "Clear, even sound in the rooms you use most",
       "Speaker placement that respects both the architecture and the listening positions",
@@ -20,7 +20,7 @@ export const SOLUTIONS = [
     summary: "A night in that feels like a theater, in a room that still looks like a room.",
     body: "We design the display, sound, lighting, and concealment together so the media wall belongs to the architecture.",
     image: "/images/editorial/cinema-1536.webp",
-    imageAlt: "Generated private cinema concept with acoustic walls and leather seating",
+    imageAlt: "Private cinema with acoustic walls and leather seating",
     outcomes: [
       "A display and seating plan that fits the room, not a catalog bundle",
       "Sound that stays in the space instead of rattling the house",
@@ -35,7 +35,7 @@ export const SOLUTIONS = [
     summary: "Light that matches the hour and the way you use the space.",
     body: "Scenes and keypads belong in the architecture. We specify control that stays simple after handover.",
     image: "/images/editorial/lighting-1536.webp",
-    imageAlt: "Generated dining room concept with layered architectural lighting",
+    imageAlt: "Dining room with layered architectural lighting",
     outcomes: [
       "Keypads and scenes named for how you use the room",
       "Day-to-evening light that does not require a phone",
@@ -50,7 +50,7 @@ export const SOLUTIONS = [
     summary: "Arrive and leave knowing the door and the approach are handled.",
     body: "Protection is designed with the rest of the property so it is usable, not noisy.",
     image: "/images/editorial/entry.webp",
-    imageAlt: "Generated entry concept with an open architectural door",
+    imageAlt: "Architectural entry with an open door",
     outcomes: [
       "Views of the approaches that matter, not a wall of unused cameras",
       "Doors and gates that match how people actually arrive",
@@ -65,7 +65,7 @@ export const SOLUTIONS = [
     summary: "One or two buttons for the routines you already have.",
     body: "Automation should reduce steps, not add apps. We program the scenes you will actually use.",
     image: "/images/editorial/control-1536.webp",
-    imageAlt: "Generated close-up of a bronze physical control on a stone wall",
+    imageAlt: "Bronze physical control on a stone wall",
     outcomes: [
       "Leave, arrive, and evening scenes that do one job each",
       "Control that still works if a phone is not in your hand",
@@ -80,7 +80,7 @@ export const SOLUTIONS = [
     summary: "The house stays connected so everything else can stay quiet.",
     body: "We treat Wi-Fi, switching, and the rack as the quiet backbone of the house.",
     image: "/images/editorial/network-1536.webp",
-    imageAlt: "Generated network equipment detail with carefully routed blue cabling",
+    imageAlt: "Network equipment with carefully routed blue cabling",
     outcomes: [
       "Coverage where people sit, work, and gather",
       "A rack and wiring path that can be serviced later",

@@ -36,7 +36,7 @@ function ContactFormInner() {
     e.preventDefault()
     setStatus("submitting")
     try {
-      const res = await fetch("https://formspree.io/f/myknwglq", {
+      const res = await fetch("https://formspree.io/f/mkjnaddb", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
         body: JSON.stringify(formData),

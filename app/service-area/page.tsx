@@ -1,13 +1,14 @@
 import type { Metadata } from "next"
+import { pageMetadata } from "@/lib/seo"
 import Link from "next/link"
 import { ArrowUpRight, Building2, Home, MapPin } from "lucide-react"
 import { PageHero } from "@/components/page-hero"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Home Technology in Lumberton & Beaumont | ELITE",
-  description: "Elite Home AV plans, installs, and supports integrated technology for homes and businesses in Lumberton, Beaumont, and across Southeast Texas. Talk with John.",
-  alternates: { canonical: "https://www.elitehomeav.com/service-area" },
-}
+  description: "Elite Home AV plans, installs, and supports integrated technology for homes and businesses in Lumberton, Beaumont, and across Southeast Texas.",
+  path: "/service-area",
+})
 
 const areas = [
   {

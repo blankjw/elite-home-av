@@ -1,16 +1,17 @@
 import type { Metadata } from "next"
+import { pageMetadata } from "@/lib/seo"
 import Link from "next/link"
 import { PageHero } from "@/components/page-hero"
 import { SiteCta } from "@/components/site-cta"
 import { BrandLockup } from "@/components/brand-lockup"
 import { CONTACT } from "@/lib/site"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "About Elite Home AV | Lumberton, TX",
   description:
     "Meet Elite Home AV in Lumberton, serving Beaumont and Southeast Texas with integrated technology designed around how homes and businesses actually work.",
-  alternates: { canonical: "https://www.elitehomeav.com/about" },
-}
+  path: "/about",
+})
 
 const trades = [
   { name: "Home audio", slug: "audio" },

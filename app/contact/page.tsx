@@ -1,14 +1,15 @@
 import type { Metadata } from "next"
+import { pageMetadata } from "@/lib/seo"
 import ContactForm from "@/components/ContactForm"
 import { PageHero } from "@/components/page-hero"
 import { CONTACT } from "@/lib/site"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Contact Elite Home AV | (409) 790-7889",
   description:
     "Call or contact Elite Home AV LLC in Lumberton, TX. Serving Beaumont, Port Arthur, Galveston & all of SE Texas. (409) 790-7889 | john@elitehomeav.com",
-  alternates: { canonical: "https://www.elitehomeav.com/contact" },
-}
+  path: "/contact",
+})
 
 export default function ContactPage() {
   return (

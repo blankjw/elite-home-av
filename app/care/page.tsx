@@ -1,12 +1,13 @@
 import Link from "next/link"
+import { pageMetadata } from "@/lib/seo"
 import { ArrowUpRight, HeartHandshake, Radar, ShieldCheck, Wrench } from "lucide-react"
 import type { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Technology Support & Maintenance | ELITE Care",
-  description: "ELITE Care provides documented technology support, planned system checkups, and service options for homes and businesses in Southeast Texas. Learn more.",
-  alternates: { canonical: "https://www.elitehomeav.com/care" },
-}
+  description: "ELITE Care provides documented technology support, planned system checkups, and service options for homes and businesses in Southeast Texas.",
+  path: "/care",
+})
 
 const pillars = [
   [ShieldCheck, "Keep the system documented", "Handoff notes, equipment records, and a support path shaped around what was installed—not a generic script."],

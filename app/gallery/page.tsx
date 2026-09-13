@@ -1,15 +1,16 @@
 import type { Metadata } from "next"
+import { pageMetadata } from "@/lib/seo"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 import { PageHero } from "@/components/page-hero"
 import { SiteCta } from "@/components/site-cta"
 import { CASE_STUDIES } from "@/lib/case-studies"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Our Work | Elite Home AV",
   description: "See how Elite Home AV approaches integrated technology projects for homes and businesses across Southeast Texas.",
-  alternates: { canonical: "https://www.elitehomeav.com/gallery" },
-}
+  path: "/gallery",
+})
 
 const principles = [
   ["Constraint", "Start with the architecture, construction stage, daily frustrations, and decisions that cannot be deferred."],

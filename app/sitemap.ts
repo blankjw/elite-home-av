@@ -14,6 +14,8 @@ const routes: ReadonlyArray<readonly [string, number]> = [
   ['/services/automation', 0.8],
   ['/services/networking', 0.8],
   ['/service-area', 0.8],
+  ['/service-area/lumberton', 0.7],
+  ['/service-area/beaumont', 0.7],
   ['/gallery', 0.7],
   ['/care', 0.8],
   ['/about', 0.6],

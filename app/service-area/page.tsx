@@ -10,15 +10,22 @@ export const metadata: Metadata = pageMetadata({
   path: "/service-area",
 })
 
-const areas = [
+const areas: ReadonlyArray<{
+  icon: typeof Home
+  title: string
+  copy: string
+  href?: string
+}> = [
   {
     icon: Home,
     title: "Lumberton",
+    href: "/service-area/lumberton",
     copy: "ELITE is based in Lumberton. We help homeowners bring audio, lighting, theater, surveillance, automation, and reliable networking together without making daily life more complicated.",
   },
   {
     icon: Building2,
     title: "Beaumont",
+    href: "/service-area/beaumont",
     copy: "For Beaumont homes and businesses, we plan the visible experience and the infrastructure behind it as one system—from a single-room improvement to a complete property.",
   },
   {
@@ -26,7 +33,7 @@ const areas = [
     title: "Southeast Texas",
     copy: "Our wider service area includes Southeast Texas communities where a local, accountable technology partner matters before, during, and after installation.",
   },
-] as const
+]
 
 export default function ServiceAreaPage() {
   return <>
@@ -38,9 +45,11 @@ export default function ServiceAreaPage() {
     <section className="bg-[#F7F9FC] px-6 py-20 text-[#0B1526] md:px-10 md:py-28">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-8 md:grid-cols-3">
-          {areas.map(({ icon: Icon, title, copy }) => <article key={title} className="border-t border-[#AAB6C5] pt-6">
+          {areas.map(({ icon: Icon, title, copy, href }) => <article key={title} className="border-t border-[#AAB6C5] pt-6">
             <Icon className="h-6 w-6 text-[#245DC1]" />
-            <h2 className="mt-8 text-2xl font-semibold">{title}</h2>
+            <h2 className="mt-8 text-2xl font-semibold">
+              {href ? <Link href={href} className="inline-flex items-center gap-2">{title}<ArrowUpRight className="h-4 w-4" /></Link> : title}
+            </h2>
             <p className="mt-4 text-sm leading-7 text-[#526274]">{copy}</p>
           </article>)}
         </div>

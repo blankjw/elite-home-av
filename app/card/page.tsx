@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { Globe, Mail, MapPin, MessageSquare, Phone, UserPlus } from 'lucide-react'
 import { CARD } from '@/lib/card'
 import { cardQrSvg, getLiveCardUrl } from '@/lib/qr'
@@ -56,10 +57,15 @@ export default async function CardPage() {
       />
 
       <article className="relative w-full max-w-md text-center">
-        <p className="font-bebas text-2xl tracking-[0.12em] text-white sm:text-3xl">
-          ELITE HOME <span className="text-[#E8521A]">AV</span>
-        </p>
-        <div className="mx-auto mt-4 h-px w-16 bg-[#E8521A]" />
+        <Image
+          src="/images/logo.png"
+          alt="Elite Home AV LLC"
+          width={280}
+          height={280}
+          className="mx-auto h-auto w-full max-w-[220px] sm:max-w-[260px]"
+          priority
+        />
+        <div className="mx-auto mt-5 h-px w-16 bg-[#E8521A]" />
 
         <h1 className="mt-10 font-bebas text-5xl leading-none tracking-tight text-white sm:text-6xl">
           {CARD.fullName}

@@ -16,6 +16,8 @@ export const CONTACT = {
   area: "Southeast Texas",
 } as const
 
+export const FACEBOOK_URL = "https://www.facebook.com/elitehomeav"
+
 export const NAV_LINKS = [
   ["Solutions", "/services"],
   ["Our Work", "/gallery"],

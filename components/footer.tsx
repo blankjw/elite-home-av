@@ -3,7 +3,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { ArrowUpRight } from "lucide-react"
 import { BrandLockup } from "@/components/brand-lockup"
-import { CONTACT } from "@/lib/site"
+import { CONTACT, FACEBOOK_URL } from "@/lib/site"
 
 export function Footer() {
   const path = usePathname()
@@ -46,6 +46,7 @@ export function Footer() {
             <p className="e-kicker">Get in touch</p>
             <a href={CONTACT.phoneHref}>{CONTACT.phone}</a>
             <a href={CONTACT.emailHref}>{CONTACT.email}</a>
+            <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">Facebook</a>
             <p>{CONTACT.location}</p>
           </div>
           <div>

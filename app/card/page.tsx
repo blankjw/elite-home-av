@@ -7,7 +7,7 @@ import { cardQrSvg, getLiveCardUrl } from '@/lib/qr'
 export const metadata: Metadata = {
   title: 'John Blank | Elite Home AV',
   description:
-    'Digital business card for John Blank, Owner of Elite Home AV LLC in Lumberton, TX. Call or text (409) 790-7889.',
+    'Digital business card for John Blank, Owner of Elite Home AV LLC in Lumberton, TX. Call or text (409) 790-9117.',
   alternates: { canonical: CARD.cardUrl },
   openGraph: {
     title: 'John Blank | Elite Home AV',

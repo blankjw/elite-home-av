@@ -22,7 +22,7 @@ const localBusiness = {
   name: 'Elite Home AV LLC',
   url: SITE_URL,
   sameAs: [FACEBOOK_URL],
-  telephone: '+1-409-790-7889',
+  telephone: '+14097909117',
   email: 'john@elitehomeav.com',
   image: `${SITE_URL}${OG_IMAGE.url}`,
   address: {
@@ -39,7 +39,7 @@ const localBusiness = {
   ],
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+1-409-790-7889',
+    telephone: '+14097909117',
     contactType: 'sales and service',
     areaServed: 'Southeast Texas',
   },

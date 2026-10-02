@@ -5,9 +5,9 @@ import { PageHero } from "@/components/page-hero"
 import { CONTACT } from "@/lib/site"
 
 export const metadata: Metadata = pageMetadata({
-  title: "Contact Elite Home AV | (409) 790-7889",
+  title: "Contact Elite Home AV | (409) 790-9117",
   description:
-    "Call or contact Elite Home AV LLC in Lumberton, TX. Serving Beaumont, Port Arthur, Galveston & all of SE Texas. (409) 790-7889 | john@elitehomeav.com",
+    "Call or contact Elite Home AV LLC in Lumberton, TX. Serving Beaumont, Port Arthur, Galveston & all of SE Texas. (409) 790-9117 | john@elitehomeav.com",
   path: "/contact",
 })
 

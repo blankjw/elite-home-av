@@ -8,8 +8,8 @@ export const BRAND = {
 } as const
 
 export const CONTACT = {
-  phone: "(409) 790-7889",
-  phoneHref: "tel:4097907889",
+  phone: "(409) 790-9117",
+  phoneHref: "tel:+14097909117",
   email: "john@elitehomeav.com",
   emailHref: "mailto:john@elitehomeav.com",
   location: "Lumberton, TX 77657",

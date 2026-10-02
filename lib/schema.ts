@@ -9,7 +9,7 @@ export const AREA_SERVED = [
 const PROVIDER = {
   "@type": "LocalBusiness",
   name: "Elite Home AV LLC",
-  telephone: "+1-409-790-7889",
+  telephone: "+1-409-790-9117",
   url: SITE_URL,
   address: {
     "@type": "PostalAddress",

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import { Globe, Mail, MapPin, MessageSquare, Phone, UserPlus } from 'lucide-react'
 import { CARD } from '@/lib/card'
+import { SOCIAL_URLS } from '@/lib/site'
 import { cardQrSvg, getLiveCardUrl } from '@/lib/qr'
 
 export const metadata: Metadata = {
@@ -45,6 +46,7 @@ export default async function CardPage() {
               '@type': 'Organization',
               name: CARD.company,
               url: CARD.website,
+              sameAs: SOCIAL_URLS,
             },
             email: CARD.email,
             telephone: CARD.phoneE164,

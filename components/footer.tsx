@@ -3,7 +3,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { ArrowUpRight } from "lucide-react"
 import { BrandLockup } from "@/components/brand-lockup"
-import { CONTACT, FACEBOOK_URL } from "@/lib/site"
+import { CONTACT, SOCIAL_LINKS } from "@/lib/site"
 
 export function Footer() {
   const path = usePathname()
@@ -46,7 +46,11 @@ export function Footer() {
             <p className="e-kicker">Get in touch</p>
             <a href={CONTACT.phoneHref}>{CONTACT.phone}</a>
             <a href={CONTACT.emailHref}>{CONTACT.email}</a>
-            <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">Facebook</a>
+            {SOCIAL_LINKS.map(({ label, href }) => (
+              <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={`Elite Home AV on ${label} (opens in a new tab)`}>
+                {label}
+              </a>
+            ))}
             <p>{CONTACT.location}</p>
           </div>
           <div>

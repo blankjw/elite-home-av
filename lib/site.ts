@@ -18,6 +18,16 @@ export const CONTACT = {
 
 export const FACEBOOK_URL = "https://www.facebook.com/elitehomeav"
 
+export const SOCIAL_LINKS = [
+  { label: "X", href: "https://x.com/elitehomeavllc" },
+  { label: "Instagram", href: "https://www.instagram.com/elitehomeavllc/" },
+  { label: "Facebook", href: FACEBOOK_URL },
+  { label: "TikTok", href: "https://www.tiktok.com/@elitehomeavllc" },
+  { label: "YouTube", href: "https://www.youtube.com/@EliteHomeAVllc" },
+] as const
+
+export const SOCIAL_URLS = SOCIAL_LINKS.map(({ href }) => href)
+
 export const NAV_LINKS = [
   ["Solutions", "/services"],
   ["Our Work", "/gallery"],

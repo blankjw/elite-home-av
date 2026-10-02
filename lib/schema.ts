@@ -1,4 +1,5 @@
 import { SITE_URL } from "@/lib/seo"
+import { SOCIAL_URLS } from "@/lib/site"
 
 export const AREA_SERVED = [
   { "@type": "City", name: "Lumberton, Texas" },
@@ -9,6 +10,7 @@ export const AREA_SERVED = [
 const PROVIDER = {
   "@type": "LocalBusiness",
   name: "Elite Home AV LLC",
+  sameAs: SOCIAL_URLS,
   telephone: "+14097909117",
   url: SITE_URL,
   address: {
@@ -27,7 +29,7 @@ export function websiteSchema() {
     name: "Elite Home AV",
     url: SITE_URL,
     inLanguage: "en-US",
-    publisher: { "@type": "LocalBusiness", name: "Elite Home AV LLC", url: SITE_URL },
+    publisher: { "@type": "LocalBusiness", name: "Elite Home AV LLC", url: SITE_URL, sameAs: SOCIAL_URLS },
   }
 }
 

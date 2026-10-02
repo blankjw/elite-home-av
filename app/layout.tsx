@@ -6,7 +6,7 @@ import { JsonLd } from '@/components/json-ld'
 import { blockSearchIndex } from '@/lib/seo-mode'
 import { OG_IMAGE, SITE_URL } from '@/lib/seo'
 import { websiteSchema } from '@/lib/schema'
-import { FACEBOOK_URL } from '@/lib/site'
+import { SOCIAL_URLS } from '@/lib/site'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' })
@@ -21,7 +21,7 @@ const localBusiness = {
   '@id': `${SITE_URL}/#business`,
   name: 'Elite Home AV LLC',
   url: SITE_URL,
-  sameAs: [FACEBOOK_URL],
+  sameAs: SOCIAL_URLS,
   telephone: '+14097909117',
   email: 'john@elitehomeav.com',
   image: `${SITE_URL}${OG_IMAGE.url}`,

@@ -16,7 +16,7 @@ export const CONTACT = {
   area: "Southeast Texas",
 } as const
 
-export const FACEBOOK_URL = "https://www.facebook.com/elitehomeav"
+export const FACEBOOK_URL = "https://www.facebook.com/elitehomeavllc/"
 
 export const SOCIAL_LINKS = [
   { label: "X", href: "https://x.com/elitehomeavllc" },

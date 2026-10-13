@@ -67,6 +67,7 @@ export function Footer() {
           <div>
             <Link href="/privacy">Privacy</Link>
             <Link href="/terms">Terms</Link>
+            <a href="https://elite-private-job-log-hosted.jwblank.workers.dev/" rel="nofollow" aria-label="Admin — private job log">Admin</a>
           </div>
         </div>
       </div>

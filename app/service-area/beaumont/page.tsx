@@ -86,6 +86,12 @@ export default function BeaumontPage() {
                   </h3>
                   <p className="mt-3 text-sm leading-6 text-[#526274]">{solution.summary}</p>
                 </Link>
+                {solution.slug === "theater" ? (
+                  <Link href="/service-area/beaumont/home-theater" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold">
+                    Home theater installation in Beaumont
+                    <ArrowUpRight className="h-4 w-4" />
+                  </Link>
+                ) : null}
               </article>
             ))}
           </div>

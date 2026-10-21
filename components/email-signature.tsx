@@ -28,7 +28,7 @@ export function EmailSignaturePanel({ html }: { html: string }) {
         </p>
         <p className="mt-3 text-sm leading-relaxed text-[#9CA3AF]">
           One image, one link. Paste the HTML into Gmail or Outlook. Clicking the card
-          opens elitehomeav.com/card.
+          opens www.elitehomeav.com/card.
         </p>
 
         <img

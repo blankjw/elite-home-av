@@ -14,7 +14,7 @@ export const CARD = {
   email: 'john@elitehomeav.com',
   website: 'https://www.elitehomeav.com',
   websiteDisplay: 'www.elitehomeav.com',
-  cardUrl: 'https://elitehomeav.com/card',
+  cardUrl: 'https://www.elitehomeav.com/card',
   vcfPath: '/card/john-blank.vcf',
   vcfFilename: 'John-Blank.vcf',
 } as const

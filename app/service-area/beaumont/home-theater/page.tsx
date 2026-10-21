@@ -26,73 +26,61 @@ const AREA = [
 const INCLUDES = [
   {
     title: "Living-room theater",
-    copy: "A TV or projector, sound, and the wires put away in the room you already use.",
+    copy: "TV or projector in the room you already sit in. Speaker wire goes in the wall.",
   },
   {
-    title: "Dedicated media room",
-    copy: "A room set aside for movies, with the screen, seating, sound, and light planned together.",
+    title: "Media room",
+    copy: "Screen, seats, sound, and the lights for a room that is just for movies.",
   },
   {
-    title: "Hiding wires and equipment",
-    copy: "Cable runs and gear placed so they are not left out in the open.",
-  },
-  {
-    title: "Low-voltage only",
-    copy: "We handle the AV/low-voltage side and coordinate with your electrician.",
+    title: "Gear out of the way",
+    copy: "The rack goes in a closet. You should not see a pile of boxes by the couch.",
   },
 ] as const
 
 const COST_DRIVERS = [
-  "Living room or a dedicated media room",
+  "Living room or a separate media room",
   "TV or projector",
-  "How much wire and equipment has to be hidden",
-  "Where you sit, and the picture size that fits that spot",
-  "Whether the room needs new low-voltage runs",
+  "How much wire has to be hidden",
+  "Where the couch sits, and the picture size that fits",
+  "How far the cable has to run",
 ] as const
 
 const FAQS = [
   {
     question: "How much does a home theater in Beaumont cost?",
     answer:
-      "It depends on the room, a living-room theater or a dedicated media room, TV or projector, and how much wire and equipment has to be hidden. We do not list prices. Call (409) 790-9117 for a quote.",
+      "Call (409) 790-9117 for a quote. The room, a TV or a projector, and how much wire has to be hidden change the number.",
   },
   {
     question: "Do I need a dedicated room?",
-    answer:
-      "No. A living room can be the theater. A dedicated media room is an option when you want that space used for movies. We plan either one.",
+    answer: "No. The living room works. A separate media room is there if you want the seats and the screen in their own space.",
   },
   {
     question: "Should I get a TV or a projector?",
     answer:
-      "A TV fits a lot of living rooms, including rooms with windows. A projector fits a room you can darken, when you want a larger picture. We look at the room and where you sit, then pick one.",
+      "TV if you have windows and you watch during the day. Projector if you can darken the room and you want a bigger picture. John will say which one after he sees the room.",
   },
   {
     question: "Can you hide the wires?",
-    answer:
-      "Yes. Hiding wires and equipment is part of the install. We run the low-voltage cabling and place the gear so it is not left out in the room.",
+    answer: "Yes. Speaker wire, video cable, and the rack go in the wall or a closet.",
   },
   {
     question: "How long does an install take?",
     answer:
-      "It depends on the room and how much has to be hidden. We tell you the time when the scope is set, before any work starts.",
+      "John will tell you once he knows the room. A living room with a short wire run is a smaller job than a media room that needs new cable.",
   },
   {
     question: "What screen size do I need?",
-    answer:
-      "Size follows the seating distance and the room. We measure where you sit and choose a TV or screen that fits that spot. There is no default size.",
+    answer: "He measures from the couch to the wall and picks the size from that.",
   },
   {
     question: "Do you work outside Beaumont?",
-    answer:
-      "Yes. We are based in Lumberton and also install in Nederland, Port Arthur, Vidor, Orange, and Silsbee, along with Beaumont.",
+    answer: "Yes. Lumberton is home. Nederland, Port Arthur, Vidor, Orange, and Silsbee are regular stops too.",
   },
   {
     question: "What if something breaks later?",
-    answer: "Call John at (409) 790-9117. ELITE Care is the support after the install.",
-  },
-  {
-    question: "Do you do the electrical work?",
-    answer: "We handle the AV/low-voltage side and coordinate with your electrician.",
+    answer: "Call John at (409) 790-9117. ELITE Care is the checkup and the repair.",
   },
 ] as const
 
@@ -149,8 +137,7 @@ export default function BeaumontHomeTheaterPage() {
               Home Theater Installation in Beaumont, TX
             </h1>
             <p className="lead mt-5">
-              Home theater and media room installation in Beaumont, from a Lumberton installer.
-              John is the one person from plan to handoff.
+              John installs home theaters in Beaumont. He lives in Lumberton. You talk to him from the first call until he walks you through the finished room.
             </p>
             <div className="mt-8">
               <SiteCta href={CONTACT.phoneHref} variant="solid">
@@ -166,7 +153,7 @@ export default function BeaumontHomeTheaterPage() {
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[.2em] text-[#526274]">What an install includes</p>
             <h2 className="mt-4 font-serif text-4xl leading-tight tracking-[-.04em] md:text-5xl">
-              The room, the picture, and the wires put away.
+              Living room, or a room just for movies.
             </h2>
           </div>
           <div className="mt-14 grid gap-8 md:grid-cols-2">
@@ -187,7 +174,7 @@ export default function BeaumontHomeTheaterPage() {
             From the job
           </h2>
           <p className="mt-6 max-w-2xl text-sm leading-7 text-[#C3CCD7]">
-            Job photos from finished Beaumont installs go here. None are posted yet.
+            Beaumont job photos go here once an install is ready to show.
           </p>
           <div className="work-linework mt-10" aria-hidden="true">
             <span />
@@ -203,10 +190,10 @@ export default function BeaumontHomeTheaterPage() {
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[.2em] text-[#526274]">How it works</p>
             <h2 className="mt-4 font-serif text-4xl leading-tight tracking-[-.04em] md:text-5xl">
-              Three steps. John is the one contact.
+              You deal with John.
             </h2>
             <p className="mt-6 text-sm leading-7 text-[#526274]">
-              You talk to John from the first call through handoff. These are the same three steps we use on every job.
+              One person on the job. Same three steps as the rest of the work.
             </p>
           </div>
           <ol className="mt-14 grid gap-8 md:grid-cols-3">
@@ -228,12 +215,11 @@ export default function BeaumontHomeTheaterPage() {
           <div>
             <p className="text-xs font-semibold uppercase tracking-[.2em] text-[#526274]">TV or projector</p>
             <h2 className="mt-4 font-serif text-4xl leading-tight tracking-[-.04em] md:text-5xl">
-              The room decides.
+              TV or a projector.
             </h2>
           </div>
           <p className="text-sm leading-7 text-[#526274]">
-            Some Beaumont rooms work better with a TV. Some work better with a projector and a screen.
-            Windows, how dark the room gets, and where you sit decide it. We look at the room before anything is ordered.
+            A bright living room wants a TV. A room you can darken can take a projector and a screen. John looks at the windows and the couch before he orders anything.
           </p>
         </div>
       </section>
@@ -243,10 +229,10 @@ export default function BeaumontHomeTheaterPage() {
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[.2em] text-[#526274]">What it costs</p>
             <h2 className="mt-4 font-serif text-4xl leading-tight tracking-[-.04em] md:text-5xl">
-              The quote follows the room.
+              What changes the quote.
             </h2>
             <p className="mt-6 text-sm leading-7 text-[#526274]">
-              There is no price list on this page. Call {CONTACT.phone} for a quote. The cost depends on:
+              Call {CONTACT.phone}. The number moves with:
             </p>
           </div>
           <ul className="mt-10 grid gap-4 md:grid-cols-2">
@@ -264,16 +250,15 @@ export default function BeaumontHomeTheaterPage() {
           <div>
             <p className="text-xs font-semibold uppercase tracking-[.2em] text-[#526274]">After the install</p>
             <h2 className="mt-4 font-serif text-4xl leading-tight tracking-[-.04em] md:text-5xl">
-              Support when you need it later.
+              Call John if it acts up later.
             </h2>
           </div>
           <div>
             <p className="text-sm leading-7 text-[#526274]">
-              After the system is in,{" "}
               <Link href="/care" className="font-semibold text-[#0B1526] underline">
                 ELITE Care
               </Link>{" "}
-              is how you get help. Planned checkups, and John if something needs a look.
+              is the checkup and the repair. Same guy who put it in.
             </p>
           </div>
         </div>
@@ -287,11 +272,10 @@ export default function BeaumontHomeTheaterPage() {
               Beaumont and nearby.
             </h2>
             <p className="mt-6 text-sm leading-7 text-[#526274]">
-              We install in{" "}
               <Link href="/service-area/beaumont" className="font-semibold text-[#0B1526] underline">
                 Beaumont
-              </Link>{" "}
-              and these nearby towns.
+              </Link>
+              , and the towns next door.
             </p>
           </div>
           <ul className="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-3">

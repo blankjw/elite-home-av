@@ -28,7 +28,7 @@ const SERVICES = [
   {
     name: "Outdoor and dock TV installation",
     description:
-      "Outdoor and dock TV installation for Toledo Bend and Sam Rayburn lake houses. A display rated for a covered porch or an open dock. Power is coordinated with your electrician.",
+      "Outdoor and dock TV installation for Toledo Bend and Sam Rayburn lake houses. A display made for a covered porch or an open dock.",
   },
   {
     name: "Outdoor and dock audio",
@@ -54,45 +54,44 @@ const FAQS = [
   {
     question: "Can I put a regular TV outside?",
     answer:
-      "Not for long. Heat, humidity, and bugs kill indoor TVs, even under a roof. Use one rated for the spot, whether that is a covered porch or an open dock.",
+      "Not for long. An indoor set cooks and takes on moisture, even under a porch roof. Use a TV made for outside.",
   },
   {
     question: "How do I get Wi-Fi to my boat dock?",
     answer:
-      "A cable run to an outdoor access point at the dock, or a wireless link from the house. Wi-Fi over water works well with line of sight.",
+      "Run cable to an outdoor access point on the dock, or put up a wireless bridge from the house. A clear shot over the water is the easy case.",
   },
   {
     question: "Will Starlink work for my lake house?",
     answer:
-      "If Starlink is the internet you have, we can make it reach the porch and the dock. Elite does not sell internet. The same is true for rural wireless or cable.",
+      "Yes. Starlink, rural wireless, or cable can feed the house. We get that signal to the porch and the dock.",
   },
   {
     question: "Can I reboot my lake house internet remotely?",
-    answer:
-      "Yes. With remote-controllable power and a managed network, you or John can restart the gear from your phone.",
+    answer: "Yes. The rack can restart the router and the streaming box from your phone. John can do it too.",
   },
   {
     question: "What speakers hold up on a dock?",
     answer:
-      "Ones built for outdoor or marine exposure, not patio speakers moved outside. Sealed connections and cable in conduit.",
+      "Speakers made for rain and humidity, with sealed connections and cable in conduit. A patio speaker dragged outside will not hold up.",
   },
   {
     question: "Will outdoor speakers bother the neighbors across the cove?",
-    answer: "More speakers at a lower volume, aimed at the seating, keeps the sound where you are.",
+    answer: "Use more speakers, turned down, aimed at the chairs. The sound stays on your dock.",
   },
   {
     question: "Can you set up Wi-Fi and TVs for my vacation rental?",
-    answer: "Yes. A guest network, simple remotes, a card on how to use it, and remote restarts.",
+    answer: "Yes. Guest network, one remote, a card that says how to turn it on, and a way to restart it when a renter calls.",
   },
   {
     question: "How do I protect my electronics from lightning at the lake?",
     answer:
-      "Surge protection on the gear and the low-voltage lines. Unplug before a big storm if nothing is protecting the gear yet. Whole-house protection is your electrician's job.",
+      "Surge protection on the gear and the lines that feed it. Unplug ahead of a big storm if that protection is not in yet.",
   },
   {
     question: "How much does it cost?",
     answer:
-      "Call (409) 790-9117 for a quote. It depends on the distance to the dock, the number of zones, where the TV goes, and whether the runs stay in the house or go outside. We do not list prices.",
+      "Call (409) 790-9117. Distance to the dock, how many zones, where the TV hangs, and how much cable leaves the house all change the quote.",
   },
 ] as const
 
@@ -135,8 +134,7 @@ export default function LakeHouseTechPage() {
               Lake House TV, Music &amp; Wi-Fi for Toledo Bend and Sam Rayburn
             </h1>
             <p className="lead mt-5">
-              Your lake house should be easy. TV on the porch, music at the dock, Wi-Fi that reaches the boat, and a
-              system you can fix from home. We set it up for Toledo Bend and Sam Rayburn lake houses.
+              John sets up TVs, music, and Wi-Fi for lake houses on Toledo Bend and Sam Rayburn. Porch, dock, and the rooms inside.
             </p>
             <p className="mt-4 text-sm text-[#9BA7B5]">Last updated October 21, 2026.</p>
             <div className="mt-8">
@@ -151,9 +149,9 @@ export default function LakeHouseTechPage() {
       <section className="bg-[#F7F9FC] px-6 py-20 text-[#0B1526] md:px-10 md:py-28">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[.2em] text-[#526274]">Scope</p>
+            <p className="text-xs font-semibold uppercase tracking-[.2em] text-[#526274]">The job</p>
             <h2 className="mt-4 font-serif text-4xl leading-tight tracking-[-.04em] md:text-5xl">
-              TV, audio, and Wi-Fi. Power stays with your electrician.
+              TV, music, and Wi-Fi out to the dock.
             </h2>
           </div>
           <ul className="mt-10 grid gap-4 md:grid-cols-2">
@@ -163,10 +161,6 @@ export default function LakeHouseTechPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-8 max-w-3xl text-sm leading-7 text-[#526274]">
-            We handle the AV and low-voltage side. We coordinate with your electrician for power to a dock or an outdoor
-            TV, and for whole-house surge.
-          </p>
         </div>
       </section>
 
@@ -176,22 +170,20 @@ export default function LakeHouseTechPage() {
             <p className="text-xs font-semibold uppercase tracking-[.2em] text-[#526274]">Picture</p>
             <h2 className="mt-4 font-serif text-4xl leading-tight tracking-[-.04em] md:text-5xl">Outdoor and dock TV</h2>
             <p className="mt-6 text-sm leading-7 text-[#526274]">
-              An indoor TV does not last outside. Use a display rated for a covered porch or an open dock.
+              An indoor TV will not last out there.
             </p>
           </div>
           <div className="mt-14 grid gap-10 md:grid-cols-2">
             <article className="border-t border-[#AAB6C5] pt-6">
               <h3 className="text-xl font-semibold">Why an indoor TV dies outside</h3>
               <p className="mt-3 text-sm leading-6 text-[#526274]">
-                Heat, humidity, bugs, and glare. Even under a roof, an indoor set fails. Pick a display rated for where
-                it hangs.
+                Heat gets in the case. Humidity fogs the screen. Bugs nest in the vents. A porch roof still is not an indoor room. An open dock needs a set made for weather and glare.
               </p>
             </article>
             <article className="border-t border-[#AAB6C5] pt-6">
-              <h3 className="text-xl font-semibold">Mounting and the cable run</h3>
+              <h3 className="text-xl font-semibold">Mount and cables</h3>
               <p className="mt-3 text-sm leading-6 text-[#526274]">
-                A mount that tilts or swings, so you can see the screen from the chairs. We plan where the cable runs.
-                We coordinate with your electrician for power.
+                Tilt or swing the screen toward the chairs. The cable runs back to the rack in the house.
               </p>
             </article>
           </div>
@@ -206,27 +198,25 @@ export default function LakeHouseTechPage() {
               Music on the porch, patio, and dock
             </h2>
             <p className="mt-6 text-sm leading-7 text-[#526274]">
-              The porch, deck, fire pit, and dock can each have their own volume.
+              The dock does not have to play as loud as the porch.
             </p>
           </div>
           <div className="mt-14 grid gap-10 md:grid-cols-2">
             <article className="border-t border-[#AAB6C5] pt-6">
               <h3 className="text-xl font-semibold">Zones</h3>
               <p className="mt-3 text-sm leading-6 text-[#526274]">
-                Porch, deck, fire pit, and dock each get their own control, so the dock is not stuck at the porch
-                volume.
+                Porch, deck, fire pit, and dock each get their own volume.
               </p>
             </article>
             <article className="border-t border-[#AAB6C5] pt-6">
-              <h3 className="text-xl font-semibold">Speakers for wet air</h3>
+              <h3 className="text-xl font-semibold">Speakers that can get wet</h3>
               <p className="mt-3 text-sm leading-6 text-[#526274]">
-                Speakers built for wet, humid air. Several smaller speakers, spread out, so it is not loud at one spot
-                and the sound does not carry across the cove.
+                Speakers made for rain and humidity. A few smaller ones around the chairs, so it does not blast one seat and travel across the cove.
               </p>
             </article>
           </div>
           <p className="mt-8 text-sm leading-7 text-[#526274]">
-            Inside the house, the same plan can cover{" "}
+            The rooms inside can use the same system. See{" "}
             <Link href="/services/audio" className="font-semibold text-[#0B1526] underline">
               whole-home audio
             </Link>
@@ -243,22 +233,20 @@ export default function LakeHouseTechPage() {
               Wi-Fi from the house to the water
             </h2>
             <p className="mt-6 text-sm leading-7 text-[#526274]">
-              The house blocks the signal. A cable run or a wireless link gets Wi-Fi to the dock.
+              The house walls kill the signal before it gets to the water.
             </p>
           </div>
           <div className="mt-14 grid gap-8 md:grid-cols-3">
             <article className="border-t border-[#AAB6C5] pt-6">
-              <h3 className="text-xl font-semibold">Cable or a wireless link</h3>
+              <h3 className="text-xl font-semibold">Cable or a wireless bridge</h3>
               <p className="mt-3 text-sm leading-6 text-[#526274]">
-                A cable run to an outdoor access point, or a point-to-point wireless link from the house to the dock or
-                boathouse. Over open water, line of sight usually works well.
+                Run cable to an outdoor access point on the dock, or aim a wireless bridge at the dock or the boathouse. A clear shot over open water works well.
               </p>
             </article>
             <article className="border-t border-[#AAB6C5] pt-6">
-              <h3 className="text-xl font-semibold">Whatever internet you already have</h3>
+              <h3 className="text-xl font-semibold">The internet you already have</h3>
               <p className="mt-3 text-sm leading-6 text-[#526274]">
-                It works with cable, rural wireless, or Starlink. Elite does not sell internet. We make the connection
-                reach the porch and the dock. See{" "}
+                Cable, rural wireless, or Starlink. We carry that signal to the porch and the dock. See{" "}
                 <Link href="/services/networking" className="font-semibold text-[#0B1526] underline">
                   networking
                 </Link>
@@ -266,9 +254,9 @@ export default function LakeHouseTechPage() {
               </p>
             </article>
             <article className="border-t border-[#AAB6C5] pt-6">
-              <h3 className="text-xl font-semibold">Guest network for rental hosts</h3>
+              <h3 className="text-xl font-semibold">Guest network for rentals</h3>
               <p className="mt-3 text-sm leading-6 text-[#526274]">
-                Guests get their own network. It stays separate from yours, so a rental does not share the house login.
+                Renters get their own login. Yours stays separate.
               </p>
             </article>
           </div>
@@ -283,18 +271,16 @@ export default function LakeHouseTechPage() {
               Restart it from home
             </h2>
             <p className="mt-6 text-sm leading-7 text-[#526274]">
-              A frozen router or streaming box can be restarted from your phone, or by John, so you do not have to drive
-              up.
+              Router locks up. Streaming box freezes. You should not have to drive up for that.
             </p>
           </div>
           <div>
             <p className="text-sm leading-7 text-[#526274]">
-              The rack has remote power control for the network and AV gear. You restart the box. John can do it too.
-              That help sits with{" "}
+              The rack can power-cycle them from your phone. John can do it from Lumberton. That is part of{" "}
               <Link href="/care" className="font-semibold text-[#0B1526] underline">
                 ELITE Care
               </Link>
-              . It is a restart for the gear, not a watch on the property.
+              .
             </p>
           </div>
         </div>
@@ -308,7 +294,7 @@ export default function LakeHouseTechPage() {
               Inside the lake house
             </h2>
             <p className="mt-6 text-sm leading-7 text-[#526274]">
-              A game-day room, TVs in the bunk rooms, and whole-home audio can share one remote.
+              Game-day room. TVs in the bunk rooms. Music through the house. One remote.
             </p>
           </div>
           <p className="mt-8 max-w-3xl text-sm leading-7 text-[#526274]">
@@ -320,7 +306,7 @@ export default function LakeHouseTechPage() {
             <Link href="/services/audio" className="font-semibold text-[#0B1526] underline">
               home audio
             </Link>
-            . Porch and dock light scenes are low-voltage control, through{" "}
+            . Porch and dock lights can come on with the rest of the house through{" "}
             <Link href="/services/lighting" className="font-semibold text-[#0B1526] underline">
               lighting
             </Link>{" "}
@@ -328,7 +314,7 @@ export default function LakeHouseTechPage() {
             <Link href="/services/automation" className="font-semibold text-[#0B1526] underline">
               automation
             </Link>
-            . Your electrician still handles the power.
+            .
           </p>
         </div>
       </section>
@@ -340,8 +326,7 @@ export default function LakeHouseTechPage() {
             From the job
           </h2>
           <p className="mt-6 max-w-2xl text-sm leading-7 text-[#C3CCD7]">
-            Job photos from lake installs go here. A porch TV, dock speakers, or Wi-Fi at the boathouse. None are posted
-            yet. The lake can be named. The address will not.
+            Lake job photos go here. Porch TV, dock speakers, Wi-Fi at the boathouse. None posted yet.
           </p>
           <div className="work-linework mt-10" aria-hidden="true">
             <span />
@@ -360,24 +345,21 @@ export default function LakeHouseTechPage() {
               Storms, surge, and humidity
             </h2>
             <p className="mt-6 text-sm leading-7 text-[#526274]">
-              East Texas lightning and spring storms are hard on gear. We protect the equipment. We do not do panel work.
+              Spring storms and lake humidity eat electronics.
             </p>
           </div>
           <ul className="mt-10 grid gap-4 md:grid-cols-2">
             {[
-              "Surge protection on the equipment and on the low-voltage lines",
-              "A ventilated cabinet for the gear",
+              "Surge protection on the gear and the lines that feed it",
+              "A cabinet that can breathe",
               "Sealed outdoor connections",
-              "Stainless hardware near the water",
+              "Stainless hardware down by the water",
             ].map((item) => (
               <li key={item} className="border-t border-[#AAB6C5] pt-4 text-sm leading-6 text-[#33445A]">
                 {item}
               </li>
             ))}
           </ul>
-          <p className="mt-8 max-w-3xl text-sm leading-7 text-[#526274]">
-            We coordinate with your electrician for whole-house surge or power.
-          </p>
         </div>
       </section>
 
@@ -391,14 +373,12 @@ export default function LakeHouseTechPage() {
           </div>
           <div className="text-sm leading-7 text-[#526274]">
             <p>
-              We plan the visit around a weekend you are at the lake. Then we hand off by phone: what is where, written
-              notes, and one number to call.
+              Plan the work for a weekend you are at the camp. After that, John walks you through it on the phone, with notes on what is where.
             </p>
             <p className="mt-4">
-              That number is John&apos;s. He is the one contact, from Lumberton, even if you live somewhere else. Read a
-              bit more{" "}
+              His number is the one you call. He works out of Lumberton. More on{" "}
               <Link href="/about" className="font-semibold text-[#0B1526] underline">
-                about Elite
+                John
               </Link>
               .
             </p>
@@ -427,7 +407,7 @@ export default function LakeHouseTechPage() {
             </article>
           </div>
           <p className="mt-8 max-w-3xl text-sm leading-7 text-[#526274]">
-            If you live in SETX and your lake place is on the Louisiana side near Many or Zwolle, call and ask. The
+            Live in SETX and the camp is on the Louisiana side near Many or Zwolle? Call and ask. The
             wider map is on{" "}
             <Link href="/service-area" className="font-semibold text-[#0B1526] underline">
               service area

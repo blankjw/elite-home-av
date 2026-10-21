@@ -15,6 +15,15 @@ export function SolutionDetail({ solution }: { solution: Solution }) {
           <div>
             <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#526274]">What this is for</p>
             <p className="mt-4 max-w-md text-base leading-7 text-[#405165]">{solution.body}</p>
+            {solution.slug === "theater" ? (
+              <p className="mt-6 text-sm leading-7 text-[#405165]">
+                In Beaumont, see{" "}
+                <Link href="/service-area/beaumont/home-theater" className="font-semibold text-[#0B1526] underline">
+                  home theater installation in Beaumont, TX
+                </Link>
+                .
+              </p>
+            ) : null}
           </div>
           <ul className="space-y-4 text-sm leading-6 text-[#405165]">
             {solution.outcomes.map((item) => (

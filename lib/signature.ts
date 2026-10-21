@@ -1,6 +1,6 @@
 import { CARD } from '@/lib/card'
 
-export const SIGNATURE_IMAGE_SRC = 'https://elitehomeav.com/card/email-signature.png'
+export const SIGNATURE_IMAGE_SRC = 'https://www.elitehomeav.com/card/email-signature.png'
 export const SIGNATURE_IMAGE_WIDTH = 500
 
 /** Gmail/Outlook snippet: one hosted card image linking to the digital card. */

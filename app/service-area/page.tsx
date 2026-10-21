@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { pageMetadata } from "@/lib/seo"
 import Link from "next/link"
-import { ArrowUpRight, Building2, Home, MapPin } from "lucide-react"
+import { Anchor, ArrowUpRight, Building2, Home, MapPin } from "lucide-react"
 import { PageHero } from "@/components/page-hero"
 
 export const metadata: Metadata = pageMetadata({
@@ -32,6 +32,12 @@ const areas: ReadonlyArray<{
     icon: MapPin,
     title: "Southeast Texas",
     copy: "Our wider service area includes Southeast Texas communities where a local, accountable technology partner matters before, during, and after installation.",
+  },
+  {
+    icon: Anchor,
+    title: "Toledo Bend and Sam Rayburn",
+    href: "/lake-house-tech-toledo-bend-sam-rayburn",
+    copy: "Lake houses at Toledo Bend and Sam Rayburn: outdoor and dock TV, porch and dock audio, and Wi-Fi from the house to the water.",
   },
 ]
 

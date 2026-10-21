@@ -52,13 +52,15 @@ export const metadata: Metadata = {
   title: 'Integrated Home Technology in Southeast Texas | ELITE',
   description: SITE_DESCRIPTION,
   keywords: ['home theater', 'home audio', 'lighting control', 'surveillance', 'access control', 'automation', 'networking', 'Lumberton TX', 'Southeast Texas'],
-  alternates: { canonical: '/' },
+  // "./" resolves against the current path and metadataBase, so every page
+  // that does not set its own canonical still points at its www URL.
+  alternates: { canonical: './' },
   robots: blockSearchIndex() ? { index: false, follow: false } : { index: true, follow: true },
   openGraph: {
     title: 'Elite Home AV | Integrated Technology for Homes & Businesses',
     description:
       'Thoughtfully integrated spaces, straightforward everyday control, and support beyond installation. Based in Lumberton, serving Southeast Texas.',
-    url: '/',
+    url: './',
     siteName: 'Elite Home AV',
     locale: 'en_US',
     type: 'website',

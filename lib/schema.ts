@@ -37,10 +37,12 @@ export function serviceSchema({
   name,
   description,
   path,
+  areaServed = AREA_SERVED,
 }: {
   name: string
   description: string
   path: string
+  areaServed?: readonly { "@type": string; name: string }[]
 }) {
   return {
     "@context": "https://schema.org",
@@ -50,7 +52,50 @@ export function serviceSchema({
     description,
     url: `${SITE_URL}${path}`,
     provider: PROVIDER,
-    areaServed: AREA_SERVED,
+    areaServed,
+  }
+}
+
+export function localBusinessSchema({
+  description,
+  areaServed = AREA_SERVED,
+}: {
+  description: string
+  areaServed?: readonly { "@type": string; name: string }[]
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": `${SITE_URL}/#business`,
+    name: "Elite Home AV LLC",
+    url: SITE_URL,
+    sameAs: SOCIAL_URLS,
+    telephone: "+14097909117",
+    email: "john@elitehomeav.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Lumberton",
+      addressRegion: "TX",
+      postalCode: "77657",
+      addressCountry: "US",
+    },
+    areaServed,
+    description,
+  }
+}
+
+export function faqSchema(items: readonly { question: string; answer: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
   }
 }
 

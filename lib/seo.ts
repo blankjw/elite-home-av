@@ -18,7 +18,7 @@ export function pageMetadata({
   description: string
   path: string
 }): Metadata {
-  const canonical = path === "/" ? SITE_URL : `${SITE_URL}${path}`
+  const canonical = path.startsWith("/") ? path : `/${path}`
   return {
     title,
     description,

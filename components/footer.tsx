@@ -57,6 +57,7 @@ export function Footer() {
             <p className="e-kicker">Explore</p>
             <Link href="/services">Solutions</Link>
             <Link href="/service-area">Service area</Link>
+            <Link href="/lake-house-tech-toledo-bend-sam-rayburn">Lake houses</Link>
             <Link href="/gallery">Our work</Link>
             <Link href="/care">ELITE Care</Link>
             <Link href="/about">About ELITE</Link>

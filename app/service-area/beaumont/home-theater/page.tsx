@@ -4,7 +4,6 @@ import { ArrowUpRight } from "lucide-react"
 import { JsonLd } from "@/components/json-ld"
 import { SiteCta } from "@/components/site-cta"
 import { pageMetadata } from "@/lib/seo"
-import { PROCESS_STEPS } from "@/lib/process"
 import { breadcrumbSchema, faqSchema, localBusinessSchema, serviceSchema } from "@/lib/schema"
 import { CONTACT } from "@/lib/site"
 
@@ -26,15 +25,15 @@ const AREA = [
 const INCLUDES = [
   {
     title: "Living-room theater",
-    copy: "TV or projector in the room you already sit in. Speaker wire goes in the wall.",
+    copy: "A TV or projector in the room you already sit in, with the speaker wire run inside the wall.",
   },
   {
     title: "Media room",
-    copy: "Screen, seats, sound, and the lights for a room that is just for movies.",
+    copy: "Screen, seats, sound, and lights for a room that's only for movies.",
   },
   {
     title: "Gear out of the way",
-    copy: "The rack goes in a closet. You should not see a pile of boxes by the couch.",
+    copy: "The rack goes in a closet so you're not looking at a stack of boxes next to the couch.",
   },
 ] as const
 
@@ -46,41 +45,57 @@ const COST_DRIVERS = [
   "How far the cable has to run",
 ] as const
 
+const STEPS = [
+  {
+    title: "Start with your day.",
+    copy: "Tell me what works, what bugs you, and what you'd like different.",
+  },
+  {
+    title: "Plan the whole picture.",
+    copy: "We agree on the scope first. Then I work out how the pieces connect.",
+  },
+  {
+    title: "Settle in. Stay supported.",
+    copy: "You get a handoff you can actually use, and you know who to call.",
+  },
+] as const
+
 const FAQS = [
   {
     question: "How much does a home theater in Beaumont cost?",
     answer:
-      "Call (409) 790-9117 for a quote. The room, a TV or a projector, and how much wire has to be hidden change the number.",
+      "Call (409) 790-9117 for a quote. The number comes down to the room, whether it's a TV or a projector, and how much wire has to be hidden.",
   },
   {
     question: "Do I need a dedicated room?",
-    answer: "No. The living room works. A separate media room is there if you want the seats and the screen in their own space.",
+    answer:
+      "No. Your living room works fine. If you want the seats and screen in their own space, a separate media room is an option.",
   },
   {
     question: "Should I get a TV or a projector?",
     answer:
-      "TV if you have windows and you watch during the day. Projector if you can darken the room and you want a bigger picture. John will say which one after he sees the room.",
+      "If the room has windows and you watch during the day, get a TV. If you can darken the room and want a bigger picture, a projector makes sense. I'll tell you which one once I've seen the room.",
   },
   {
     question: "Can you hide the wires?",
-    answer: "Yes. Speaker wire, video cable, and the rack go in the wall or a closet.",
+    answer: "Yes. Speaker wire and video cable go in the wall, and the rack goes in a closet.",
   },
   {
     question: "How long does an install take?",
     answer:
-      "John will tell you once he knows the room. A living room with a short wire run is a smaller job than a media room that needs new cable.",
+      "I'll give you a time once I've seen the room. A living room with a short wire run is a smaller job than a media room that needs new cable.",
   },
   {
     question: "What screen size do I need?",
-    answer: "He measures from the couch to the wall and picks the size from that.",
+    answer: "I measure from the couch to the wall and pick the size off that.",
   },
   {
     question: "Do you work outside Beaumont?",
-    answer: "Yes. Lumberton is home. Nederland, Port Arthur, Vidor, Orange, and Silsbee are regular stops too.",
+    answer: "Yes. Lumberton's home. I'm in Nederland, Port Arthur, Vidor, Orange, and Silsbee regularly too.",
   },
   {
     question: "What if something breaks later?",
-    answer: "Call John at (409) 790-9117. ELITE Care is the checkup and the repair.",
+    answer: "Call me at (409) 790-9117. ELITE Care covers the checkup and the repair.",
   },
 ] as const
 
@@ -137,7 +152,7 @@ export default function BeaumontHomeTheaterPage() {
               Home Theater Installation in Beaumont, TX
             </h1>
             <p className="lead mt-5">
-              John installs home theaters in Beaumont. He lives in Lumberton. You talk to him from the first call until he walks you through the finished room.
+              I install home theaters in Beaumont. I live up the road in Lumberton. You'll talk to me on the first call, and I'm the one who walks you through the room when it's done.
             </p>
             <div className="mt-8">
               <SiteCta href={CONTACT.phoneHref} variant="solid">
@@ -153,7 +168,7 @@ export default function BeaumontHomeTheaterPage() {
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[.2em] text-[#526274]">What an install includes</p>
             <h2 className="mt-4 font-serif text-4xl leading-tight tracking-[-.04em] md:text-5xl">
-              Living room, or a room just for movies.
+              It can be your living room. It can be a room just for movies.
             </h2>
           </div>
           <div className="mt-14 grid gap-8 md:grid-cols-2">
@@ -190,14 +205,14 @@ export default function BeaumontHomeTheaterPage() {
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[.2em] text-[#526274]">How it works</p>
             <h2 className="mt-4 font-serif text-4xl leading-tight tracking-[-.04em] md:text-5xl">
-              You deal with John.
+              You deal with me.
             </h2>
             <p className="mt-6 text-sm leading-7 text-[#526274]">
-              One person on the job. Same three steps as the rest of the work.
+              I'm the one person on the job, and I work it the same way I work everything else.
             </p>
           </div>
           <ol className="mt-14 grid gap-8 md:grid-cols-3">
-            {PROCESS_STEPS.map((step, index) => (
+            {STEPS.map((step, index) => (
               <li key={step.title} className="border-t border-[#AAB6C5] pt-6">
                 <p className="text-sm font-semibold tabular-nums text-[#526274]">
                   {String(index + 1).padStart(2, "0")}
@@ -219,7 +234,7 @@ export default function BeaumontHomeTheaterPage() {
             </h2>
           </div>
           <p className="text-sm leading-7 text-[#526274]">
-            A bright living room wants a TV. A room you can darken can take a projector and a screen. John looks at the windows and the couch before he orders anything.
+            If the living room gets a lot of light, go with a TV. If you can make the room dark, a projector and screen will work. I look at the windows and where the couch sits before I order anything.
           </p>
         </div>
       </section>
@@ -232,7 +247,7 @@ export default function BeaumontHomeTheaterPage() {
               What changes the quote.
             </h2>
             <p className="mt-6 text-sm leading-7 text-[#526274]">
-              Call {CONTACT.phone}. The number moves with:
+              Call {CONTACT.phone}. The number depends on:
             </p>
           </div>
           <ul className="mt-10 grid gap-4 md:grid-cols-2">
@@ -250,7 +265,7 @@ export default function BeaumontHomeTheaterPage() {
           <div>
             <p className="text-xs font-semibold uppercase tracking-[.2em] text-[#526274]">After the install</p>
             <h2 className="mt-4 font-serif text-4xl leading-tight tracking-[-.04em] md:text-5xl">
-              Call John if it acts up later.
+              If it acts up later, call me.
             </h2>
           </div>
           <div>
@@ -258,7 +273,7 @@ export default function BeaumontHomeTheaterPage() {
               <Link href="/care" className="font-semibold text-[#0B1526] underline">
                 ELITE Care
               </Link>{" "}
-              is the checkup and the repair. Same guy who put it in.
+              covers the checkup and the repair, and I'm the same guy who put it in.
             </p>
           </div>
         </div>
@@ -275,7 +290,8 @@ export default function BeaumontHomeTheaterPage() {
               <Link href="/service-area/beaumont" className="font-semibold text-[#0B1526] underline">
                 Beaumont
               </Link>
-              , and the towns next door.
+              {" "}
+              and the towns right around it.
             </p>
           </div>
           <ul className="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
@@ -309,7 +325,7 @@ export default function BeaumontHomeTheaterPage() {
         <div className="mx-auto max-w-7xl">
           <p className="text-xs uppercase tracking-[.2em] text-[#B8C3CF]">Beaumont quote</p>
           <h2 className="mt-4 max-w-2xl font-serif text-4xl tracking-[-.04em] md:text-5xl">
-            Call John and tell him about the room.
+            Give me a call and tell me about the room.
           </h2>
           <div className="mt-8 flex flex-wrap gap-x-8 gap-y-4">
             <a href={CONTACT.phoneHref} className="inline-flex items-center gap-2 text-sm font-semibold">
